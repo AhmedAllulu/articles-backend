@@ -1487,3 +1487,18 @@
 [31m    at next (/var/www/html/articles-backend/node_modules/express/lib/router/route.js:149:13)[39m
 [31m    at middleware (/var/www/html/node_modules/express-validator/lib/middlewares/check.js:16:13)[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+2025-04-05 14:49:08:498 [31merror[39m: [31mError fetching trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:08:498 [31merror[39m: [31mError in generateArticlesFromTrends: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError fetching trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError ensuring trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError in generateArticlesForCategoryAndCountry: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError in generateArticles: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:50:27:5027 [31merror[39m: [31mError fetching trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:50:27:5027 [31merror[39m: [31mError in generateArticlesFromTrends: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:56:19:5619 [31merror[39m: [31mError fetching trends using SerpAPI: Request failed with status code 404[39m
+2025-04-05 14:56:19:5619 [31merror[39m: [31mError fetching trends for tech/US: Request failed with status code 404[39m
+2025-04-05 14:56:24:5624 [31merror[39m: [31mAll attempts failed for "Augmented Reality". Using fallback.[39m
+2025-04-05 14:56:30:5630 [31merror[39m: [31mAll attempts failed for "Cloud Computing". Using fallback.[39m
+2025-04-05 14:56:35:5635 [31merror[39m: [31mAll attempts failed for "Quantum Computing". Using fallback.[39m
+2025-04-05 14:56:39:5639 [31merror[39m: [31mAll attempts failed for "Digital Transformation". Using fallback.[39m
+2025-04-05 14:56:44:5644 [31merror[39m: [31mAll attempts failed for "Blockchain". Using fallback.[39m

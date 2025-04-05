@@ -10,7 +10,7 @@ router.use(auth.authenticate);
 
 /**
  * @swagger
- * /admin/articles/generate:
+ * /api/admin/articles/generate:
  *   post:
  *     summary: Generate articles for a category and country
  *     tags: [Admin]
@@ -81,7 +81,7 @@ router.post('/articles/generate', adminController.generateArticles);
 
 /**
  * @swagger
- * /admin/trends/{category}/{countryCode}:
+ * /api/admin/trends/{category}/{countryCode}:
  *   get:
  *     summary: Get trends for a specific category and country
  *     tags: [Admin]
@@ -150,7 +150,7 @@ router.get('/trends/:category/:countryCode', adminController.getTrends);
 
 /**
  * @swagger
- * /admin/trends/fetch:
+ * /api/admin/trends/fetch:
  *   post:
  *     summary: Fetch new trends from external API
  *     tags: [Admin]
@@ -218,7 +218,7 @@ router.post('/trends/fetch', adminController.fetchTrends);
 
 /**
  * @swagger
- * /admin/articles/generate-from-trends:
+ * /api/admin/articles/generate-from-trends:
  *   post:
  *     summary: Fetch new trends and generate articles in one operation
  *     tags: [Admin]
@@ -307,7 +307,7 @@ router.post('/articles/generate-from-trends', adminController.generateArticlesFr
 
 /**
  * @swagger
- * /admin/stats:
+ * /api/admin/stats:
  *   get:
  *     summary: Get system statistics
  *     tags: [Admin]
@@ -368,7 +368,7 @@ router.get('/stats', adminController.getStats);
 
 /**
  * @swagger
- * /admin/trends/cleanup:
+ * /api/admin/trends/cleanup:
  *   post:
  *     summary: Clean up old used trends
  *     tags: [Admin]

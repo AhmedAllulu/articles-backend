@@ -10,7 +10,7 @@ const https = require('https');
 const fs = require('fs');
 
 // Set port
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 const SHUTDOWN_TIMEOUT = 10000; // 10 seconds timeout for graceful shutdown
 
 // Track ongoing requests

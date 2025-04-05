@@ -1,10 +1,10 @@
-
 // services/trendsService.js
 const axios = require('axios');
 const logger = require('../config/logger');
 const countries = require('../config/countries');
 const db = require('../db/connections');
 const constants = require('../config/constants');
+const googleTrends = require('google-trends-api'); // Consider adding this package for direct Google Trends access
 
 class TrendsService {
   /**
@@ -17,86 +17,206 @@ class TrendsService {
     try {
       logger.info(`Fetching trends for ${category} in ${countryCode}`);
       
-      // Replace with actual API call to Google Trends or similar service
-      // This is a placeholder implementation
+      // Approach 1: Using SerpAPI (if you've subscribed to their service)
+      if (process.env.TRENDS_API_KEY && process.env.TRENDS_API_URL) {
+        return await this._fetchTrendsUsingSerpApi(category, countryCode);
+      }
+      
+      // Approach 2: Using the google-trends-api package (no API key required)
+      return await this._fetchTrendsUsingGoogleTrendsApi(category, countryCode);
+    } catch (error) {
+      logger.error(`Error fetching trends for ${category}/${countryCode}: ${error.message}`);
+      
+      // Fallback to mock trends for development
+      if (process.env.NODE_ENV === 'development') {
+        logger.info(`Using mock trends for ${category}/${countryCode}`);
+        return this._getMockTrendsForCategory(category, countryCode);
+      }
+      
+      throw error;
+    }
+  }
+  
+  /**
+   * Fetch trends using SerpAPI
+   * @private
+   * @param {string} category - Category to fetch trends for
+   * @param {string} countryCode - Country code to fetch trends for
+   * @returns {Promise<Array>} Array of trending keywords
+   */
+  async _fetchTrendsUsingSerpApi(category, countryCode) {
+    try {
       const response = await axios.get(
-        `${process.env.TRENDS_API_URL}/api/trends`,
+        process.env.TRENDS_API_URL,
         {
           params: {
-            category,
+            api_key: process.env.TRENDS_API_KEY,
+            category: this._mapCategoryToGoogleTrendsCategory(category),
             geo: countryCode,
-            hl: countries.find(c => c.code === countryCode).language,
-            api_key: process.env.TRENDS_API_KEY
+            hl: countries.find(c => c.code === countryCode).language
           }
         }
       );
       
-      if (response.data && response.data.trends) {
-        const trends = response.data.trends.map(trend => trend.keyword);
-        logger.info(`Fetched ${trends.length} trends for ${category}/${countryCode}`);
+      if (response.data && response.data.interest_over_time && response.data.interest_over_time.topics) {
+        const trends = response.data.interest_over_time.topics.map(topic => topic.title);
+        logger.info(`Fetched ${trends.length} trends for ${category}/${countryCode} using SerpAPI`);
         return trends;
       }
       
       return [];
     } catch (error) {
-      logger.error(`Error fetching trends for ${category}/${countryCode}: ${error.message}`);
+      logger.error(`Error fetching trends using SerpAPI: ${error.message}`);
       throw error;
     }
   }
+  
   /**
- * Store trends in the database
- * @param {string} category - Category of the trends
- * @param {string} countryCode - Country code
- * @param {Array<string>} trends - Array of trending keywords
- * @returns {Promise<number>} Number of trends stored
- */
-async storeTrends(category, countryCode, trends) {
-  try {
-    logger.info(`Storing ${trends.length} trends for ${category}/${countryCode}`);
-    
-    let storedCount = 0;
-    for (const keyword of trends) {
-      const result = await db.query(
-        category,
-        countryCode,
-        `INSERT INTO trends (keyword, status) VALUES ($1, $2)
-         ON CONFLICT (keyword) DO NOTHING RETURNING id`,
-        [keyword, constants.TREND_STATUS.NOT_USED]
-      );
+   * Fetch trends using google-trends-api package
+   * @private
+   * @param {string} category - Category to fetch trends for
+   * @param {string} countryCode - Country code to fetch trends for
+   * @returns {Promise<Array>} Array of trending keywords
+   */
+  async _fetchTrendsUsingGoogleTrendsApi(category, countryCode) {
+    try {
+      // Using the google-trends-api package
+      // Make sure to add this package: npm install google-trends-api
       
-      if (result.rowCount > 0) {
-        storedCount++;
+      // Map our category to Google Trends category
+      const googleCategory = this._mapCategoryToGoogleTrendsCategory(category);
+      
+      // Get language based on country code
+      const language = countries.find(c => c.code === countryCode).language;
+      
+      // Get daily trends
+      const result = await googleTrends.dailyTrends({
+        geo: countryCode,
+        hl: language,
+        category: googleCategory
+      });
+      
+      const trendData = JSON.parse(result);
+      
+      if (trendData && trendData.default && trendData.default.trendingSearchesDays) {
+        // Extract trending topics
+        const trends = [];
+        
+        for (const day of trendData.default.trendingSearchesDays) {
+          for (const search of day.trendingSearches) {
+            trends.push(search.title.query);
+          }
+        }
+        
+        // Return unique trends
+        const uniqueTrends = [...new Set(trends)];
+        logger.info(`Fetched ${uniqueTrends.length} trends for ${category}/${countryCode} using google-trends-api`);
+        return uniqueTrends.slice(0, 20); // Limit to top 20
       }
+      
+      return [];
+    } catch (error) {
+      logger.error(`Error fetching trends using google-trends-api: ${error.message}`);
+      throw error;
     }
-    
-    logger.info(`Stored ${storedCount} trends for ${category}/${countryCode}`);
-    return storedCount;
-  } catch (error) {
-    logger.error(`Error storing trends for ${category}/${countryCode}: ${error.message}`);
-    throw error;
   }
-}
+  
+  /**
+   * Map our categories to Google Trends categories
+   * @private
+   * @param {string} category - Our internal category
+   * @returns {number} Google Trends category ID
+   */
+  _mapCategoryToGoogleTrendsCategory(category) {
+    // Google Trends category mapping
+    // See: https://github.com/pat310/google-trends-api/wiki/Google-Trends-Categories
+    const categoryMap = {
+      tech: 't',        // Tech category
+      sports: 's',      // Sports category
+      politics: 'n',    // News category
+      health: 'h',      // Health category
+      general: 'all'    // All categories
+    };
+    
+    return categoryMap[category] || 'all';
+  }
+  
+  /**
+   * Generate mock trends for development
+   * @private
+   * @param {string} category - Category
+   * @param {string} countryCode - Country code
+   * @returns {Array} Mock trends
+   */
+  _getMockTrendsForCategory(category, countryCode) {
+    const mockTrends = {
+      tech: [
+        'Artificial Intelligence', 'Machine Learning', 'Blockchain', 'Quantum Computing',
+        '5G Networks', 'Cloud Computing', 'Cybersecurity', 'Internet of Things',
+        'Augmented Reality', 'Virtual Reality', 'Edge Computing', 'Digital Transformation'
+      ],
+      sports: [
+        'Premier League', 'Champions League', 'NBA Playoffs', 'Olympics',
+        'Formula 1', 'Tennis Grand Slam', 'NFL Draft', 'World Cup',
+        'Rugby Championship', 'Golf Masters', 'Cricket World Cup', 'Tour de France'
+      ],
+      politics: [
+        'Climate Agreement', 'Election Results', 'Economic Policy', 'International Relations',
+        'Tax Reform', 'Immigration Law', 'Healthcare Bill', 'Defense Spending',
+        'Trade Agreement', 'Foreign Policy', 'Diplomatic Visit', 'Political Summit'
+      ],
+      health: [
+        'Healthy Diet', 'Mental Wellness', 'Fitness Trends', 'Vaccine Development',
+        'Medical Research', 'Healthcare Technology', 'Nutrition Science', 'Pandemic Response',
+        'Wellness Routine', 'Medical Breakthrough', 'Public Health', 'Preventive Care'
+      ],
+      general: [
+        'Latest Smartphone', 'Popular Movies', 'Celebrity News', 'Stock Market',
+        'Weather Forecast', 'Environmental News', 'Education Trends', 'Travel Destinations',
+        'Fashion Trends', 'Housing Market', 'Consumer Trends', 'Entertainment News'
+      ]
+    };
+    
+    // Return random subset of mock trends for the specified category
+    const trends = mockTrends[category] || mockTrends.general;
+    
+    // Shuffle and take a random number of trends between 5-12
+    const shuffled = trends.sort(() => 0.5 - Math.random());
+    const count = Math.floor(Math.random() * 8) + 5; // 5-12 trends
+    
+    return shuffled.slice(0, count);
+  }
+  
   /**
    * Store trends in the database
    * @param {string} category - Category of the trends
    * @param {string} countryCode - Country code
    * @param {Array<string>} trends - Array of trending keywords
+   * @returns {Promise<number>} Number of trends stored
    */
   async storeTrends(category, countryCode, trends) {
     try {
       logger.info(`Storing ${trends.length} trends for ${category}/${countryCode}`);
       
+      let storedCount = 0;
       for (const keyword of trends) {
-        await db.query(
+        const result = await db.query(
           category,
           countryCode,
-          `INSERT INTO trends (keyword, status) VALUES ($1, $2)
-           ON CONFLICT (keyword) DO NOTHING`,
+          `INSERT INTO trends (keyword, status) 
+           VALUES ($1, $2)
+           ON CONFLICT (keyword) DO NOTHING
+           RETURNING id`,
           [keyword, constants.TREND_STATUS.NOT_USED]
         );
+        
+        if (result.rowCount > 0) {
+          storedCount++;
+        }
       }
       
-      logger.info(`Stored trends for ${category}/${countryCode}`);
+      logger.info(`Stored ${storedCount} trends for ${category}/${countryCode}`);
+      return storedCount;
     } catch (error) {
       logger.error(`Error storing trends for ${category}/${countryCode}: ${error.message}`);
       throw error;

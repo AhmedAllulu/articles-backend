@@ -8,7 +8,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /health:
+ * /api/health:
  *   get:
  *     summary: Basic health check
  *     tags: [Health]
@@ -37,7 +37,7 @@ router.get('/', asyncHandler(healthController.getBasicHealth));
 
 /**
  * @swagger
- * /health/detailed:
+ * /api/health/detailed:
  *   get:
  *     summary: Detailed health check
  *     tags: [Health]

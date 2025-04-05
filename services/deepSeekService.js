@@ -11,7 +11,7 @@ class DeepSeekService {
     // Cache for successful responses
     this.cache = new Map();
     this.cacheTimeout = 30 * 60 * 1000; // 30 minutes
-  }s
+  }
   
   /**
    * Generate an article using DeepSeek API with retries and fallback
@@ -49,7 +49,7 @@ class DeepSeekService {
           const response = await axios.post(
             process.env.DEEPSEEK_API_URL,
             {
-              model: "deepseek-llm",
+              model: "deepseek-chat",  // Updated model name (use the appropriate model)
               messages: [
                 {
                   role: "user",

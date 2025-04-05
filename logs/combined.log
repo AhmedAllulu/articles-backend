@@ -2721,3 +2721,251 @@
 2025-04-05 14:44:09:449 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:44:09 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
 2025-04-05 14:44:28:4428 [33mwarn[39m: [33mRoute not found: POST /admin/articles/generate-from-trends[39m
 2025-04-05 14:44:28:4428 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:44:28 +0000] "POST /admin/articles/generate-from-trends HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:48:56:4856 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 14:48:56:4856 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 14:48:56:4856 [32minfo[39m: [32mHTTP server closed[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mServer running on HTTP port 3333 in development mode[39m
+2025-04-05 14:48:57:4857 [32minfo[39m: [32mAPI Documentation available at http://localhost:3333/api-docs[39m
+2025-04-05 14:49:02:492 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:02 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:02:492 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:02 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:02:492 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:02 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:02:492 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:02 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:02:492 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:02 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:03:493 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:03 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:08:498 [32minfo[39m: [32mFetching trends for tech/US[39m
+2025-04-05 14:49:08:498 [32minfo[39m: [32mFetching trends for tech in US[39m
+2025-04-05 14:49:08:498 [31merror[39m: [31mError fetching trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:08:498 [31merror[39m: [31mError in generateArticlesFromTrends: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:08:498 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:08 +0000] "POST /api/admin/articles/generate-from-trends HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:49:49:4949 [32minfo[39m: [32mGenerating 1 articles for tech/US[39m
+2025-04-05 14:49:49:4949 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 14:49:49:4949 [34mdebug[39m: [34mExecuted query on tech/US: SELECT id, keyword FROM trends [39m
+[34m         WHERE status = $1 [39m
+[34m         ORDER BY created_at DESC [39m
+[34m         LIMIT $2 (12ms)[39m
+2025-04-05 14:49:49:4949 [32minfo[39m: [32mNo unused trends for tech/US. Fetching new trends.[39m
+2025-04-05 14:49:49:4949 [32minfo[39m: [32mFetching trends for tech in US[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError fetching trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError ensuring trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError in generateArticlesForCategoryAndCountry: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [31merror[39m: [31mError in generateArticles: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:49:49:4949 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:49:49 +0000] "POST /api/admin/articles/generate HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:50:27:5027 [32minfo[39m: [32mFetching trends for tech/US[39m
+2025-04-05 14:50:27:5027 [32minfo[39m: [32mFetching trends for tech in US[39m
+2025-04-05 14:50:27:5027 [31merror[39m: [31mError fetching trends for tech/US: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:50:27:5027 [31merror[39m: [31mError in generateArticlesFromTrends: getaddrinfo ENOTFOUND trends-api.example.com[39m
+2025-04-05 14:50:27:5027 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:50:27 +0000] "POST /api/admin/articles/generate-from-trends HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:07:567 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 14:56:07:567 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mServer running on HTTP port 3333 in development mode[39m
+2025-04-05 14:56:08:568 [32minfo[39m: [32mAPI Documentation available at http://localhost:3333/api-docs[39m
+2025-04-05 14:56:15:5615 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:15 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:15:5615 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:15 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:15:5615 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:15 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:15:5615 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:15 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:15:5615 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:15 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:16:5616 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:16 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mFetching trends for tech/US[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mFetching trends for tech in US[39m
+2025-04-05 14:56:19:5619 [31merror[39m: [31mError fetching trends using SerpAPI: Request failed with status code 404[39m
+2025-04-05 14:56:19:5619 [31merror[39m: [31mError fetching trends for tech/US: Request failed with status code 404[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mUsing mock trends for tech/US[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mStoring 6 trends for tech/US[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (5ms)[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (2ms)[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (2ms)[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mStored 6 trends for tech/US[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mStored 6 new trends for tech/US[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mGenerating 5 articles for tech/US[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: SELECT id, keyword FROM trends [39m
+[34m         WHERE status = $1 [39m
+[34m         ORDER BY created_at DESC [39m
+[34m         LIMIT $2 (2ms)[39m
+2025-04-05 14:56:19:5619 [34mdebug[39m: [34mExecuted query on tech/US: SELECT id, keyword FROM trends [39m
+[34m         WHERE status = $1 [39m
+[34m         ORDER BY created_at DESC [39m
+[34m         LIMIT $2 (1ms)[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mGenerating article for tech/US/Augmented Reality[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mGenerating article for "Augmented Reality" in en (US)[39m
+2025-04-05 14:56:19:5619 [32minfo[39m: [32mAPI call during regular hours[39m
+2025-04-05 14:56:20:5620 [33mwarn[39m: [33mAttempt 1/3 failed for "Augmented Reality": Request failed with status code 402[39m
+2025-04-05 14:56:22:5622 [33mwarn[39m: [33mAttempt 2/3 failed for "Augmented Reality": Request failed with status code 402[39m
+2025-04-05 14:56:24:5624 [33mwarn[39m: [33mAttempt 3/3 failed for "Augmented Reality": Request failed with status code 402[39m
+2025-04-05 14:56:24:5624 [31merror[39m: [31mAll attempts failed for "Augmented Reality". Using fallback.[39m
+2025-04-05 14:56:24:5624 [32minfo[39m: [32mGenerating fallback article for "Augmented Reality"[39m
+2025-04-05 14:56:24:5624 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO articles (title, content, trend_keyword, language) [39m
+[34m         VALUES ($1, $2, $3, $4)[39m
+[34m         RETURNING id (2ms)[39m
+2025-04-05 14:56:24:5624 [34mdebug[39m: [34mExecuted query on tech/US: UPDATE trends SET status = $1, used_at = NOW() WHERE id = $2 (1ms)[39m
+2025-04-05 14:56:24:5624 [32minfo[39m: [32mMarked trend 6 as used for tech/US[39m
+2025-04-05 14:56:24:5624 [32minfo[39m: [32mSuccessfully generated and stored article for tech/US/Augmented Reality[39m
+2025-04-05 14:56:24:5624 [32minfo[39m: [32mGenerating article for tech/US/Cloud Computing[39m
+2025-04-05 14:56:24:5624 [32minfo[39m: [32mGenerating article for "Cloud Computing" in en (US)[39m
+2025-04-05 14:56:24:5624 [32minfo[39m: [32mAPI call during regular hours[39m
+2025-04-05 14:56:26:5626 [33mwarn[39m: [33mAttempt 1/3 failed for "Cloud Computing": Request failed with status code 402[39m
+2025-04-05 14:56:27:5627 [33mwarn[39m: [33mAttempt 2/3 failed for "Cloud Computing": Request failed with status code 402[39m
+2025-04-05 14:56:30:5630 [33mwarn[39m: [33mAttempt 3/3 failed for "Cloud Computing": Request failed with status code 402[39m
+2025-04-05 14:56:30:5630 [31merror[39m: [31mAll attempts failed for "Cloud Computing". Using fallback.[39m
+2025-04-05 14:56:30:5630 [32minfo[39m: [32mGenerating fallback article for "Cloud Computing"[39m
+2025-04-05 14:56:30:5630 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO articles (title, content, trend_keyword, language) [39m
+[34m         VALUES ($1, $2, $3, $4)[39m
+[34m         RETURNING id (2ms)[39m
+2025-04-05 14:56:30:5630 [34mdebug[39m: [34mExecuted query on tech/US: UPDATE trends SET status = $1, used_at = NOW() WHERE id = $2 (1ms)[39m
+2025-04-05 14:56:30:5630 [32minfo[39m: [32mMarked trend 5 as used for tech/US[39m
+2025-04-05 14:56:30:5630 [32minfo[39m: [32mSuccessfully generated and stored article for tech/US/Cloud Computing[39m
+2025-04-05 14:56:30:5630 [32minfo[39m: [32mGenerating article for tech/US/Quantum Computing[39m
+2025-04-05 14:56:30:5630 [32minfo[39m: [32mGenerating article for "Quantum Computing" in en (US)[39m
+2025-04-05 14:56:30:5630 [32minfo[39m: [32mAPI call during regular hours[39m
+2025-04-05 14:56:30:5630 [33mwarn[39m: [33mAttempt 1/3 failed for "Quantum Computing": Request failed with status code 402[39m
+2025-04-05 14:56:32:5632 [33mwarn[39m: [33mAttempt 2/3 failed for "Quantum Computing": Request failed with status code 402[39m
+2025-04-05 14:56:35:5635 [33mwarn[39m: [33mAttempt 3/3 failed for "Quantum Computing": Request failed with status code 402[39m
+2025-04-05 14:56:35:5635 [31merror[39m: [31mAll attempts failed for "Quantum Computing". Using fallback.[39m
+2025-04-05 14:56:35:5635 [32minfo[39m: [32mGenerating fallback article for "Quantum Computing"[39m
+2025-04-05 14:56:35:5635 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO articles (title, content, trend_keyword, language) [39m
+[34m         VALUES ($1, $2, $3, $4)[39m
+[34m         RETURNING id (2ms)[39m
+2025-04-05 14:56:35:5635 [34mdebug[39m: [34mExecuted query on tech/US: UPDATE trends SET status = $1, used_at = NOW() WHERE id = $2 (2ms)[39m
+2025-04-05 14:56:35:5635 [32minfo[39m: [32mMarked trend 4 as used for tech/US[39m
+2025-04-05 14:56:35:5635 [32minfo[39m: [32mSuccessfully generated and stored article for tech/US/Quantum Computing[39m
+2025-04-05 14:56:35:5635 [32minfo[39m: [32mGenerating article for tech/US/Digital Transformation[39m
+2025-04-05 14:56:35:5635 [32minfo[39m: [32mGenerating article for "Digital Transformation" in en (US)[39m
+2025-04-05 14:56:35:5635 [32minfo[39m: [32mAPI call during regular hours[39m
+2025-04-05 14:56:35:5635 [33mwarn[39m: [33mAttempt 1/3 failed for "Digital Transformation": Request failed with status code 402[39m
+2025-04-05 14:56:37:5637 [33mwarn[39m: [33mAttempt 2/3 failed for "Digital Transformation": Request failed with status code 402[39m
+2025-04-05 14:56:39:5639 [33mwarn[39m: [33mAttempt 3/3 failed for "Digital Transformation": Request failed with status code 402[39m
+2025-04-05 14:56:39:5639 [31merror[39m: [31mAll attempts failed for "Digital Transformation". Using fallback.[39m
+2025-04-05 14:56:39:5639 [32minfo[39m: [32mGenerating fallback article for "Digital Transformation"[39m
+2025-04-05 14:56:39:5639 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO articles (title, content, trend_keyword, language) [39m
+[34m         VALUES ($1, $2, $3, $4)[39m
+[34m         RETURNING id (2ms)[39m
+2025-04-05 14:56:39:5639 [34mdebug[39m: [34mExecuted query on tech/US: UPDATE trends SET status = $1, used_at = NOW() WHERE id = $2 (2ms)[39m
+2025-04-05 14:56:39:5639 [32minfo[39m: [32mMarked trend 3 as used for tech/US[39m
+2025-04-05 14:56:39:5639 [32minfo[39m: [32mSuccessfully generated and stored article for tech/US/Digital Transformation[39m
+2025-04-05 14:56:39:5639 [32minfo[39m: [32mGenerating article for tech/US/Blockchain[39m
+2025-04-05 14:56:39:5639 [32minfo[39m: [32mGenerating article for "Blockchain" in en (US)[39m
+2025-04-05 14:56:39:5639 [32minfo[39m: [32mAPI call during regular hours[39m
+2025-04-05 14:56:40:5640 [33mwarn[39m: [33mAttempt 1/3 failed for "Blockchain": Request failed with status code 402[39m
+2025-04-05 14:56:42:5642 [33mwarn[39m: [33mAttempt 2/3 failed for "Blockchain": Request failed with status code 402[39m
+2025-04-05 14:56:44:5644 [33mwarn[39m: [33mAttempt 3/3 failed for "Blockchain": Request failed with status code 402[39m
+2025-04-05 14:56:44:5644 [31merror[39m: [31mAll attempts failed for "Blockchain". Using fallback.[39m
+2025-04-05 14:56:44:5644 [32minfo[39m: [32mGenerating fallback article for "Blockchain"[39m
+2025-04-05 14:56:44:5644 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO articles (title, content, trend_keyword, language) [39m
+[34m         VALUES ($1, $2, $3, $4)[39m
+[34m         RETURNING id (1ms)[39m
+2025-04-05 14:56:44:5644 [34mdebug[39m: [34mExecuted query on tech/US: UPDATE trends SET status = $1, used_at = NOW() WHERE id = $2 (1ms)[39m
+2025-04-05 14:56:44:5644 [32minfo[39m: [32mMarked trend 2 as used for tech/US[39m
+2025-04-05 14:56:44:5644 [32minfo[39m: [32mSuccessfully generated and stored article for tech/US/Blockchain[39m
+2025-04-05 14:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:14:56:44 +0000] "POST /api/admin/articles/generate-from-trends HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
