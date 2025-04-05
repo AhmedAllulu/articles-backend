@@ -69,14 +69,14 @@ async function login(req, res) {
     const user = await User.findByEmail(email);
     
     if (!user) {
-      throw new UnauthorizedError('Invalid credentials');
+      throw new UnauthorizedError('Invalid credentials email ');
     }
     
     // Verify password
     const isPasswordValid = await User.verifyPassword(password, user.password);
     
     if (!isPasswordValid) {
-      throw new UnauthorizedError('Invalid credentials');
+      throw new UnauthorizedError('Invalid credentials password');
     }
     
     // Update last login time

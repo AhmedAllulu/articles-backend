@@ -1468,3 +1468,22 @@
 2025-04-05 14:03:20:320 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
 2025-04-05 14:03:20:320 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
 2025-04-05 14:03:20:320 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 14:23:13:2313 [31merror[39m: [31mSyntaxError: Expected double-quoted property name in JSON at position 34[39m
+2025-04-05 14:23:13:2313 [31merror[39m: [31mSyntaxError: Expected double-quoted property name in JSON at position 34[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (/var/www/html/articles-backend/node_modules/body-parser/lib/types/json.js:92:19)[39m
+[31m    at /var/www/html/articles-backend/node_modules/body-parser/lib/read.js:128:18[39m
+[31m    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)[39m
+[31m    at invokeCallback (/var/www/html/articles-backend/node_modules/raw-body/index.js:238:16)[39m
+[31m    at done (/var/www/html/articles-backend/node_modules/raw-body/index.js:227:7)[39m
+[31m    at IncomingMessage.onEnd (/var/www/html/articles-backend/node_modules/raw-body/index.js:287:7)[39m
+[31m    at IncomingMessage.emit (node:events:519:28)[39m
+[31m    at endReadableNT (node:internal/streams/readable:1696:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)[39m
+2025-04-05 14:27:23:2723 [31merror[39m: [31mValidationError: Password must be at least 8 characters and include uppercase, lowercase, number, and special character[39m
+2025-04-05 14:27:23:2723 [31merror[39m: [31mValidationError: Password must be at least 8 characters and include uppercase, lowercase, number, and special character[39m
+[31m    at validate (/var/www/html/articles-backend/middleware/validator.js:18:11)[39m
+[31m    at Layer.handle [as handle_request] (/var/www/html/articles-backend/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/var/www/html/articles-backend/node_modules/express/lib/router/route.js:149:13)[39m
+[31m    at middleware (/var/www/html/node_modules/express-validator/lib/middlewares/check.js:16:13)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m

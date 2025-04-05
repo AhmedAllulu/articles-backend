@@ -140,6 +140,74 @@ async function fetchTrends(req, res) {
 }
 
 /**
+ * Generate articles by fetching trends first, then generating articles
+ * @param {Object} req - Request object
+ * @param {Object} res - Response object
+ * @returns {Promise<void>}
+ */
+async function generateArticlesFromTrends(req, res) {
+  try {
+    const { category, countryCode, count = 5 } = req.body;
+    
+    // Validate params
+    if (!category || !countryCode) {
+      return res.status(400).json(
+        formatResponse(null, 'Missing required parameters: category, countryCode', 400)
+      );
+    }
+    
+    // Log action
+    await User.logAction(
+      req.user.id,
+      `Generate articles from trends: ${category}/${countryCode} (${count})`,
+      req.ip,
+      req.headers['user-agent']
+    );
+    
+    // Step 1: Fetch new trends
+    logger.info(`Fetching trends for ${category}/${countryCode}`);
+    const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
+    
+    if (trends.length === 0) {
+      return res.json(formatResponse({
+        message: 'No trends fetched, cannot generate articles',
+        count: 0
+      }));
+    }
+    
+    // Step 2: Store fetched trends
+    const storedCount = await trendsService.storeTrends(category, countryCode, trends);
+    logger.info(`Stored ${storedCount} new trends for ${category}/${countryCode}`);
+    
+    // Step 3: Generate articles
+    const result = await generationService.generateArticlesForCategoryAndCountry(
+      category,
+      countryCode,
+      parseInt(count, 10)
+    );
+    
+    return res.json(formatResponse({
+      message: 'Trends fetched and articles generated successfully',
+      trends: {
+        fetched: trends.length,
+        stored: storedCount,
+        used: result.count,
+        keywords: result.keywords || []
+      },
+      articles: {
+        count: result.count,
+        message: result.message
+      }
+    }));
+  } catch (error) {
+    logger.error(`Error in generateArticlesFromTrends: ${error.message}`);
+    return res.status(500).json(
+      formatResponse(null, error.message, 500)
+    );
+  }
+}
+
+/**
  * Get system statistics
  * @param {Object} req - Request object
  * @param {Object} res - Response object
@@ -218,5 +286,6 @@ module.exports = {
   getTrends,
   fetchTrends,
   getStats,
-  cleanupOldTrends
+  cleanupOldTrends,
+  generateArticlesFromTrends
 };

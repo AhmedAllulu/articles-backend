@@ -82,9 +82,9 @@ setupSwagger(app);
 
 // Routes
 app.use('/api', apiRoutes);
-app.use('/admin', adminRoutes);
-app.use('/auth', authRoutes);
-app.use('/health', healthRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/health', healthRoutes);
 
 // Only include development routes in development environment
 if (process.env.NODE_ENV === 'development') {

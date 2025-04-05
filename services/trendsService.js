@@ -43,7 +43,39 @@ class TrendsService {
       throw error;
     }
   }
-  
+  /**
+ * Store trends in the database
+ * @param {string} category - Category of the trends
+ * @param {string} countryCode - Country code
+ * @param {Array<string>} trends - Array of trending keywords
+ * @returns {Promise<number>} Number of trends stored
+ */
+async storeTrends(category, countryCode, trends) {
+  try {
+    logger.info(`Storing ${trends.length} trends for ${category}/${countryCode}`);
+    
+    let storedCount = 0;
+    for (const keyword of trends) {
+      const result = await db.query(
+        category,
+        countryCode,
+        `INSERT INTO trends (keyword, status) VALUES ($1, $2)
+         ON CONFLICT (keyword) DO NOTHING RETURNING id`,
+        [keyword, constants.TREND_STATUS.NOT_USED]
+      );
+      
+      if (result.rowCount > 0) {
+        storedCount++;
+      }
+    }
+    
+    logger.info(`Stored ${storedCount} trends for ${category}/${countryCode}`);
+    return storedCount;
+  } catch (error) {
+    logger.error(`Error storing trends for ${category}/${countryCode}: ${error.message}`);
+    throw error;
+  }
+}
   /**
    * Store trends in the database
    * @param {string} category - Category of the trends
