@@ -60,7 +60,7 @@ async function query(category, countryCode, text, params) {
     try {
       // Set schema for this connection
       const schema = countryCode.toLowerCase();
-      await client.query('SET search_path TO $1', [schema]);
+      await client.query(`SET search_path TO ${schema}`);
       
       // Execute the actual query
       const res = await client.query(text, params);
@@ -91,18 +91,21 @@ async function closeAllPools() {
 // Create required schemas if they don't exist
 async function ensureSchemas() {
   for (const category of constants.CATEGORIES) {
+    const pool = getPool(category);
+    
     for (const country of countries) {
-      const pool = getPool(category, country.code);
       const client = await pool.connect();
       
       try {
-        // Create schema if it doesn't exist - Safely using the lowercase country code
+        // Create schema if it doesn't exist - Using the lowercase country code directly
         const schema = country.code.toLowerCase();
-        await client.query('CREATE SCHEMA IF NOT EXISTS $1:name', [schema]);
         
-        // Create necessary tables in this schema using proper parameterized identifiers
+        // Use literal schema name instead of parameterized query
+        await client.query(`CREATE SCHEMA IF NOT EXISTS ${schema}`);
+        
+        // Create necessary tables in this schema
         await client.query(`
-          CREATE TABLE IF NOT EXISTS $1:name.articles (
+          CREATE TABLE IF NOT EXISTS ${schema}.articles (
             id SERIAL PRIMARY KEY,
             title TEXT NOT NULL,
             content TEXT NOT NULL,
@@ -112,10 +115,10 @@ async function ensureSchemas() {
             language VARCHAR(5) NOT NULL,
             image_url TEXT
           )
-        `, [schema]);
+        `);
         
         await client.query(`
-          CREATE TABLE IF NOT EXISTS $1:name.trends (
+          CREATE TABLE IF NOT EXISTS ${schema}.trends (
             id SERIAL PRIMARY KEY,
             keyword TEXT NOT NULL,
             status VARCHAR(10) DEFAULT 'not_used',
@@ -123,7 +126,7 @@ async function ensureSchemas() {
             used_at TIMESTAMP NULL,
             CONSTRAINT unique_keyword UNIQUE (keyword)
           )
-        `, [schema]);
+        `);
         
         logger.info(`Ensured schema and tables for ${category}/${country.code}`);
       } catch (err) {
