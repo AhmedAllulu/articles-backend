@@ -102,56 +102,24 @@ async function getTrends(req, res) {
 }
 
 /**
- * Fetch new trends
+ * Fetch new trends (disabled, use insert trends instead)
  * @param {Object} req - Request object
  * @param {Object} res - Response object
  * @returns {Promise<void>}
  */
 async function fetchTrends(req, res) {
   try {
-    const { category, countryCode } = req.body;
-    
-    // Validate params
-    if (!category || !countryCode) {
-      return res.status(400).json(
-        formatResponse(null, 'Missing required parameters: category, countryCode', 400)
-      );
-    }
-    
     // Log action
     await User.logAction(
       req.user.id,
-      `Fetch trends: ${category}/${countryCode}`,
+      `Attempted to use disabled fetch trends endpoint`,
       req.ip,
       req.headers['user-agent']
     );
     
-    try {
-      // Fetch trends
-      const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
-      
-      if (trends.length === 0) {
-        return res.json(formatResponse({
-          message: 'No trends fetched',
-          count: 0
-        }));
-      }
-      
-      // Store trends
-      const storedCount = await Trend.storeMultiple(category, countryCode, trends);
-      
-      return res.json(formatResponse({
-        message: 'Trends fetched and stored successfully',
-        fetched: trends.length,
-        stored: storedCount,
-        trends
-      }));
-    } catch (error) {
-      logger.error(`Failed to fetch trends: ${error.message}`);
-      return res.status(500).json(
-        formatResponse(null, `Failed to fetch trends: ${error.message}`, 500)
-      );
-    }
+    return res.status(400).json(
+      formatResponse(null, 'Automatic trend fetching is disabled. Please use the /trends/insert endpoint to manually add trends.', 400)
+    );
   } catch (error) {
     logger.error(`Error in fetchTrends: ${error.message}`);
     return res.status(500).json(
@@ -161,7 +129,7 @@ async function fetchTrends(req, res) {
 }
 
 /**
- * Generate articles by fetching trends first, then generating articles
+ * Generate articles from existing trends
  * @param {Object} req - Request object
  * @param {Object} res - Response object
  * @returns {Promise<void>}
@@ -180,28 +148,23 @@ async function generateArticlesFromTrends(req, res) {
     // Log action
     await User.logAction(
       req.user.id,
-      `Generate articles from trends: ${category}/${countryCode} (${count})`,
+      `Generate articles from existing trends: ${category}/${countryCode} (${count})`,
       req.ip,
       req.headers['user-agent']
     );
     
     try {
-      // Step 1: Fetch new trends
-      logger.info(`Fetching trends for ${category}/${countryCode}`);
-      const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
+      // Check if we have unused trends
+      const unusedTrends = await trendsService.getUnusedTrends(category, countryCode);
       
-      if (trends.length === 0) {
+      if (unusedTrends.length === 0) {
         return res.json(formatResponse({
-          message: 'No trends fetched, cannot generate articles',
+          message: 'No unused trends available. Please insert trends first using the /trends/insert endpoint.',
           count: 0
         }));
       }
       
-      // Step 2: Store fetched trends
-      const storedCount = await trendsService.storeTrends(category, countryCode, trends);
-      logger.info(`Stored ${storedCount} new trends for ${category}/${countryCode}`);
-      
-      // Step 3: Generate articles
+      // Generate articles
       const result = await generationService.generateArticlesForCategoryAndCountry(
         category,
         countryCode,
@@ -209,17 +172,9 @@ async function generateArticlesFromTrends(req, res) {
       );
       
       return res.json(formatResponse({
-        message: 'Trends fetched and articles generated successfully',
-        trends: {
-          fetched: trends.length,
-          stored: storedCount,
-          used: result.count,
-          keywords: result.keywords || []
-        },
-        articles: {
-          count: result.count,
-          message: result.message
-        }
+        message: 'Articles generated successfully from existing trends',
+        count: result.count,
+        keywords: result.keywords || []
       }));
     } catch (error) {
       logger.error(`Failed to generate articles from trends: ${error.message}`);
@@ -254,6 +209,54 @@ async function getStats(req, res) {
     }));
   } catch (error) {
     logger.error(`Error in getStats: ${error.message}`);
+    return res.status(500).json(
+      formatResponse(null, error.message, 500)
+    );
+  }
+}
+/**
+ * Insert trends manually
+ * @param {Object} req - Request object
+ * @param {Object} res - Response object
+ * @returns {Promise<void>}
+ */
+async function insertTrends(req, res) {
+  try {
+    const { category, countryCode, trends } = req.body;
+    
+    // Validate params
+    if (!category || !countryCode || !trends || !Array.isArray(trends) || trends.length === 0) {
+      return res.status(400).json(
+        formatResponse(null, 'Missing required parameters: category, countryCode, trends (array)', 400)
+      );
+    }
+    
+    // Log action
+    await User.logAction(
+      req.user.id,
+      `Insert trends: ${category}/${countryCode} (${trends.length} trends)`,
+      req.ip,
+      req.headers['user-agent']
+    );
+    
+    try {
+      // Store trends
+      const storedCount = await trendsService.storeTrends(category, countryCode, trends);
+      
+      return res.json(formatResponse({
+        message: 'Trends inserted successfully',
+        submitted: trends.length,
+        stored: storedCount,
+        trends
+      }));
+    } catch (error) {
+      logger.error(`Failed to insert trends: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Failed to insert trends: ${error.message}`, 500)
+      );
+    }
+  } catch (error) {
+    logger.error(`Error in insertTrends: ${error.message}`);
     return res.status(500).json(
       formatResponse(null, error.message, 500)
     );
@@ -314,11 +317,13 @@ async function cleanupOldTrends(req, res) {
   }
 }
 
+// Add this to the exports at the bottom of the file
 module.exports = {
   generateArticles,
   getTrends,
   fetchTrends,
   getStats,
   cleanupOldTrends,
-  generateArticlesFromTrends
+  generateArticlesFromTrends,
+  insertTrends
 };

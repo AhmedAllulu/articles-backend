@@ -432,6 +432,51 @@ router.get('/stats', adminController.getStats);
  *         $ref: '#/components/responses/ServerError'
  */
 router.post('/trends/cleanup', adminController.cleanupOldTrends);
+// Add this route definition to routes/admin.js
 
+/**
+ * @swagger
+ * /api/admin/trends/insert:
+ *   post:
+ *     summary: Insert trends manually
+ *     tags: [Admin]
+ *     description: Insert trending keywords manually for a specific category and country
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - category
+ *               - countryCode
+ *               - trends
+ *             properties:
+ *               category:
+ *                 $ref: '#/components/schemas/CategoryParam'
+ *               countryCode:
+ *                 $ref: '#/components/schemas/CountryCodeParam'
+ *               trends:
+ *                 type: array
+ *                 items:
+ *                   type: string
+ *                 description: List of trend keywords to insert
+ *     responses:
+ *       200:
+ *         description: Trends inserted successfully
+ *       400:
+ *         $ref: '#/components/responses/ValidationError'
+ *       401:
+ *         $ref: '#/components/responses/UnauthorizedError'
+ *       403:
+ *         $ref: '#/components/responses/ForbiddenError'
+ *       500:
+ *         $ref: '#/components/responses/ServerError'
+ */
+router.post('/trends/insert', adminController.insertTrends);
+
+// Add this right after the other trend-related routes
 // Export router
 module.exports = router;

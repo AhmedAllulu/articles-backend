@@ -132,36 +132,27 @@ class GenerationService {
     }
   }
   
-  /**
-   * Ensure trends exist in the database, fetch if needed
-   * @private
-   * @param {string} category - Category
-   * @param {string} countryCode - Country code
-   */
-  async _ensureTrendsExist(category, countryCode) {
-    try {
-      // Check if we have unused trends
-      const unusedTrends = await trendsService.getUnusedTrends(category, countryCode, 1);
-      
-      // If we don't have any unused trends, fetch new ones
-      if (unusedTrends.length === 0) {
-        logger.info(`No unused trends for ${category}/${countryCode}. Fetching new trends.`);
-        
-        const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
-        
-        if (trends.length > 0) {
-          await trendsService.storeTrends(category, countryCode, trends);
-          logger.info(`Fetched and stored ${trends.length} new trends for ${category}/${countryCode}`);
-        } else {
-          logger.warn(`No trends fetched for ${category}/${countryCode}`);
-          throw new Error(`No trends available for ${category}/${countryCode}`);
-        }
-      }
-    } catch (error) {
-      logger.error(`Error ensuring trends for ${category}/${countryCode}: ${error.message}`);
-      throw error;
+/**
+ * Check if unused trends exist in the database
+ * @private
+ * @param {string} category - Category
+ * @param {string} countryCode - Country code
+ */
+async  _ensureTrendsExist(category, countryCode) {
+  try {
+    // Check if we have unused trends
+    const unusedTrends = await trendsService.getUnusedTrends(category, countryCode, 1);
+    
+    // If we don't have any unused trends, throw an error
+    if (unusedTrends.length === 0) {
+      logger.warn(`No unused trends for ${category}/${countryCode}. Please insert trends first.`);
+      throw new Error(`No unused trends available for ${category}/${countryCode}. Please insert trends using the admin API.`);
     }
+  } catch (error) {
+    logger.error(`Error checking for trends for ${category}/${countryCode}: ${error.message}`);
+    throw error;
   }
+}
   
   /**
    * Generate articles for a specific category and country
