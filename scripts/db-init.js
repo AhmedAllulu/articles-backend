@@ -25,23 +25,36 @@ async function initializeDatabase() {
   try {
     // Create admin database
     logger.info('Creating admin database...');
-    await client.query(`CREATE DATABASE IF NOT EXISTS admin_db;`);
+    
+    // Check if admin_db exists
+    const adminDbCheck = await client.query(
+      'SELECT 1 FROM pg_database WHERE datname = $1',
+      ['admin_db']
+    );
+    
+    if (adminDbCheck.rowCount === 0) {
+      // PostgreSQL syntax: No "IF NOT EXISTS" in CREATE DATABASE
+      await client.query('CREATE DATABASE admin_db');
+      logger.info('Created database: admin_db');
+    } else {
+      logger.info('Database admin_db already exists');
+    }
     
     // Create category databases
     for (const category of constants.CATEGORIES) {
       const dbName = `news_${category}`;
-      logger.info(`Creating database: ${dbName}`);
+      logger.info(`Checking database: ${dbName}`);
       
       try {
         // Check if database exists
         const dbCheck = await client.query(
-          `SELECT 1 FROM pg_database WHERE datname = $1`,
+          'SELECT 1 FROM pg_database WHERE datname = $1',
           [dbName]
         );
         
         if (dbCheck.rowCount === 0) {
           // Need to use template1 because we can't create a DB while connected to it
-          await client.query(`CREATE DATABASE ${dbName} TEMPLATE template1;`);
+          await client.query(`CREATE DATABASE ${dbName} TEMPLATE template1`);
           logger.info(`Created database: ${dbName}`);
         } else {
           logger.info(`Database ${dbName} already exists`);
@@ -81,7 +94,7 @@ async function initializeDatabase() {
         logger.info(`Creating schema: ${schema} in ${dbName}`);
         
         try {
-          await categoryClient.query(`CREATE SCHEMA IF NOT EXISTS ${schema};`);
+          await categoryClient.query(`CREATE SCHEMA IF NOT EXISTS ${schema}`);
           
           // Create tables
           await categoryClient.query(`
@@ -208,6 +221,23 @@ async function initializeDatabase() {
     adminClient.release();
     await adminPool.end();
   }
+  
+  await pgPool.end();
+  logger.info('Database initialization completed');
+}
+
+// Execute if being run directly
+if (require.main === module) {
+  initializeDatabase()
+    .then(() => {
+      console.log('Database initialization completed successfully');
+      process.exit(0);
+    })
+    .catch(error => {
+      console.error('Database initialization failed:', error.message);
+      console.error(error.stack);
+      process.exit(1);
+    });
 }
 
 module.exports = {

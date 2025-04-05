@@ -163,3 +163,1261 @@
 2025-04-05 13:42:39:4239 [32minfo[39m: [32mAll database connection pools initialized[39m
 2025-04-05 13:42:39:4239 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
 2025-04-05 13:42:39:4239 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:42:4242 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:42:4242 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:42:4242 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:45:4245 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:45:4245 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:45:4245 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:49:4249 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:49:4249 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:49:4249 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:52:4252 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:52:4252 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:52:4252 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:55:4255 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:55:4255 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:55:4255 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:58:4258 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:58:4258 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:58:4258 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:01:431 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:01:431 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:01:431 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:04:434 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:04:434 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:04:434 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:07:437 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:07:437 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:07:437 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:10:4310 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:10:4310 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:10:4310 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:14:4314 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:14:4314 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:14:4314 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:17:4317 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:17:4317 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:17:4317 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:20:4320 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:20:4320 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:20:4320 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:23:4323 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:23:4323 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:23:4323 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:26:4326 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:26:4326 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:26:4326 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:29:4329 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:29:4329 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:29:4329 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:32:4332 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:32:4332 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:32:4332 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:35:4335 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:35:4335 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:35:4335 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:39:4339 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:39:4339 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:39:4339 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:42:4342 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:42:4342 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:42:4342 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:45:4345 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:45:4345 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:45:4345 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:48:4348 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:48:4348 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:48:4348 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:51:4351 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:51:4351 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:51:4351 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:54:4354 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:54:4354 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:54:4354 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:43:57:4357 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:43:57:4357 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:43:57:4357 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:00:440 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:00:440 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:00:440 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:03:443 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:03:443 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:03:443 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:06:446 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:07:447 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:07:447 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:10:4410 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:10:4410 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:10:4410 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:13:4413 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:13:4413 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:13:4413 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:16:4416 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:16:4416 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:16:4416 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:19:4419 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:19:4419 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:19:4419 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:22:4422 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:22:4422 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:22:4422 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:25:4425 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:25:4425 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:25:4425 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:28:4428 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:28:4428 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:28:4428 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:31:4431 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:31:4431 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:31:4431 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:35:4435 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:35:4435 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:35:4435 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:38:4438 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:38:4438 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:38:4438 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:41:4441 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:41:4441 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:41:4441 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:44:4444 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:44:4444 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:44:4444 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:47:4447 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:47:4447 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:47:4447 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:50:4450 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:50:4450 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:50:4450 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:53:4453 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:53:4453 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:53:4453 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:44:56:4456 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:44:56:4456 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:44:56:4456 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:00:450 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:00:450 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:00:450 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:03:453 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:03:453 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:03:453 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:06:456 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:06:456 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:06:456 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:09:459 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:09:459 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:09:459 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:12:4512 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:12:4512 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:12:4512 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:15:4515 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:15:4515 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:15:4515 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:18:4518 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:18:4518 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:18:4518 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:21:4521 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:21:4521 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:21:4521 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:24:4524 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:24:4524 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:24:4524 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:28:4528 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:28:4528 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:28:4528 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:31:4531 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:31:4531 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:31:4531 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:34:4534 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:34:4534 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:34:4534 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:37:4537 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:37:4537 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:37:4537 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:40:4540 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:40:4540 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:40:4540 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:43:4543 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:43:4543 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:43:4543 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:46:4546 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:46:4546 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:46:4546 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:49:4549 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:49:4549 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:49:4549 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:52:4552 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:52:4552 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:52:4552 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:56:4556 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:56:4556 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:56:4556 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:45:59:4559 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:45:59:4559 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:45:59:4559 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:02:462 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:02:462 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:02:462 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:05:465 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:05:465 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:05:465 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:08:468 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:08:468 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:08:468 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:11:4611 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:11:4611 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:11:4611 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:12:4612 [32minfo[39m: [32mStarting database initialization[39m
+2025-04-05 13:46:12:4612 [32minfo[39m: [32mCreating admin database...[39m
+2025-04-05 13:46:12:4612 [31merror[39m: [31mError initializing databases: syntax error at or near "NOT"[39m
+2025-04-05 13:46:14:4614 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:14:4614 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:14:4614 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:17:4617 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:17:4617 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:17:4617 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:20:4620 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:21:4621 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:21:4621 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:24:4624 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:24:4624 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:24:4624 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:27:4627 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:27:4627 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:27:4627 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:30:4630 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:30:4630 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:30:4630 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:33:4633 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:33:4633 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:33:4633 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:36:4636 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:36:4636 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:36:4636 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:39:4639 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:39:4639 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:39:4639 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:42:4642 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:42:4642 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:42:4642 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:45:4645 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:45:4645 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:45:4645 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:49:4649 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:49:4649 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:49:4649 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:52:4652 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:52:4652 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:52:4652 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:55:4655 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:55:4655 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:55:4655 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:46:58:4658 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:46:58:4658 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:46:58:4658 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:47:01:471 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:47:01:471 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:47:01:471 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:47:02:472 [32minfo[39m: [32mStarting database initialization[39m
+2025-04-05 13:47:02:472 [32minfo[39m: [32mCreating admin database...[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated database: admin_db[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mChecking database: news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated database: news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mChecking database: news_sports[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated database: news_sports[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mChecking database: news_politics[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated database: news_politics[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mChecking database: news_health[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated database: news_health[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mChecking database: news_general[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated database: news_general[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mDatabases created successfully[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mInitializing schemas for news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: us in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for us in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: gb in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for gb in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: ca in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for ca in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: de in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for de in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: fr in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for fr in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: sa in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for sa in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: au in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreated schema and tables for au in news_tech[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mInitializing schemas for news_sports[39m
+2025-04-05 13:47:03:473 [32minfo[39m: [32mCreating schema: us in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for us in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: gb in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for gb in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: ca in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for ca in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: de in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for de in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: fr in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for fr in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: sa in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for sa in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: au in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for au in news_sports[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mInitializing schemas for news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: us in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for us in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: gb in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for gb in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: ca in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for ca in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: de in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for de in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: fr in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for fr in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: sa in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for sa in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: au in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for au in news_politics[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mInitializing schemas for news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: us in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for us in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: gb in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for gb in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: ca in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for ca in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: de in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for de in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: fr in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for fr in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: sa in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for sa in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: au in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for au in news_health[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mInitializing schemas for news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: us in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for us in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: gb in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for gb in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: ca in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for ca in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: de in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for de in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: fr in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for fr in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: sa in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for sa in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreating schema: au in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated schema and tables for au in news_general[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mInitializing admin database[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mCreated default admin user: admin@example.com[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:04:474 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:47:37:4737 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:10:4810 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:48:35:4835 [32minfo[39m: [32mStarting all migrations[39m
+2025-04-05 13:48:35:4835 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mSchemas verified[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mStarting migration: Add image_url column to articles tables[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing category: tech[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for tech: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing category: sports[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for sports: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing category: politics[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for politics: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing category: health[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for health: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing category: general[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError getting pool for general: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mMigration complete: Add image_url column to articles tables[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mStarting migration: Add updated_at column to articles tables[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/US.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/GB.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/CA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/DE.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/FR.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/SA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing tech/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to tech/AU.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/US.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/GB.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/CA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/DE.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/FR.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/SA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing sports/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to sports/AU.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/US.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/GB.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/CA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/DE.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/FR.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/SA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing politics/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to politics/AU.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/US.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/GB.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/CA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/DE.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/FR.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/SA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing health/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to health/AU.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/US[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/US.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/GB[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/GB.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/CA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/CA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/DE[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/DE.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/FR[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/FR.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/SA[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/SA.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mProcessing general/AU[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mQuery error on general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [31merror[39m: [31mError adding updated_at column to general/AU.articles: syntax error at or near "$1"[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mMigration complete: Add updated_at column to articles tables[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mStarting migration: Initialize admin database[39m
+2025-04-05 13:48:37:4837 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:48:44:4844 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:17:4917 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:49:30:4930 [32minfo[39m: [32mShutting down server...[39m
+2025-04-05 13:49:30:4930 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 13:49:30:4930 [32minfo[39m: [32mHTTP server closed[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:49:42:4942 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:15:5015 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:50:48:5048 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:21:5121 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:51:54:5154 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:52:27:5227 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:00:530 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:53:33:5333 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:53:33:5333 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:53:33:5333 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:33:5333 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:53:34:5334 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:07:547 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for tech/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for sports/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for politics/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for health/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/US: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/GB: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/CA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/DE: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/FR: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/SA: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [31merror[39m: [31mFailed to ensure schema for general/AU: syntax error at or near "$1"[39m
+2025-04-05 13:54:40:5440 [32minfo[39m: [32mDatabase schemas initialized[39m
