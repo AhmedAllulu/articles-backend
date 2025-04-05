@@ -7,6 +7,33 @@ const constants = require('../config/constants');
 const countries = require('../config/countries');
 
 /**
+ * Run all migrations
+ */
+async function runAllMigrations() {
+  logger.info('Starting all migrations');
+  
+  // Initialize pools before using them
+  db.initializePools();
+  
+  // Wait a moment for pools to initialize
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  
+  // Ensure schemas exist
+  await db.ensureSchemas();
+  
+  // Run migrations
+  await addImageUrlColumn();
+  await addUpdatedAtColumn();
+  await initializeAdminDatabase();
+  
+  logger.info('All migrations completed');
+  
+  // Close database connections
+  await db.closeAllPools();
+  process.exit(0);
+}
+
+/**
  * Add image_url column to articles tables
  */
 async function addImageUrlColumn() {

@@ -1,0 +1,165 @@
+2025-04-05 13:39:51:3951 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:39:51:3951 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:39:51:3951 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:39:54:3954 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:39:54:3954 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:39:54:3954 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:39:57:3957 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:39:57:3957 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:39:57:3957 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:00:400 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:00:400 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:00:400 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:03:403 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:03:403 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:03:403 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:07:407 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:07:407 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:07:407 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:10:4010 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:10:4010 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:10:4010 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:13:4013 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:13:4013 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:13:4013 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:16:4016 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:16:4016 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:16:4016 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:19:4019 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:19:4019 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:19:4019 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:22:4022 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:22:4022 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:22:4022 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:25:4025 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:25:4025 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:25:4025 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:28:4028 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:28:4028 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:28:4028 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:31:4031 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:31:4031 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:31:4031 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:35:4035 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:35:4035 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:35:4035 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:38:4038 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:38:4038 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:38:4038 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:41:4041 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:41:4041 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:41:4041 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:44:4044 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:44:4044 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:44:4044 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:47:4047 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:47:4047 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:47:4047 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:50:4050 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:50:4050 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:50:4050 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:53:4053 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:53:4053 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:53:4053 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:56:4056 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:56:4056 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:56:4056 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:40:59:4059 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:40:59:4059 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:40:59:4059 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:03:413 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:03:413 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:03:413 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:06:416 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:06:416 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:06:416 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:09:419 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:09:419 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:09:419 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:12:4112 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:12:4112 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:12:4112 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:15:4115 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:15:4115 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:15:4115 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:18:4118 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:18:4118 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:18:4118 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:21:4121 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:21:4121 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:21:4121 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:24:4124 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:24:4124 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:24:4124 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:27:4127 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:28:4128 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:28:4128 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:31:4131 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:31:4131 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:31:4131 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:34:4134 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:34:4134 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:34:4134 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:37:4137 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:37:4137 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:37:4137 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:40:4140 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:40:4140 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:40:4140 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:43:4143 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:43:4143 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:43:4143 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:46:4146 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:46:4146 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:46:4146 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:49:4149 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:49:4149 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:49:4149 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:52:4152 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:52:4152 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:52:4152 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:56:4156 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:56:4156 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:56:4156 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:41:59:4159 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:41:59:4159 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:41:59:4159 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:02:422 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:02:422 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:02:422 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:05:425 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:05:425 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:05:425 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:08:428 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:08:428 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:08:428 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:11:4211 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:11:4211 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:11:4211 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:14:4214 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:14:4214 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:14:4214 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:17:4217 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:17:4217 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:17:4217 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:21:4221 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:21:4221 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:21:4221 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:24:4224 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:24:4224 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:24:4224 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:27:4227 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:27:4227 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:27:4227 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:30:4230 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:30:4230 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:30:4230 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:33:4233 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:33:4233 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:33:4233 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:36:4236 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:36:4236 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:36:4236 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
+2025-04-05 13:42:39:4239 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 13:42:39:4239 [32minfo[39m: [32mServer running on port 4550 in development mode[39m
+2025-04-05 13:42:39:4239 [31merror[39m: [31mError initializing database schemas: database "news_tech" does not exist[39m
