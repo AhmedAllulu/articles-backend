@@ -14,7 +14,7 @@ class DeepSeekService {
   }
   
   /**
-   * Generate an article using DeepSeek API with retries and fallback
+   * Generate an article using DeepSeek API with retries
    * @param {string} keyword - Trending keyword to base the article on
    * @param {string} language - Language code to generate the article in
    * @param {string} countryCode - Country code for localization
@@ -29,114 +29,74 @@ class DeepSeekService {
       return cachedArticle;
     }
     
-    try {
-      logger.info(`Generating article for "${keyword}" in ${language} (${countryCode})`);
-      
-      // Check if we're in discount hours to log API usage cost
-      const now = new Date();
-      const hour = now.getHours();
-      const isDiscountHour = hour >= 16 && hour < 24; // 4 PM to midnight
-      logger.info(`API call during ${isDiscountHour ? 'discount' : 'regular'} hours`);
-      
-      // Attempt API call with retries
-      let lastError;
-      for (let attempt = 1; attempt <= this.maxRetries; attempt++) {
-        try {
-          // Create prompt for DeepSeek
-          const prompt = this._createPrompt(keyword, language, countryCode);
-          
-          // Make API call to DeepSeek
-          const response = await axios.post(
-            process.env.DEEPSEEK_API_URL,
-            {
-              model: "deepseek-chat",  // Updated model name (use the appropriate model)
-              messages: [
-                {
-                  role: "user",
-                  content: prompt
-                }
-              ],
-              temperature: 0.7,
-              max_tokens: 4000
+    logger.info(`Generating article for "${keyword}" in ${language} (${countryCode})`);
+    
+    // Check if we're in discount hours to log API usage cost
+    const now = new Date();
+    const hour = now.getHours();
+    const isDiscountHour = hour >= 16 && hour < 24; // 4 PM to midnight
+    logger.info(`API call during ${isDiscountHour ? 'discount' : 'regular'} hours`);
+    
+    // Attempt API call with retries
+    let lastError;
+    for (let attempt = 1; attempt <= this.maxRetries; attempt++) {
+      try {
+        // Create prompt for DeepSeek
+        const prompt = this._createPrompt(keyword, language, countryCode);
+        
+        // Make API call to DeepSeek
+        const response = await axios.post(
+          process.env.DEEPSEEK_API_URL,
+          {
+            model: "deepseek-chat",  // Updated model name (use the appropriate model)
+            messages: [
+              {
+                role: "user",
+                content: prompt
+              }
+            ],
+            temperature: 0.7,
+            max_tokens: 4000
+          },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
             },
-            {
-              headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
-              },
-              timeout: 30000 // 30 second timeout
-            }
-          );
-          
-          // Parse the response
-          if (response.data && response.data.choices && response.data.choices.length > 0) {
-            const generatedText = response.data.choices[0].message.content;
-            
-            // Extract title and content from generated text
-            const article = this._parseGeneratedContent(generatedText);
-            
-            // Cache the successful result
-            this._addToCache(cacheKey, article);
-            
-            logger.info(`Successfully generated article for "${keyword}" (${article.title.substring(0, 30)}...)`);
-            return article;
+            timeout: 30000 // 30 second timeout
           }
+        );
+        
+        // Parse the response
+        if (response.data && response.data.choices && response.data.choices.length > 0) {
+          const generatedText = response.data.choices[0].message.content;
           
-          throw new Error('Invalid response from DeepSeek API');
-        } catch (error) {
-          lastError = error;
-          logger.warn(`Attempt ${attempt}/${this.maxRetries} failed for "${keyword}": ${error.message}`);
+          // Extract title and content from generated text
+          const article = this._parseGeneratedContent(generatedText);
           
-          if (attempt < this.maxRetries) {
-            // Wait before retrying with exponential backoff
-            const delay = this.retryDelay * Math.pow(2, attempt - 1);
-            await new Promise(resolve => setTimeout(resolve, delay));
-          }
+          // Cache the successful result
+          this._addToCache(cacheKey, article);
+          
+          logger.info(`Successfully generated article for "${keyword}" (${article.title.substring(0, 30)}...)`);
+          return article;
+        }
+        
+        throw new Error('Invalid response from DeepSeek API');
+      } catch (error) {
+        lastError = error;
+        logger.warn(`Attempt ${attempt}/${this.maxRetries} failed for "${keyword}": ${error.message}`);
+        
+        if (attempt < this.maxRetries) {
+          // Wait before retrying with exponential backoff
+          const delay = this.retryDelay * Math.pow(2, attempt - 1);
+          await new Promise(resolve => setTimeout(resolve, delay));
         }
       }
-      
-      // If all retries failed, fall back to template
-      logger.error(`All attempts failed for "${keyword}". Using fallback.`);
-      return this._generateFallbackArticle(keyword, language, countryCode);
-    } catch (error) {
-      logger.error(`Error generating article for "${keyword}": ${error.message}`);
-      return this._generateFallbackArticle(keyword, language, countryCode);
     }
-  }
-  
-  /**
-   * Generate a fallback article when the API fails
-   * @private
-   * @param {string} keyword - Trending keyword
-   * @param {string} language - Language code
-   * @param {string} countryCode - Country code
-   * @returns {Object} Fallback article with title and content
-   */
-  _generateFallbackArticle(keyword, language, countryCode) {
-    logger.info(`Generating fallback article for "${keyword}"`);
     
-    // Create a basic article title
-    const title = `${keyword.charAt(0).toUpperCase() + keyword.slice(1)}: Latest Developments`;
-    
-    // Create template content
-    const content = `
-      This is an overview of the latest developments related to ${keyword}.
-      
-      The trending topic of ${keyword} has been gaining attention recently. 
-      Experts in the field have noted several key developments that are worth following.
-      
-      While specific details are still emerging, the significance of ${keyword} continues to grow.
-      
-      Stay tuned for more updates on this developing story as new information becomes available.
-    `.trim().replace(/\n\s+/g, '\n\n');
-    
-    const fallbackArticle = { title, content };
-    
-    // Cache the fallback article too
-    const cacheKey = `${keyword}:${language}:${countryCode}`;
-    this._addToCache(cacheKey, fallbackArticle);
-    
-    return fallbackArticle;
+    // If all retries failed, throw the error
+    logger.error(`All attempts failed for "${keyword}". Error: ${lastError.message}`);
+    throw new Error(`Failed to generate article for "${keyword}" after ${this.maxRetries} attempts: ${lastError.message}`);
   }
   
   /**

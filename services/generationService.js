@@ -47,10 +47,21 @@ class GenerationService {
       for (const country of countries) {
         try {
           // Step 1: Fetch trends if needed
-          await this._ensureTrendsExist(category, country.code);
+          try {
+            await this._ensureTrendsExist(category, country.code);
+          } catch (error) {
+            logger.error(`Failed to ensure trends for ${category}/${country.code}: ${error.message}`);
+            continue; // Skip to next country if we can't get trends
+          }
           
           // Step 2: Get unused trends
-          const unusedTrends = await trendsService.getUnusedTrends(category, country.code, 5);
+          let unusedTrends;
+          try {
+            unusedTrends = await trendsService.getUnusedTrends(category, country.code, 5);
+          } catch (error) {
+            logger.error(`Failed to get unused trends for ${category}/${country.code}: ${error.message}`);
+            continue; // Skip to next country if we can't get trends
+          }
           
           if (unusedTrends.length === 0) {
             logger.info(`No unused trends for ${category}/${country.code}. Skipping.`);
@@ -143,6 +154,7 @@ class GenerationService {
           logger.info(`Fetched and stored ${trends.length} new trends for ${category}/${countryCode}`);
         } else {
           logger.warn(`No trends fetched for ${category}/${countryCode}`);
+          throw new Error(`No trends available for ${category}/${countryCode}`);
         }
       }
     } catch (error) {

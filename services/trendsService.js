@@ -27,12 +27,7 @@ class TrendsService {
     } catch (error) {
       logger.error(`Error fetching trends for ${category}/${countryCode}: ${error.message}`);
       
-      // Fallback to mock trends for development
-      if (process.env.NODE_ENV === 'development') {
-        logger.info(`Using mock trends for ${category}/${countryCode}`);
-        return this._getMockTrendsForCategory(category, countryCode);
-      }
-      
+      // Remove fallback to mock trends and just throw the error
       throw error;
     }
   }
@@ -64,7 +59,7 @@ class TrendsService {
         return trends;
       }
       
-      return [];
+      throw new Error(`No trends found for ${category}/${countryCode} using SerpAPI`);
     } catch (error) {
       logger.error(`Error fetching trends using SerpAPI: ${error.message}`);
       throw error;
@@ -111,10 +106,15 @@ class TrendsService {
         // Return unique trends
         const uniqueTrends = [...new Set(trends)];
         logger.info(`Fetched ${uniqueTrends.length} trends for ${category}/${countryCode} using google-trends-api`);
+        
+        if (uniqueTrends.length === 0) {
+          throw new Error(`No trends found for ${category}/${countryCode} using google-trends-api`);
+        }
+        
         return uniqueTrends.slice(0, 20); // Limit to top 20
       }
       
-      return [];
+      throw new Error(`Invalid response from google-trends-api for ${category}/${countryCode}`);
     } catch (error) {
       logger.error(`Error fetching trends using google-trends-api: ${error.message}`);
       throw error;
@@ -141,51 +141,7 @@ class TrendsService {
     return categoryMap[category] || 'all';
   }
   
-  /**
-   * Generate mock trends for development
-   * @private
-   * @param {string} category - Category
-   * @param {string} countryCode - Country code
-   * @returns {Array} Mock trends
-   */
-  _getMockTrendsForCategory(category, countryCode) {
-    const mockTrends = {
-      tech: [
-        'Artificial Intelligence', 'Machine Learning', 'Blockchain', 'Quantum Computing',
-        '5G Networks', 'Cloud Computing', 'Cybersecurity', 'Internet of Things',
-        'Augmented Reality', 'Virtual Reality', 'Edge Computing', 'Digital Transformation'
-      ],
-      sports: [
-        'Premier League', 'Champions League', 'NBA Playoffs', 'Olympics',
-        'Formula 1', 'Tennis Grand Slam', 'NFL Draft', 'World Cup',
-        'Rugby Championship', 'Golf Masters', 'Cricket World Cup', 'Tour de France'
-      ],
-      politics: [
-        'Climate Agreement', 'Election Results', 'Economic Policy', 'International Relations',
-        'Tax Reform', 'Immigration Law', 'Healthcare Bill', 'Defense Spending',
-        'Trade Agreement', 'Foreign Policy', 'Diplomatic Visit', 'Political Summit'
-      ],
-      health: [
-        'Healthy Diet', 'Mental Wellness', 'Fitness Trends', 'Vaccine Development',
-        'Medical Research', 'Healthcare Technology', 'Nutrition Science', 'Pandemic Response',
-        'Wellness Routine', 'Medical Breakthrough', 'Public Health', 'Preventive Care'
-      ],
-      general: [
-        'Latest Smartphone', 'Popular Movies', 'Celebrity News', 'Stock Market',
-        'Weather Forecast', 'Environmental News', 'Education Trends', 'Travel Destinations',
-        'Fashion Trends', 'Housing Market', 'Consumer Trends', 'Entertainment News'
-      ]
-    };
-    
-    // Return random subset of mock trends for the specified category
-    const trends = mockTrends[category] || mockTrends.general;
-    
-    // Shuffle and take a random number of trends between 5-12
-    const shuffled = trends.sort(() => 0.5 - Math.random());
-    const count = Math.floor(Math.random() * 8) + 5; // 5-12 trends
-    
-    return shuffled.slice(0, count);
-  }
+  // Removed _getMockTrendsForCategory method as it should not be used
   
   /**
    * Store trends in the database

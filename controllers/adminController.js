@@ -32,13 +32,20 @@ async function generateArticles(req, res) {
     );
     
     // Generate articles
-    const result = await generationService.generateArticlesForCategoryAndCountry(
-      category,
-      countryCode,
-      parseInt(count, 10)
-    );
-    
-    return res.json(formatResponse(result));
+    try {
+      const result = await generationService.generateArticlesForCategoryAndCountry(
+        category,
+        countryCode,
+        parseInt(count, 10)
+      );
+      
+      return res.json(formatResponse(result));
+    } catch (error) {
+      logger.error(`Article generation failed: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Article generation failed: ${error.message}`, 500)
+      );
+    }
   } catch (error) {
     logger.error(`Error in generateArticles: ${error.message}`);
     return res.status(500).json(
@@ -66,19 +73,26 @@ async function getTrends(req, res) {
     }
     
     // Get trends
-    const trends = await Trend.getAll(
-      category,
-      countryCode,
-      parseInt(limit, 10),
-      status
-    );
-    
-    return res.json(formatResponse({
-      trends,
-      count: trends.length,
-      category,
-      countryCode
-    }));
+    try {
+      const trends = await Trend.getAll(
+        category,
+        countryCode,
+        parseInt(limit, 10),
+        status
+      );
+      
+      return res.json(formatResponse({
+        trends,
+        count: trends.length,
+        category,
+        countryCode
+      }));
+    } catch (error) {
+      logger.error(`Failed to get trends: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Failed to get trends: ${error.message}`, 500)
+      );
+    }
   } catch (error) {
     logger.error(`Error in getTrends: ${error.message}`);
     return res.status(500).json(
@@ -112,25 +126,32 @@ async function fetchTrends(req, res) {
       req.headers['user-agent']
     );
     
-    // Fetch trends
-    const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
-    
-    if (trends.length === 0) {
+    try {
+      // Fetch trends
+      const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
+      
+      if (trends.length === 0) {
+        return res.json(formatResponse({
+          message: 'No trends fetched',
+          count: 0
+        }));
+      }
+      
+      // Store trends
+      const storedCount = await Trend.storeMultiple(category, countryCode, trends);
+      
       return res.json(formatResponse({
-        message: 'No trends fetched',
-        count: 0
+        message: 'Trends fetched and stored successfully',
+        fetched: trends.length,
+        stored: storedCount,
+        trends
       }));
+    } catch (error) {
+      logger.error(`Failed to fetch trends: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Failed to fetch trends: ${error.message}`, 500)
+      );
     }
-    
-    // Store trends
-    const storedCount = await Trend.storeMultiple(category, countryCode, trends);
-    
-    return res.json(formatResponse({
-      message: 'Trends fetched and stored successfully',
-      fetched: trends.length,
-      stored: storedCount,
-      trends
-    }));
   } catch (error) {
     logger.error(`Error in fetchTrends: ${error.message}`);
     return res.status(500).json(
@@ -164,41 +185,48 @@ async function generateArticlesFromTrends(req, res) {
       req.headers['user-agent']
     );
     
-    // Step 1: Fetch new trends
-    logger.info(`Fetching trends for ${category}/${countryCode}`);
-    const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
-    
-    if (trends.length === 0) {
-      return res.json(formatResponse({
-        message: 'No trends fetched, cannot generate articles',
-        count: 0
-      }));
-    }
-    
-    // Step 2: Store fetched trends
-    const storedCount = await trendsService.storeTrends(category, countryCode, trends);
-    logger.info(`Stored ${storedCount} new trends for ${category}/${countryCode}`);
-    
-    // Step 3: Generate articles
-    const result = await generationService.generateArticlesForCategoryAndCountry(
-      category,
-      countryCode,
-      parseInt(count, 10)
-    );
-    
-    return res.json(formatResponse({
-      message: 'Trends fetched and articles generated successfully',
-      trends: {
-        fetched: trends.length,
-        stored: storedCount,
-        used: result.count,
-        keywords: result.keywords || []
-      },
-      articles: {
-        count: result.count,
-        message: result.message
+    try {
+      // Step 1: Fetch new trends
+      logger.info(`Fetching trends for ${category}/${countryCode}`);
+      const trends = await trendsService.fetchTrendingKeywords(category, countryCode);
+      
+      if (trends.length === 0) {
+        return res.json(formatResponse({
+          message: 'No trends fetched, cannot generate articles',
+          count: 0
+        }));
       }
-    }));
+      
+      // Step 2: Store fetched trends
+      const storedCount = await trendsService.storeTrends(category, countryCode, trends);
+      logger.info(`Stored ${storedCount} new trends for ${category}/${countryCode}`);
+      
+      // Step 3: Generate articles
+      const result = await generationService.generateArticlesForCategoryAndCountry(
+        category,
+        countryCode,
+        parseInt(count, 10)
+      );
+      
+      return res.json(formatResponse({
+        message: 'Trends fetched and articles generated successfully',
+        trends: {
+          fetched: trends.length,
+          stored: storedCount,
+          used: result.count,
+          keywords: result.keywords || []
+        },
+        articles: {
+          count: result.count,
+          message: result.message
+        }
+      }));
+    } catch (error) {
+      logger.error(`Failed to generate articles from trends: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Failed to generate articles from trends: ${error.message}`, 500)
+      );
+    }
   } catch (error) {
     logger.error(`Error in generateArticlesFromTrends: ${error.message}`);
     return res.status(500).json(
@@ -259,13 +287,18 @@ async function cleanupOldTrends(req, res) {
       results[category] = {};
       
       for (const country of countries) {
-        const deletedCount = await Trend.deleteOldUsed(
-          category,
-          country.code,
-          olderThanDays
-        );
-        
-        results[category][country.code] = deletedCount;
+        try {
+          const deletedCount = await Trend.deleteOldUsed(
+            category,
+            country.code,
+            olderThanDays
+          );
+          
+          results[category][country.code] = deletedCount;
+        } catch (error) {
+          logger.error(`Error cleaning up trends for ${category}/${country.code}: ${error.message}`);
+          results[category][country.code] = `Error: ${error.message}`;
+        }
       }
     }
     
