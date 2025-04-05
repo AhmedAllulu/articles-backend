@@ -10,23 +10,30 @@ const pools = {};
 
 // Initialize pools for all categories and countries
 function initializePools() {
-  // Create connection pools for each category and country
+  // Create connection pools for each category
   constants.CATEGORIES.forEach(category => {
-    pools[category] = {};
+    const dbName = `news_${category}`;
+    const config = {
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT,
+      database: dbName,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      max: 20, // max clients in pool
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 2000,
+    };
     
-    countries.forEach(country => {
-      const config = dbConfig.getConnectionConfig(category, country.code);
-      pools[category][country.code] = new Pool(config);
-      
-      // Log when connection is established
-      pools[category][country.code].on('connect', () => {
-        logger.info(`Connected to ${category} database for ${country.country}`);
-      });
-      
-      // Log errors
-      pools[category][country.code].on('error', (err) => {
-        logger.error(`Database error in ${category}/${country.country}: ${err.message}`);
-      });
+    pools[category] = new Pool(config);
+    
+    // Log when connection is established
+    pools[category].on('connect', () => {
+      logger.info(`Connected to ${category} database`);
+    });
+    
+    // Log errors
+    pools[category].on('error', (err) => {
+      logger.error(`Database error in ${category}: ${err.message}`);
     });
   });
   
@@ -34,26 +41,26 @@ function initializePools() {
 }
 
 // Get pool for specific category and country
-function getPool(category, countryCode) {
-  if (!pools[category] || !pools[category][countryCode]) {
-    throw new Error(`No pool exists for ${category}/${countryCode}`);
+function getPool(category) {
+  if (!pools[category]) {
+    throw new Error(`No pool exists for ${category}`);
   }
   
-  return pools[category][countryCode];
+  return pools[category];
 }
 
 // Execute query on specific category and country
 async function query(category, countryCode, text, params) {
-  const pool = getPool(category, countryCode);
+  const pool = getPool(category);
   const start = Date.now();
   
   try {
-    // Set search path to appropriate schema
+    // Get client from the pool
     const client = await pool.connect();
     try {
       // Set schema for this connection
-      const country = countries.find(c => c.code === countryCode);
-      await client.query(`SET search_path TO ${country.code.toLowerCase()}`);
+      const schema = countryCode.toLowerCase();
+      await client.query('SET search_path TO $1', [schema]);
       
       // Execute the actual query
       const res = await client.query(text, params);
@@ -71,13 +78,12 @@ async function query(category, countryCode, text, params) {
   }
 }
 
+
 // Close all pools (for graceful shutdown)
 async function closeAllPools() {
   for (const category of Object.keys(pools)) {
-    for (const countryCode of Object.keys(pools[category])) {
-      await pools[category][countryCode].end();
-      logger.info(`Closed pool for ${category}/${countryCode}`);
-    }
+    await pools[category].end();
+    logger.info(`Closed pool for ${category}`);
   }
   logger.info('All database connection pools closed');
 }
@@ -90,30 +96,34 @@ async function ensureSchemas() {
       const client = await pool.connect();
       
       try {
-        // Create schema if it doesn't exist
-        await client.query(`CREATE SCHEMA IF NOT EXISTS ${country.code.toLowerCase()}`);
+        // Create schema if it doesn't exist - Safely using the lowercase country code
+        const schema = country.code.toLowerCase();
+        await client.query('CREATE SCHEMA IF NOT EXISTS $1:name', [schema]);
         
-        // Create necessary tables in this schema
+        // Create necessary tables in this schema using proper parameterized identifiers
         await client.query(`
-          CREATE TABLE IF NOT EXISTS ${country.code.toLowerCase()}.articles (
+          CREATE TABLE IF NOT EXISTS $1:name.articles (
             id SERIAL PRIMARY KEY,
             title TEXT NOT NULL,
             content TEXT NOT NULL,
             created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+            updated_at TIMESTAMP DEFAULT NOW(),
             trend_keyword TEXT NOT NULL,
-            language VARCHAR(5) NOT NULL
+            language VARCHAR(5) NOT NULL,
+            image_url TEXT
           )
-        `);
+        `, [schema]);
         
         await client.query(`
-          CREATE TABLE IF NOT EXISTS ${country.code.toLowerCase()}.trends (
+          CREATE TABLE IF NOT EXISTS $1:name.trends (
             id SERIAL PRIMARY KEY,
             keyword TEXT NOT NULL,
             status VARCHAR(10) DEFAULT 'not_used',
             created_at TIMESTAMP NOT NULL DEFAULT NOW(),
-            used_at TIMESTAMP NULL
+            used_at TIMESTAMP NULL,
+            CONSTRAINT unique_keyword UNIQUE (keyword)
           )
-        `);
+        `, [schema]);
         
         logger.info(`Ensured schema and tables for ${category}/${country.code}`);
       } catch (err) {

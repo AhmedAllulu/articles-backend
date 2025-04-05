@@ -121,7 +121,7 @@ async function initializeDatabase() {
   
   // Initialize admin database
   logger.info('Initializing admin database');
-  
+
   const adminPool = new Pool({
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
@@ -143,7 +143,10 @@ async function initializeDatabase() {
         role VARCHAR(50) NOT NULL DEFAULT 'editor',
         created_at TIMESTAMP NOT NULL DEFAULT NOW(),
         updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
-        last_login TIMESTAMP
+        last_login TIMESTAMP,
+        password_reset_required BOOLEAN DEFAULT false,
+        password_reset_token VARCHAR(255),
+        password_reset_expires TIMESTAMP
       );
       
       CREATE TABLE IF NOT EXISTS access_logs (
@@ -158,23 +161,44 @@ async function initializeDatabase() {
     
     // Check if admin user exists, create if not
     const adminCheck = await adminClient.query(
-      `SELECT 1 FROM users WHERE email = 'admin@example.com'`
+      `SELECT 1 FROM users WHERE email = $1`,
+      [process.env.ADMIN_EMAIL || 'admin@example.com']
     );
     
     if (adminCheck.rowCount === 0) {
-      // Create default admin user
+      // Create default admin user with environment variables or generate random password
       const bcrypt = require('bcrypt');
+      const crypto = require('crypto');
       const saltRounds = 10;
-      const hashedPassword = await bcrypt.hash('Admin@123', saltRounds);
       
+      // Use environment variable for email or default
+      const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';
+      
+      // Either use provided password or generate a random one
+      let adminPassword;
+      let passwordMessage;
+      
+      if (process.env.ADMIN_PASSWORD) {
+        adminPassword = process.env.ADMIN_PASSWORD;
+        passwordMessage = 'Using password from environment variable';
+      } else {
+        // Generate a secure random password
+        adminPassword = crypto.randomBytes(16).toString('hex');
+        passwordMessage = `Generated random password: ${adminPassword}`;
+      }
+      
+      const hashedPassword = await bcrypt.hash(adminPassword, saltRounds);
+      
+      // Set password_reset_required to true for first login security
       await adminClient.query(
-        `INSERT INTO users (email, password, name, role)
-         VALUES ($1, $2, $3, $4)`,
-        ['admin@example.com', hashedPassword, 'Administrator', 'admin']
+        `INSERT INTO users (email, password, name, role, password_reset_required)
+         VALUES ($1, $2, $3, $4, true)`,
+        [adminEmail, hashedPassword, 'Administrator', 'admin']
       );
       
-      logger.info('Created default admin user: admin@example.com');
-      logger.info('Default password: Admin@123 (please change after first login)');
+      logger.info(`Created default admin user: ${adminEmail}`);
+      logger.info(passwordMessage);
+      logger.info('Password reset will be required on first login');
     }
     
     logger.info('Admin database initialized');
@@ -184,22 +208,6 @@ async function initializeDatabase() {
     adminClient.release();
     await adminPool.end();
   }
-  
-  // Close main connection
-  await pgPool.end();
-  
-  logger.info('Database initialization completed successfully');
-}
-
-// Run if this script is executed directly
-if (require.main === module) {
-  initializeDatabase().then(() => {
-    logger.info('Database initialization script completed');
-    process.exit(0);
-  }).catch(error => {
-    logger.error(`Database initialization failed: ${error.message}`);
-    process.exit(1);
-  });
 }
 
 module.exports = {

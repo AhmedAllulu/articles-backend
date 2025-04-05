@@ -1,10 +1,11 @@
+// app.js (partial update to use consistent rate limiting)
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 const morgan = require('morgan');
-const rateLimit = require('express-rate-limit');
 const logger = require('./config/logger');
 const constants = require('./config/constants');
+const rateLimiter = require('./middleware/rateLimiter');
 
 // Import routes
 const apiRoutes = require('./routes/api');
@@ -33,18 +34,12 @@ app.use(express.urlencoded({ extended: true }));
 // Request logging
 app.use(morgan('combined', { stream: { write: message => logger.http(message.trim()) } }));
 
-// Rate limiting
-const apiLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: constants.API_RATE_LIMIT,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: {
-    status: 429,
-    message: 'Too many requests, please try again later.'
-  }
-});
-app.use('/api/', apiLimiter);
+// Rate limiting - Using the pre-configured limiters from middleware/rateLimiter.js
+app.use('/api/', rateLimiter.apiLimiter);
+app.use('/admin/', rateLimiter.strictLimiter);
+
+// Public endpoints get more lenient rate limiting
+app.use('/api/status', rateLimiter.publicLimiter);
 
 // Routes
 app.use('/api', apiRoutes);
