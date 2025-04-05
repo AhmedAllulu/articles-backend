@@ -432,15 +432,80 @@ router.get('/stats', adminController.getStats);
  *         $ref: '#/components/responses/ServerError'
  */
 router.post('/trends/cleanup', adminController.cleanupOldTrends);
-// Add this route definition to routes/admin.js
+
+/**
+ * @swagger
+ * /api/admin/trends/options:
+ *   get:
+ *     summary: Get available categories and countries
+ *     tags: [Admin]
+ *     description: Retrieve available categories and countries for trend operations
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Options retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     categories:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           value:
+ *                             type: string
+ *                             example: tech
+ *                           label:
+ *                             type: string
+ *                             example: Tech
+ *                           website:
+ *                             type: string
+ *                             example: news-tech.com
+ *                     countries:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                         properties:
+ *                           value:
+ *                             type: string
+ *                             example: US
+ *                           label:
+ *                             type: string
+ *                             example: USA
+ *                           language:
+ *                             type: string
+ *                             example: en
+ *                 message:
+ *                   type: string
+ *                   example: Success
+ *                 timestamp:
+ *                   type: string
+ *                   format: date-time
+ *       401:
+ *         $ref: '#/components/responses/UnauthorizedError'
+ *       403:
+ *         $ref: '#/components/responses/ForbiddenError'
+ *       500:
+ *         $ref: '#/components/responses/ServerError'
+ */
+router.get('/trends/options', adminController.getTrendOptions);
 
 /**
  * @swagger
  * /api/admin/trends/insert:
  *   post:
- *     summary: Insert trends manually
+ *     summary: Insert trends for a specific category and country
  *     tags: [Admin]
- *     description: Insert trending keywords manually for a specific category and country
+ *     description: Insert trending keywords for a selected category and country
  *     security:
  *       - bearerAuth: []
  *     requestBody:
@@ -456,18 +521,59 @@ router.post('/trends/cleanup', adminController.cleanupOldTrends);
  *             properties:
  *               category:
  *                 $ref: '#/components/schemas/CategoryParam'
+ *                 description: Category to insert trends for (use /api/admin/trends/options to get available options)
  *               countryCode:
  *                 $ref: '#/components/schemas/CountryCodeParam'
+ *                 description: Country code to insert trends for (use /api/admin/trends/options to get available options)
  *               trends:
  *                 type: array
  *                 items:
  *                   type: string
  *                 description: List of trend keywords to insert
+ *                 example: ["artificial intelligence", "quantum computing", "blockchain"]
  *     responses:
  *       200:
  *         description: Trends inserted successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     message:
+ *                       type: string
+ *                       example: Trends inserted successfully
+ *                     submitted:
+ *                       type: integer
+ *                       example: 3
+ *                     stored:
+ *                       type: integer
+ *                       example: 3
+ *                     category:
+ *                       type: string
+ *                       example: tech
+ *                     countryCode:
+ *                       type: string
+ *                       example: US
+ *                     trends:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: ["artificial intelligence", "quantum computing", "blockchain"]
+ *                 message:
+ *                   type: string
+ *                   example: Success
+ *                 timestamp:
+ *                   type: string
+ *                   format: date-time
  *       400:
  *         $ref: '#/components/responses/ValidationError'
+ *         description: Invalid input - missing required parameters or invalid category/country code
  *       401:
  *         $ref: '#/components/responses/UnauthorizedError'
  *       403:
@@ -477,6 +583,4 @@ router.post('/trends/cleanup', adminController.cleanupOldTrends);
  */
 router.post('/trends/insert', adminController.insertTrends);
 
-// Add this right after the other trend-related routes
-// Export router
 module.exports = router;

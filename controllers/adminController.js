@@ -214,8 +214,9 @@ async function getStats(req, res) {
     );
   }
 }
+// Updated insertTrends function in controllers/adminController.js
 /**
- * Insert trends manually
+ * Insert trends manually for a selected category and country
  * @param {Object} req - Request object
  * @param {Object} res - Response object
  * @returns {Promise<void>}
@@ -223,18 +224,41 @@ async function getStats(req, res) {
 async function insertTrends(req, res) {
   try {
     const { category, countryCode, trends } = req.body;
+    const constants = require('../config/constants');
+    const countries = require('../config/countries');
     
-    // Validate params
-    if (!category || !countryCode || !trends || !Array.isArray(trends) || trends.length === 0) {
+    // Validate required parameters
+    if (!category || !countryCode) {
       return res.status(400).json(
-        formatResponse(null, 'Missing required parameters: category, countryCode, trends (array)', 400)
+        formatResponse(null, 'Missing required parameters: category, countryCode', 400)
+      );
+    }
+    
+    // Validate trends array
+    if (!trends || !Array.isArray(trends) || trends.length === 0) {
+      return res.status(400).json(
+        formatResponse(null, 'Missing required parameter: trends (array)', 400)
+      );
+    }
+    
+    // Validate category
+    if (!constants.CATEGORIES.includes(category)) {
+      return res.status(400).json(
+        formatResponse(null, `Invalid category: ${category}. Available options: ${constants.CATEGORIES.join(', ')}`, 400)
+      );
+    }
+    
+    // Validate country code
+    if (!countries.some(c => c.code === countryCode)) {
+      return res.status(400).json(
+        formatResponse(null, `Invalid country code: ${countryCode}. Available options: ${countries.map(c => c.code).join(', ')}`, 400)
       );
     }
     
     // Log action
     await User.logAction(
       req.user.id,
-      `Insert trends: ${category}/${countryCode} (${trends.length} trends)`,
+      `Insert trends for ${category}/${countryCode} (${trends.length} trends)`,
       req.ip,
       req.headers['user-agent']
     );
@@ -247,6 +271,8 @@ async function insertTrends(req, res) {
         message: 'Trends inserted successfully',
         submitted: trends.length,
         stored: storedCount,
+        category,
+        countryCode,
         trends
       }));
     } catch (error) {
@@ -262,7 +288,34 @@ async function insertTrends(req, res) {
     );
   }
 }
-
+/**
+ * Get available categories and countries for trend operations
+ * @param {Object} req - Request object
+ * @param {Object} res - Response object
+ * @returns {Promise<void>}
+ */
+async function getTrendOptions(req, res) {
+  try {
+    const constants = require('../config/constants');
+    return res.json(formatResponse({
+      categories: constants.CATEGORIES.map(category => ({
+        value: category,
+        label: category.charAt(0).toUpperCase() + category.slice(1),
+        website: constants.WEBSITES[category]
+      })),
+      countries: countries.map(country => ({
+        value: country.code,
+        label: country.country,
+        language: country.language
+      }))
+    }));
+  } catch (error) {
+    logger.error(`Error in getTrendOptions: ${error.message}`);
+    return res.status(500).json(
+      formatResponse(null, error.message, 500)
+    );
+  }
+}
 /**
  * Clean up old used trends
  * @param {Object} req - Request object
@@ -325,5 +378,6 @@ module.exports = {
   getStats,
   cleanupOldTrends,
   generateArticlesFromTrends,
-  insertTrends
+  insertTrends,
+  getTrendOptions
 };
