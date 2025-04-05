@@ -1505,3 +1505,11 @@
 2025-04-05 15:06:18:618 [31merror[39m: [31mError fetching trends using SerpAPI: Request failed with status code 404[39m
 2025-04-05 15:06:18:618 [31merror[39m: [31mError fetching trends for tech/US: Request failed with status code 404[39m
 2025-04-05 15:06:18:618 [31merror[39m: [31mFailed to generate articles from trends: Request failed with status code 404[39m
+2025-04-05 15:20:37:2037 [31merror[39m: [31mAll attempts failed for "ai". Error: Request failed with status code 402[39m
+2025-04-05 15:20:37:2037 [31merror[39m: [31mError generating article for tech/US/ai: Failed to generate article for "ai" after 3 attempts: Request failed with status code 402[39m
+2025-04-05 15:20:37:2037 [31merror[39m: [31mError in generateArticlesForCategoryAndCountry: Failed to generate article for "ai" after 3 attempts: Request failed with status code 402[39m
+2025-04-05 15:20:37:2037 [31merror[39m: [31mArticle generation failed: Failed to generate article for "ai" after 3 attempts: Request failed with status code 402[39m
+2025-04-05 15:28:48:2848 [31merror[39m: [31mAll attempts failed for "ai". Error: 404 status code (no body)[39m
+2025-04-05 15:28:48:2848 [31merror[39m: [31mError generating article for tech/US/ai: Failed to generate article for "ai" after 3 attempts: 404 status code (no body)[39m
+2025-04-05 15:28:48:2848 [31merror[39m: [31mError in generateArticlesForCategoryAndCountry: Failed to generate article for "ai" after 3 attempts: 404 status code (no body)[39m
+2025-04-05 15:28:48:2848 [31merror[39m: [31mArticle generation failed: Failed to generate article for "ai" after 3 attempts: 404 status code (no body)[39m

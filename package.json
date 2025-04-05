@@ -34,6 +34,7 @@
     "moment": "^2.29.4",
     "morgan": "^1.10.0",
     "node-cron": "^3.0.3",
+    "openai": "^4.91.1",
     "pg": "^8.14.1",
     "pg-pool": "^3.6.1",
     "swagger-jsdoc": "^6.2.8",

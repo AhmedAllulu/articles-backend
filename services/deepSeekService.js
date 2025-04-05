@@ -1,6 +1,8 @@
 // services/deepSeekService.js
-const axios = require('axios');
 const logger = require('../config/logger');
+const OpenAI = require('openai');
+
+  
 
 class DeepSeekService {
   constructor() {
@@ -11,6 +13,12 @@ class DeepSeekService {
     // Cache for successful responses
     this.cache = new Map();
     this.cacheTimeout = 30 * 60 * 1000; // 30 minutes
+    
+    // Initialize OpenAI client with DeepSeek configuration
+    this.openai = new OpenAI({ 
+      baseURL: process.env.DEEPSEEK_API_URL,
+      apiKey: process.env.DEEPSEEK_API_KEY
+    });
   }
   
   /**
@@ -44,32 +52,26 @@ class DeepSeekService {
         // Create prompt for DeepSeek
         const prompt = this._createPrompt(keyword, language, countryCode);
         
-        // Make API call to DeepSeek
-        const response = await axios.post(
-          process.env.DEEPSEEK_API_URL,
-          {
-            model: "deepseek-chat",  // Updated model name (use the appropriate model)
-            messages: [
-              {
-                role: "user",
-                content: prompt
-              }
-            ],
-            temperature: 0.7,
-            max_tokens: 4000
-          },
-          {
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
+        // Make API call to DeepSeek using OpenAI compatibility interface
+        const response = await this.openai.chat.completions.create({
+          model: "deepseek-chat",
+          messages: [
+            {
+              role: "system",
+              content: "You are a professional journalist who writes informative news articles."
             },
-            timeout: 30000 // 30 second timeout
-          }
-        );
+            {
+              role: "user",
+              content: prompt
+            }
+          ],
+          temperature: 0.7,
+          max_tokens: 4000
+        });
         
         // Parse the response
-        if (response.data && response.data.choices && response.data.choices.length > 0) {
-          const generatedText = response.data.choices[0].message.content;
+        if (response.choices && response.choices.length > 0) {
+          const generatedText = response.choices[0].message.content;
           
           // Extract title and content from generated text
           const article = this._parseGeneratedContent(generatedText);
@@ -198,3 +200,4 @@ class DeepSeekService {
 }
 
 module.exports = new DeepSeekService();
+  
