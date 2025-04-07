@@ -498,7 +498,6 @@ router.post('/trends/cleanup', adminController.cleanupOldTrends);
  *         $ref: '#/components/responses/ServerError'
  */
 router.get('/trends/options', adminController.getTrendOptions);
-
 /**
  * @swagger
  * /api/admin/trends/insert:
@@ -521,15 +520,12 @@ router.get('/trends/options', adminController.getTrendOptions);
  *             properties:
  *               category:
  *                 $ref: '#/components/schemas/CategoryParam'
- *                 description: Category to insert trends for (use /api/admin/trends/options to get available options)
  *               countryCode:
  *                 $ref: '#/components/schemas/CountryCodeParam'
- *                 description: Country code to insert trends for (use /api/admin/trends/options to get available options)
  *               trends:
  *                 type: array
  *                 items:
  *                   type: string
- *                 description: List of trend keywords to insert
  *                 example: ["artificial intelligence", "quantum computing", "blockchain"]
  *     responses:
  *       200:
@@ -545,13 +541,12 @@ router.get('/trends/options', adminController.getTrendOptions);
  *                 data:
  *                   type: object
  *                   properties:
- *                     message:
- *                       type: string
- *                       example: Trends inserted successfully
- *                     submitted:
- *                       type: integer
- *                       example: 3
- *                     stored:
+ *                     trends:
+ *                       type: array
+ *                       items:
+ *                         type: string
+ *                       example: ["artificial intelligence", "quantum computing", "blockchain"]
+ *                     count:
  *                       type: integer
  *                       example: 3
  *                     category:
@@ -560,11 +555,6 @@ router.get('/trends/options', adminController.getTrendOptions);
  *                     countryCode:
  *                       type: string
  *                       example: US
- *                     trends:
- *                       type: array
- *                       items:
- *                         type: string
- *                       example: ["artificial intelligence", "quantum computing", "blockchain"]
  *                 message:
  *                   type: string
  *                   example: Success
@@ -573,7 +563,6 @@ router.get('/trends/options', adminController.getTrendOptions);
  *                   format: date-time
  *       400:
  *         $ref: '#/components/responses/ValidationError'
- *         description: Invalid input - missing required parameters or invalid category/country code
  *       401:
  *         $ref: '#/components/responses/UnauthorizedError'
  *       403:

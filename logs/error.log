@@ -1535,3 +1535,16 @@
 2025-04-05 16:37:53:3753 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
 2025-04-05 16:42:20:4220 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
 2025-04-05 16:43:11:4311 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
+2025-04-05 16:59:19:5919 [31merror[39m: [31mSyntaxError: Expected double-quoted property name in JSON at position 49[39m
+2025-04-05 16:59:19:5919 [31merror[39m: [31mSyntaxError: Expected double-quoted property name in JSON at position 49[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (/var/www/html/articles-backend/node_modules/body-parser/lib/types/json.js:92:19)[39m
+[31m    at /var/www/html/articles-backend/node_modules/body-parser/lib/read.js:128:18[39m
+[31m    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)[39m
+[31m    at invokeCallback (/var/www/html/articles-backend/node_modules/raw-body/index.js:238:16)[39m
+[31m    at done (/var/www/html/articles-backend/node_modules/raw-body/index.js:227:7)[39m
+[31m    at IncomingMessage.onEnd (/var/www/html/articles-backend/node_modules/raw-body/index.js:287:7)[39m
+[31m    at IncomingMessage.emit (node:events:519:28)[39m
+[31m    at endReadableNT (node:internal/streams/readable:1696:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)[39m
+2025-04-05 17:04:04:44 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m

@@ -4581,3 +4581,504 @@
 2025-04-05 16:43:50:4350 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:43:50 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
 2025-04-05 16:43:56:4356 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:43:56 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
 2025-04-05 16:43:56:4356 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:43:56 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:47:13:4713 [33mwarn[39m: [33mAuthentication failed: No token provided[39m
+2025-04-05 16:47:13:4713 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:47:13 +0000] "GET /api/admin/trends/options HTTP/1.1" 401 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:50:47:5047 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 16:50:47:5047 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 16:50:47:5047 [32minfo[39m: [32mHTTP server closed[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mServer running on HTTP port 3300 in development mode[39m
+2025-04-05 16:50:48:5048 [32minfo[39m: [32mAPI Documentation available at http://localhost:3300/api-docs[39m
+2025-04-05 16:50:52:5052 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:50:52 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:50:52:5052 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:50:52 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:50:52:5052 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:50:52 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:50:52:5052 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:50:52 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:50:52:5052 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:50:52 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:50:53:5053 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:50:53 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mServer running on HTTP port 3300 in development mode[39m
+2025-04-05 16:56:40:5640 [32minfo[39m: [32mAPI Documentation available at http://localhost:3300/api-docs[39m
+2025-04-05 16:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:56:44 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:56:44 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:56:44 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:56:44 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:56:44 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:56:44:5644 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:56:44 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:09:579 [33mwarn[39m: [33mAuthentication failed: No token provided[39m
+2025-04-05 16:57:09:579 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:09 +0000] "POST /api/admin/trends/insert HTTP/1.1" 401 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:13:5713 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:13 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:13:5713 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:13 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:13:5713 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:13 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:13:5713 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:13 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:14:5714 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:14 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:14:5714 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:14 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:29:5729 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:29 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:37:5737 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:37 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:38:5738 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:38 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:38:5738 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:38 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:38:5738 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:38 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:38:5738 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:38 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:57:38:5738 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:57:38 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:58:05:585 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 16:58:05:585 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mServer running on HTTP port 3300 in development mode[39m
+2025-04-05 16:58:20:5820 [32minfo[39m: [32mAPI Documentation available at http://localhost:3300/api-docs[39m
+2025-04-05 16:58:47:5847 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:58:47 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:58:47:5847 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:58:47 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:58:47:5847 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:58:47 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 16:59:19:5919 [31merror[39m: [31mSyntaxError: Expected double-quoted property name in JSON at position 49[39m
+2025-04-05 16:59:19:5919 [31merror[39m: [31mSyntaxError: Expected double-quoted property name in JSON at position 49[39m
+[31m    at JSON.parse (<anonymous>)[39m
+[31m    at parse (/var/www/html/articles-backend/node_modules/body-parser/lib/types/json.js:92:19)[39m
+[31m    at /var/www/html/articles-backend/node_modules/body-parser/lib/read.js:128:18[39m
+[31m    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)[39m
+[31m    at invokeCallback (/var/www/html/articles-backend/node_modules/raw-body/index.js:238:16)[39m
+[31m    at done (/var/www/html/articles-backend/node_modules/raw-body/index.js:227:7)[39m
+[31m    at IncomingMessage.onEnd (/var/www/html/articles-backend/node_modules/raw-body/index.js:287:7)[39m
+[31m    at IncomingMessage.emit (node:events:519:28)[39m
+[31m    at endReadableNT (node:internal/streams/readable:1696:12)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)[39m
+2025-04-05 16:59:23:5923 [32minfo[39m: [32mStoring 3 trends for tech/US[39m
+2025-04-05 16:59:23:5923 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 16:59:23:5923 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (11ms)[39m
+2025-04-05 16:59:23:5923 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (2ms)[39m
+2025-04-05 16:59:23:5923 [34mdebug[39m: [34mExecuted query on tech/US: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-05 16:59:23:5923 [32minfo[39m: [32mStored 3 trends for tech/US[39m
+2025-04-05 16:59:23:5923 [35mhttp[39m: [35m::1 - - [05/Apr/2025:16:59:23 +0000] "POST /api/admin/trends/insert HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:01:23:123 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 17:01:23:123 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 17:01:23:123 [32minfo[39m: [32mHTTP server closed[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mServer running on HTTP port 3300 in development mode[39m
+2025-04-05 17:01:24:124 [32minfo[39m: [32mAPI Documentation available at http://localhost:3300/api-docs[39m
+2025-04-05 17:01:27:127 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:01:27 +0000] "GET /api-docs/ HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:01:28:128 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:01:28 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:01:28:128 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:01:28 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:01:28:128 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:01:28 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:01:28:128 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:01:28 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:01:28:128 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:01:28 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:02:29:229 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:02:29 +0000] "POST /api/admin/trends/insert HTTP/1.1" 400 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:02:37:237 [32minfo[39m: [32mStoring 3 trends for tech/CA[39m
+2025-04-05 17:02:37:237 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 17:02:37:237 [34mdebug[39m: [34mExecuted query on tech/CA: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (12ms)[39m
+2025-04-05 17:02:37:237 [34mdebug[39m: [34mExecuted query on tech/CA: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-05 17:02:37:237 [34mdebug[39m: [34mExecuted query on tech/CA: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-05 17:02:37:237 [32minfo[39m: [32mStored 3 trends for tech/CA[39m
+2025-04-05 17:02:37:237 [35mhttp[39m: [35m::1 - - [05/Apr/2025:17:02:37 +0000] "POST /api/admin/trends/insert HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 17:04:03:43 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 17:04:03:43 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 17:04:03:43 [32minfo[39m: [32mHTTP server closed[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 17:04:04:44 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
+2025-04-05 17:04:04:44 [33mwarn[39m: [33mFalling back to HTTP server[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mSetting up production scheduler[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mServer running on HTTPS port 3300 in production mode[39m
+2025-04-05 17:04:04:44 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-05 17:04:48:448 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-05 17:04:48:448 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-05 17:04:48:448 [32minfo[39m: [32mHTTP server closed[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mConnected to health database[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mConnected to general database[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mServer running on HTTP port 3300 in development mode[39m
+2025-04-05 17:04:49:449 [32minfo[39m: [32mAPI Documentation available at http://localhost:3300/api-docs[39m
+2025-04-05 23:47:43:4743 [33mwarn[39m: [33mRoute not found: GET /[39m
+2025-04-05 23:47:43:4743 [35mhttp[39m: [35m::1 - - [05/Apr/2025:23:47:43 +0000] "GET / HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-05 23:47:43:4743 [33mwarn[39m: [33mRoute not found: GET /favicon.ico[39m
+2025-04-05 23:47:43:4743 [35mhttp[39m: [35m::1 - - [05/Apr/2025:23:47:43 +0000] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:04:234 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mHTTP server created for development environment[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mServer running on HTTP port 3300 in development mode[39m
+2025-04-07 00:23:05:235 [32minfo[39m: [32mAPI Documentation available at http://localhost:3300/api-docs[39m
+2025-04-07 00:23:15:2315 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:15 +0000] "GET /api-docs HTTP/1.1" 301 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:15:2315 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:15 +0000] "GET /api-docs/ HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:16:2316 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:16 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:16:2316 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:16 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:16:2316 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:16 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:19:2319 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:19 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:19:2319 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:19 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 200 628 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:23:48:2348 [33mwarn[39m: [33mAuthentication failed: No token provided[39m
+2025-04-07 00:23:48:2348 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:23:48 +0000] "POST /api/admin/trends/insert HTTP/1.1" 401 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:24:08:248 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:24:08 +0000] "POST /api/auth/login HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:24:19:2419 [32minfo[39m: [32mStoring 3 trends for tech/SA[39m
+2025-04-07 00:24:19:2419 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 00:24:19:2419 [34mdebug[39m: [34mExecuted query on tech/SA: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (25ms)[39m
+2025-04-07 00:24:19:2419 [34mdebug[39m: [34mExecuted query on tech/SA: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (1ms)[39m
+2025-04-07 00:24:19:2419 [34mdebug[39m: [34mExecuted query on tech/SA: INSERT INTO trends (keyword, status) [39m
+[34m           VALUES ($1, $2)[39m
+[34m           ON CONFLICT (keyword) DO NOTHING[39m
+[34m           RETURNING id (2ms)[39m
+2025-04-07 00:24:19:2419 [32minfo[39m: [32mStored 3 trends for tech/SA[39m
+2025-04-07 00:24:19:2419 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:24:19 +0000] "POST /api/admin/trends/insert HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:26:31:2631 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 00:26:31:2631 [34mdebug[39m: [34mExecuted query on tech/SA: SELECT * FROM trends ORDER BY created_at DESC LIMIT $1 (13ms)[39m
+2025-04-07 00:26:31:2631 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:26:31 +0000] "GET /api/admin/trends/tech/SA?limit=100 HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:28:01:281 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 00:28:01:281 [34mdebug[39m: [34mExecuted query on sports/SA: SELECT * FROM trends ORDER BY created_at DESC LIMIT $1 (28ms)[39m
+2025-04-07 00:28:01:281 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:28:01 +0000] "GET /api/admin/trends/sports/SA?limit=100 HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:28:05:285 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 00:28:05:285 [34mdebug[39m: [34mExecuted query on tech/SA: SELECT * FROM trends ORDER BY created_at DESC LIMIT $1 (11ms)[39m
+2025-04-07 00:28:05:285 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:28:05 +0000] "GET /api/admin/trends/tech/SA?limit=100 HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
+2025-04-07 00:29:09:299 [32minfo[39m: [32mGenerating 1 articles for tech/SA[39m
+2025-04-07 00:29:09:299 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 00:29:09:299 [34mdebug[39m: [34mExecuted query on tech/SA: SELECT id, keyword FROM trends [39m
+[34m         WHERE status = $1 [39m
+[34m         ORDER BY created_at DESC [39m
+[34m         LIMIT $2 (11ms)[39m
+2025-04-07 00:29:09:299 [34mdebug[39m: [34mExecuted query on tech/SA: SELECT id, keyword FROM trends [39m
+[34m         WHERE status = $1 [39m
+[34m         ORDER BY created_at DESC [39m
+[34m         LIMIT $2 (0ms)[39m
+2025-04-07 00:29:09:299 [32minfo[39m: [32mGenerating article for tech/SA/blockchain[39m
+2025-04-07 00:29:09:299 [32minfo[39m: [32mGenerating article for "blockchain" in ar (SA)[39m
+2025-04-07 00:29:09:299 [32minfo[39m: [32mAPI call during regular hours[39m
+2025-04-07 00:29:53:2953 [32minfo[39m: [32mSuccessfully generated article for "blockchain" (تقنية البلوكشين: ثورة رقمية ته...)[39m
+2025-04-07 00:29:53:2953 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 00:29:53:2953 [34mdebug[39m: [34mExecuted query on tech/SA: INSERT INTO articles (title, content, trend_keyword, language) [39m
+[34m         VALUES ($1, $2, $3, $4)[39m
+[34m         RETURNING id (17ms)[39m
+2025-04-07 00:29:53:2953 [34mdebug[39m: [34mExecuted query on tech/SA: UPDATE trends SET status = $1, used_at = NOW() WHERE id = $2 (3ms)[39m
+2025-04-07 00:29:53:2953 [32minfo[39m: [32mMarked trend 3 as used for tech/SA[39m
+2025-04-07 00:29:53:2953 [32minfo[39m: [32mSuccessfully generated and stored article for tech/SA/blockchain[39m
+2025-04-07 00:29:53:2953 [35mhttp[39m: [35m::1 - - [07/Apr/2025:00:29:53 +0000] "POST /api/admin/articles/generate HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"[39m
