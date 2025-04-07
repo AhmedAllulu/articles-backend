@@ -1592,3 +1592,4 @@
 2025-04-07 13:08:34:834 [31merror[39m: [31mError storing trends for tech/USA: relation "trends" does not exist[39m
 2025-04-07 13:08:34:834 [31merror[39m: [31mError fetching trends: relation "trends" does not exist[39m
 2025-04-07 13:08:34:834 [31merror[39m: [31mFailed to fetch trends: normalizedCategory is not defined[39m
+2025-04-07 13:20:22:2022 [31merror[39m: [31mError generating trending keywords: 404 status code (no body)[39m
