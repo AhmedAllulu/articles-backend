@@ -112,15 +112,14 @@ class GenerationService {
         country.code
       );
       
-      // Store the article in the database
-      await db.query(
-        category,
-        country.code,
-        `INSERT INTO articles (title, content, trend_keyword, language) 
-         VALUES ($1, $2, $3, $4)
-         RETURNING id`,
-        [article.title, article.content, trend.keyword, country.language]
-      );
+      // Use articleService to create the article with image generation
+      const articleService = require('./articleService');
+      await articleService.createArticle(category, country.code, {
+        title: article.title,
+        content: article.content,
+        trend_keyword: trend.keyword,
+        language: country.language
+      });
       
       // Mark the trend as used
       await trendsService.markTrendAsUsed(category, country.code, trend.id);
