@@ -1,61 +1,59 @@
 // services/trendsService.js
-const axios = require('axios');
-const logger = require('../config/logger');
+const deepSeekTrends = require('./deepSeekTrendsService');
 const db = require('../db/connections');
+const logger = require('../config/logger');
 const constants = require('../config/constants');
 const { getLanguageForCountry } = require('../utils/languageUtils');
 
 class TrendsService {
-/**
- * Fetch trending keywords from internal Flask trends API
- * @param {string} category - Category to fetch trends for (used as keyword)
- * @param {string} countryCode - Country code to fetch trends for (optional, not currently used)
- * @param {number} limit - Maximum number of trends to fetch (applied on frontend)
- * @returns {Promise<Array<string>>} Array of trending keywords
- */
-async fetchTrendingKeywords(category, countryCode, limit = 20) {
-  try {
-    logger.info(`Fetching trending keywords for ${category}/${countryCode}`);
+  /**
+   * Fetch trending keywords using DeepSeek
+   * @param {string} category - Category to fetch trends for
+   * @param {string} countryCode - Country code to fetch trends for
+   * @param {number} limit - Maximum number of trends to fetch
+   * @returns {Promise<Object>} Object with fetched and stored counts
+   */
+  async fetchTrendingKeywords(category, countryCode, limit = 20) {
+    try {
+      // Normalize category to lowercase to match database pools
+      const normalizedCategory = category.toLowerCase();
+      
+      logger.info(`Fetching trending keywords for ${normalizedCategory}/${countryCode}`);
 
-    // You can eventually map categories/countries to specific keyword sets
-    const keywords = category || 'AI';
+      // Get language for this country from config
+      const language = getLanguageForCountry(countryCode);
+      logger.info(`Using language ${language} for country ${countryCode}`);
 
-    const response = await axios.get(`${process.env.TRENDS_API_URL}/trends`, {
-      params: {
-        keywords,
-        timeframe: 'now 7-d'
-      },
-      timeout: 10000 // 10 second timeout
-    });
+      // Generate trends using DeepSeek
+      const keywords = await deepSeekTrends.getTrendingKeywords(
+        normalizedCategory, 
+        countryCode, 
+        language,
+        limit
+      );
 
-    if (response.data) {
-      const keywordGroups = response.data;
-      let allKeywords = [];
-
-      // Flatten top and rising keywords
-      Object.values(keywordGroups).forEach(group => {
-        if (group.top) {
-          allKeywords.push(...group.top.map(k => k.query));
-        }
-        if (group.rising) {
-          allKeywords.push(...group.rising.map(k => k.query));
-        }
-      });
-
-      // Deduplicate and limit
-      const uniqueKeywords = [...new Set(allKeywords)].slice(0, limit);
-      logger.info(`Fetched ${uniqueKeywords.length} trending keywords.`);
-      return uniqueKeywords;
+      logger.info(`Generated ${keywords.length} trending keywords for ${normalizedCategory}/${countryCode}`);
+      
+      // Store the fetched keywords with normalized category
+      const storedCount = await this.storeTrends(normalizedCategory, countryCode, keywords);
+      
+      return {
+        fetched: keywords.length,
+        stored: storedCount
+      };
+    } catch (error) {
+      logger.error(`Error fetching trends: ${error.message}`);
+      // On failure, use fallback keywords from the deepSeekTrends service
+      const fallbackKeywords = deepSeekTrends._getFallbackKeywords(normalizedCategory, getLanguageForCountry(countryCode));
+      const storedCount = await this.storeTrends(normalizedCategory, countryCode, fallbackKeywords);
+      
+      return {
+        error: error.message,
+        fetched: fallbackKeywords.length,
+        stored: storedCount
+      };
     }
-
-    logger.warn(`No trends returned for ${category}/${countryCode}`);
-    return [];
-  } catch (error) {
-    logger.error(`Error fetching trends: ${error.message}`);
-    throw error;
   }
-}
-
 
   /**
    * Store trends in the database
@@ -140,6 +138,38 @@ async fetchTrendingKeywords(category, countryCode, limit = 20) {
       logger.info(`Marked trend ${trendId} as used for ${category}/${countryCode}`);
     } catch (error) {
       logger.error(`Error marking trend ${trendId} as used for ${category}/${countryCode}: ${error.message}`);
+      throw error;
+    }
+  }
+
+  /**
+   * Fetch and store trends for all categories and countries
+   * @returns {Promise<Object>} Results for all categories and countries
+   */
+  async fetchAndStoreAllTrends() {
+    try {
+      const constants = require('../config/constants');
+      const countries = require('../config/countries');
+      const results = {};
+      
+      for (const category of constants.CATEGORIES) {
+        results[category] = {};
+        
+        for (const country of countries) {
+          try {
+            logger.info(`Fetching trends for ${category}/${country.code}`);
+            const result = await this.fetchTrendingKeywords(category, country.code);
+            results[category][country.code] = result;
+          } catch (error) {
+            logger.error(`Error fetching trends for ${category}/${country.code}: ${error.message}`);
+            results[category][country.code] = { error: error.message };
+          }
+        }
+      }
+      
+      return { results };
+    } catch (error) {
+      logger.error(`Error in fetchAndStoreAllTrends: ${error.message}`);
       throw error;
     }
   }

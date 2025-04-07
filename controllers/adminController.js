@@ -101,12 +101,6 @@ async function getTrends(req, res) {
   }
 }
 
-/**
- * Fetch new trends from external API
- * @param {Object} req - Request object
- * @param {Object} res - Response object
- * @returns {Promise<void>}
- */
 async function fetchTrends(req, res) {
   try {
     const { category, countryCode } = req.body;
@@ -118,6 +112,10 @@ async function fetchTrends(req, res) {
       );
     }
     
+    // Get normalized versions
+    const { category: normalizedCategory, countryCode: normalizedCountryCode } = 
+      normalizeParams(category, countryCode);
+    
     // Log action
     await User.logAction(
       req.user.id,
@@ -126,9 +124,9 @@ async function fetchTrends(req, res) {
       req.headers['user-agent']
     );
     
-    // Fetch and store trends
+    // Fetch and store trends - USE THE NORMALIZED VALUES HERE
     try {
-      const result = await trendsService.fetchTrendingKeywords(category, countryCode);
+      const result = await trendsService.fetchTrendingKeywords(normalizedCategory, normalizedCountryCode);
       
       return res.json(formatResponse({
         message: 'Trends fetched and stored successfully',
@@ -150,7 +148,18 @@ async function fetchTrends(req, res) {
     );
   }
 }
-
+/**
+ * Normalize category and country code
+ * @param {string} category - Category
+ * @param {string} countryCode - Country code
+ * @returns {Object} Normalized values
+ */
+function normalizeParams(category, countryCode) {
+  return {
+    category: category.toLowerCase(),
+    countryCode: countryCode.toUpperCase()
+  };
+}
 /**
  * Fetch trends for all categories and countries
  * @param {Object} req - Request object

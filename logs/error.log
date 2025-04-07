@@ -1575,3 +1575,20 @@
 2025-04-07 12:03:52:352 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
 2025-04-07 12:03:59:359 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
 2025-04-07 12:03:59:359 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 12:32:41:3241 [31merror[39m: [31mError fetching trends: timeout of 10000ms exceeded[39m
+2025-04-07 12:32:41:3241 [31merror[39m: [31mFailed to fetch trends: timeout of 10000ms exceeded[39m
+2025-04-07 12:33:03:333 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 12:33:03:333 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 12:42:18:4218 [31merror[39m: [31mError storing trends for AI/US: No pool exists for AI[39m
+2025-04-07 12:42:18:4218 [31merror[39m: [31mError fetching trends: No pool exists for AI[39m
+2025-04-07 12:42:18:4218 [31merror[39m: [31mFailed to fetch trends: fallbackKeywords is not defined[39m
+2025-04-07 12:47:50:4750 [31merror[39m: [31mFailed to fetch trends: trendsService.fetchTrendingKeywords is not a function[39m
+2025-04-07 12:58:10:5810 [31merror[39m: [31mError storing trends for Tech/SA: No pool exists for Tech[39m
+2025-04-07 12:58:10:5810 [31merror[39m: [31mError fetching trends: No pool exists for Tech[39m
+2025-04-07 12:58:10:5810 [31merror[39m: [31mError storing trends for Tech/SA: No pool exists for Tech[39m
+2025-04-07 12:58:10:5810 [31merror[39m: [31mFailed to fetch trends: No pool exists for Tech[39m
+2025-04-07 13:00:22:022 [31merror[39m: [31mError in fetchTrends: Assignment to constant variable.[39m
+2025-04-07 13:08:34:834 [31merror[39m: [31mQuery error on tech/USA: relation "trends" does not exist[39m
+2025-04-07 13:08:34:834 [31merror[39m: [31mError storing trends for tech/USA: relation "trends" does not exist[39m
+2025-04-07 13:08:34:834 [31merror[39m: [31mError fetching trends: relation "trends" does not exist[39m
+2025-04-07 13:08:34:834 [31merror[39m: [31mFailed to fetch trends: normalizedCategory is not defined[39m
