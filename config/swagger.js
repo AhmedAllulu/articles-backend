@@ -23,10 +23,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: process.env.NODE_ENV === 'production' 
-        ? 'https://api.example.com/v1' 
-        : `http://localhost:${process.env.PORT || 3333}`,
-      description: process.env.NODE_ENV === 'production' ? 'Production server' : 'Development server'
+      url: 'https://chato-app.com:3300',
     }
   ],
   tags: [

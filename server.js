@@ -5,7 +5,6 @@ const logger = require('./config/logger');
 const db = require('./db/connections');
 const { User, initAdminDb } = require('./models/User');
 const scheduler = require('./config/scheduler');
-const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
@@ -16,6 +15,12 @@ const SHUTDOWN_TIMEOUT = 10000; // 10 seconds timeout for graceful shutdown
 // Track ongoing requests
 let ongoingRequests = 0;
 let shuttingDown = false;
+
+// SSL configuration
+const options = {
+  key: fs.readFileSync("/etc/letsencrypt/live/chato-app.com/privkey.pem"),
+  cert: fs.readFileSync("/etc/letsencrypt/live/chato-app.com/fullchain.pem"),
+};
 
 // Initialize database connections
 async function startServer() {
@@ -32,33 +37,14 @@ async function startServer() {
     await initAdminDb();
     logger.info('Admin database initialized');
 
-    // Create the appropriate server based on environment
+    // Create HTTPS server
     let server;
-
-    if (process.env.NODE_ENV === 'production') {
-      try {
-        const sslKeyPath = process.env.SSL_KEY_PATH;
-        const sslCertPath = process.env.SSL_CERT_PATH;
-        
-        if (!sslKeyPath || !sslCertPath) {
-          throw new Error('SSL paths not configured');
-        }
-        
-        const options = {
-          key: fs.readFileSync(sslKeyPath),
-          cert: fs.readFileSync(sslCertPath),
-        };
-        
-        server = https.createServer(options, app);
-        logger.info('HTTPS server created with SSL certificates');
-      } catch (error) {
-        logger.error(`Failed to load SSL certificates: ${error.message}`);
-        logger.warn('Falling back to HTTP server');
-        server = http.createServer(app);
-      }
-    } else {
-      server = http.createServer(app);
-      logger.info('HTTP server created for development environment');
+    try {
+      server = https.createServer(options, app);
+      logger.info('HTTPS server created with SSL certificates');
+    } catch (error) {
+      logger.error(`Failed to load SSL certificates: ${error.message}`);
+      throw error; // Exit if SSL fails, no HTTP fallback
     }
 
     // Middleware to track ongoing requests
@@ -88,16 +74,13 @@ async function startServer() {
 
     // Start the server
     server.listen(PORT, () => {
-      const protocol = process.env.NODE_ENV === 'production' ? 'HTTPS' : 'HTTP';
-      logger.info(`Server running on ${protocol} port ${PORT} in ${process.env.NODE_ENV} mode`);
-      logger.info(`API Documentation available at ${protocol.toLowerCase()}://localhost:${PORT}/api-docs`);
+      logger.info(`Server running on HTTPS port ${PORT}`);
+      logger.info(`API Documentation available at https://localhost:${PORT}/api-docs`);
     });
 
-    // Initialize scheduler in production
-    if (process.env.NODE_ENV === 'production') {
-      scheduler.initScheduler();
-      logger.info('Scheduler initialized');
-    }
+    // Initialize scheduler
+    scheduler.initScheduler();
+    logger.info('Scheduler initialized');
 
     // Implement graceful shutdown
     const gracefulShutdown = async (signal) => {
@@ -117,9 +100,9 @@ async function startServer() {
       
       // Wait for ongoing requests to complete
       setTimeout(async () => {
-        // Close the HTTP server first to stop accepting new requests
+        // Close the HTTPS server first to stop accepting new requests
         server.close(async () => {
-          logger.info('HTTP server closed');
+          logger.info('HTTPS server closed');
           
           try {
             // Close database connections

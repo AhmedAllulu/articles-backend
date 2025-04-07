@@ -1553,3 +1553,25 @@
 2025-04-07 00:59:35:5935 [31merror[39m: [31mFailed to fetch trends: trendsService.fetchAndStoreTrends is not a function[39m
 2025-04-07 01:00:23:023 [31merror[39m: [31mFailed to fetch trends: this._generateMockTrends is not a function[39m
 2025-04-07 01:02:00:20 [31merror[39m: [31mFailed to fetch trends: this._generateMockTrends is not a function[39m
+2025-04-07 01:52:42:5242 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
+2025-04-07 01:53:04:534 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
+2025-04-07 11:47:20:4720 [31merror[39m: [31mError fetching trends for tech/US: timeout of 10000ms exceeded[39m
+2025-04-07 11:47:20:4720 [31merror[39m: [31mFailed to fetch trends: timeout of 10000ms exceeded[39m
+2025-04-07 11:47:50:4750 [31merror[39m: [31mError fetching trends for tech/US: Request failed with status code 404[39m
+2025-04-07 11:47:50:4750 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 404[39m
+2025-04-07 11:48:03:483 [31merror[39m: [31mError fetching trends for tech/US: Request failed with status code 404[39m
+2025-04-07 11:48:03:483 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 404[39m
+2025-04-07 11:49:31:4931 [31merror[39m: [31mError fetching trends for tech/US: Request failed with status code 404[39m
+2025-04-07 11:49:31:4931 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 404[39m
+2025-04-07 11:50:48:5048 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 11:50:48:5048 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 11:51:38:5138 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 11:51:38:5138 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 11:52:33:5233 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 11:52:33:5233 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 11:53:09:539 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 11:53:09:539 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 12:03:52:352 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 12:03:52:352 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m
+2025-04-07 12:03:59:359 [31merror[39m: [31mError fetching trends: Request failed with status code 500[39m
+2025-04-07 12:03:59:359 [31merror[39m: [31mFailed to fetch trends: Request failed with status code 500[39m

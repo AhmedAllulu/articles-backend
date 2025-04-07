@@ -6,46 +6,56 @@ const constants = require('../config/constants');
 const { getLanguageForCountry } = require('../utils/languageUtils');
 
 class TrendsService {
-  /**
-   * Fetch trending keywords from external API
-   * @param {string} category - Category to fetch trends for
-   * @param {string} countryCode - Country code to fetch trends for
-   * @param {number} limit - Maximum number of trends to fetch
-   * @returns {Promise<Array<string>>} Array of trending keywords
-   */
-  async fetchTrendingKeywords(category, countryCode, limit = 20) {
-    try {
-      logger.info(`Fetching trending keywords for ${category}/${countryCode}`);
-      
-      // Get language for the country
-      const language = getLanguageForCountry(countryCode);
-      
-      // Make API call to trends API
-      const response = await axios.get(process.env.TRENDS_API_URL, {
-        params: {
-          api_key: process.env.TRENDS_API_KEY,
-          category: category,
-          country: countryCode,
-          language: language,
-          limit: limit
-        },
-        timeout: 10000 // 10 second timeout
+/**
+ * Fetch trending keywords from internal Flask trends API
+ * @param {string} category - Category to fetch trends for (used as keyword)
+ * @param {string} countryCode - Country code to fetch trends for (optional, not currently used)
+ * @param {number} limit - Maximum number of trends to fetch (applied on frontend)
+ * @returns {Promise<Array<string>>} Array of trending keywords
+ */
+async fetchTrendingKeywords(category, countryCode, limit = 20) {
+  try {
+    logger.info(`Fetching trending keywords for ${category}/${countryCode}`);
+
+    // You can eventually map categories/countries to specific keyword sets
+    const keywords = category || 'AI';
+
+    const response = await axios.get(`${process.env.TRENDS_API_URL}/trends`, {
+      params: {
+        keywords,
+        timeframe: 'now 7-d'
+      },
+      timeout: 10000 // 10 second timeout
+    });
+
+    if (response.data) {
+      const keywordGroups = response.data;
+      let allKeywords = [];
+
+      // Flatten top and rising keywords
+      Object.values(keywordGroups).forEach(group => {
+        if (group.top) {
+          allKeywords.push(...group.top.map(k => k.query));
+        }
+        if (group.rising) {
+          allKeywords.push(...group.rising.map(k => k.query));
+        }
       });
-      
-      // Process response based on the API structure
-      if (response.data && response.data.trends) {
-        const trends = response.data.trends.map(t => t.keyword || t);
-        logger.info(`Fetched ${trends.length} trending keywords for ${category}/${countryCode}`);
-        return trends;
-      }
-      
-      logger.warn(`No trends found for ${category}/${countryCode}`);
-      return [];
-    } catch (error) {
-      logger.error(`Error fetching trends for ${category}/${countryCode}: ${error.message}`);
-      throw error;
+
+      // Deduplicate and limit
+      const uniqueKeywords = [...new Set(allKeywords)].slice(0, limit);
+      logger.info(`Fetched ${uniqueKeywords.length} trending keywords.`);
+      return uniqueKeywords;
     }
+
+    logger.warn(`No trends returned for ${category}/${countryCode}`);
+    return [];
+  } catch (error) {
+    logger.error(`Error fetching trends: ${error.message}`);
+    throw error;
   }
+}
+
 
   /**
    * Store trends in the database

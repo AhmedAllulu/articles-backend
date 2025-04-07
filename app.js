@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
@@ -21,17 +20,31 @@ const developmentRoutes = require('./routes/development');
 // Initialize express app
 const app = express();
 
-// Apply security middleware
+// ✅ Trust proxy if behind reverse proxy (like Nginx, Heroku, etc.)
+app.set('trust proxy', 1);
+
+// ✅ Optional HTTPS redirect middleware (enabled via env var)
+if (process.env.ENFORCE_HTTPS === 'true') {
+  app.use((req, res, next) => {
+    if (req.secure || req.headers['x-forwarded-proto'] === 'https') {
+      next();
+    } else {
+      return res.redirect(301, `https://${req.headers.host}${req.url}`);
+    }
+  });
+}
+
+// ✅ Security headers
 app.use(helmet({
   contentSecurityPolicy: process.env.NODE_ENV === 'production' ? undefined : false,
   crossOriginEmbedderPolicy: false,
   crossOriginResourcePolicy: { policy: 'cross-origin' }
 }));
 
-// Configure CORS
+// ✅ CORS configuration
 const corsOrigins = Object.values(constants.WEBSITES).map(site => `https://${site}`);
 if (process.env.NODE_ENV === 'development') {
-  corsOrigins.push('http://localhost:8080');
+  corsOrigins.push('https://localhost:8080');
 }
 
 const corsOptions = {
@@ -44,57 +57,56 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-// Request parsing with limits
+// ✅ Parse requests with limits
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 
-// Compression middleware
+// ✅ Compression
 app.use(compression({
   threshold: 0,
   level: 6,
   filter: (req, res) => {
-    if (req.headers['x-no-compression']) {
-      return false;
-    }
+    if (req.headers['x-no-compression']) return false;
     return compression.filter(req, res);
   }
 }));
 
-// Request logging
-app.use(morgan('combined', { stream: { write: message => logger.http(message.trim()) } }));
+// ✅ HTTP request logging
+app.use(morgan('combined', {
+  stream: {
+    write: message => logger.http(message.trim())
+  }
+}));
 
-// Middleware to track ongoing requests (moved to server.js)
-
-// Static files for uploads with cache headers
+// ✅ Static files (e.g. uploads)
 app.use('/uploads', express.static(path.join(__dirname, './uploads'), {
   maxAge: '1d',
   etag: true
 }));
 
-// Apply rate limiting based on route type
+// ✅ Rate limiting middleware
 app.use('/api/', rateLimiter.apiLimiter);
 app.use('/admin/', rateLimiter.strictLimiter);
 app.use('/auth/', rateLimiter.apiLimiter);
 app.use('/health', rateLimiter.publicLimiter);
 
-// Setup Swagger API documentation
+// ✅ Swagger API docs
 setupSwagger(app);
 
-// Routes
+// ✅ Route definitions
 app.use('/api', apiRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/health', healthRoutes);
 
-// Only include development routes in development environment
+// ✅ Development-only routes
 if (process.env.NODE_ENV === 'development') {
   app.use('/dev', developmentRoutes);
 }
 
-// 404 handler
+// ✅ Not found and error handlers
 app.use(notFoundHandler);
-
-// Error handling middleware
 app.use(errorHandler);
 
+// ✅ Export app
 module.exports = app;
