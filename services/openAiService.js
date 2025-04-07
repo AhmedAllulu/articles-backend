@@ -16,13 +16,13 @@ class DeepSeekService {
     
     // Initialize OpenAI client with DeepSeek configuration
     this.openai = new OpenAI({ 
-      baseURL: process.env.DEEPSEEK_API_URL,
-      apiKey: process.env.DEEPSEEK_API_KEY
+      baseURL: process.env.OpenAI_API_URL,
+      apiKey: process.env.OpenAI_API_KEY
     });
   }
   
   /**
-   * Generate an article using DeepSeek API with retries
+   * Generate an article using OpenAI's search preview with retries
    * @param {string} keyword - Trending keyword to base the article on
    * @param {string} language - Language code to generate the article in
    * @param {string} countryCode - Country code for localization
@@ -36,58 +36,37 @@ class DeepSeekService {
       logger.info(`Using cached article for "${keyword}"`);
       return cachedArticle;
     }
-    
+
     logger.info(`Generating article for "${keyword}" in ${language} (${countryCode})`);
-    
-    // Check if we're in discount hours to log API usage cost
-    const now = new Date();
-    const hour = now.getHours();
-    const isDiscountHour = hour >= 16 && hour < 24; // 4 PM to midnight
-    logger.info(`API call during ${isDiscountHour ? 'discount' : 'regular'} hours`);
-    
+
     // Attempt API call with retries
     let lastError;
     for (let attempt = 1; attempt <= this.maxRetries; attempt++) {
       try {
-        // Create prompt for DeepSeek
-        const prompt = this._createPrompt(keyword, language, countryCode);
-        
-        // Make API call to DeepSeek using OpenAI compatibility interface
-        const response = await this.openai.chat.completions.create({
-          model: "deepseek-chat",
-          messages: [
-            {
-              role: "system",
-              content: "You are a professional journalist who writes informative news articles."
-            },
-            {
-              role: "user",
-              content: prompt
-            }
-          ],
+        // Create search query based on keyword
+        const searchQuery = this._createSearchQuery(keyword, language, countryCode);
+
+        // Make API call to GPT for search preview
+        const response = await this.openai.completions.create({
+          model: "gpt-4o-mini-search-preview-2025-03-11", // Adjust to the appropriate GPT model
+          prompt: searchQuery,
           temperature: 0.7,
-          max_tokens: 4000
+          max_tokens: 2000
         });
-        
-        // Parse the response
-        if (response.choices && response.choices.length > 0) {
-          const generatedText = response.choices[0].message.content;
-          
-          // Extract title and content from generated text
-          const article = this._parseGeneratedContent(generatedText);
-          
-          // Cache the successful result
-          this._addToCache(cacheKey, article);
-          
-          logger.info(`Successfully generated article for "${keyword}" (${article.title.substring(0, 30)}...)`);
-          return article;
-        }
-        
-        throw new Error('Invalid response from DeepSeek API');
+
+        // Extract title and content from generated text
+        const generatedText = response.choices[0].text;
+        const article = this._parseGeneratedContent(generatedText);
+
+        // Cache the successful result
+        this._addToCache(cacheKey, article);
+
+        logger.info(`Successfully generated article for "${keyword}" (${article.title.substring(0, 30)}...)`);
+        return article;
       } catch (error) {
         lastError = error;
         logger.warn(`Attempt ${attempt}/${this.maxRetries} failed for "${keyword}": ${error.message}`);
-        
+
         if (attempt < this.maxRetries) {
           // Wait before retrying with exponential backoff
           const delay = this.retryDelay * Math.pow(2, attempt - 1);
@@ -95,7 +74,7 @@ class DeepSeekService {
         }
       }
     }
-    
+
     // If all retries failed, throw the error
     logger.error(`All attempts failed for "${keyword}". Error: ${lastError.message}`);
     throw new Error(`Failed to generate article for "${keyword}" after ${this.maxRetries} attempts: ${lastError.message}`);

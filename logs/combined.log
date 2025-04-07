@@ -7419,3 +7419,154 @@
 2025-04-07 13:53:33:5333 [32minfo[39m: [32mScheduler initialized[39m
 2025-04-07 13:53:33:5333 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
 2025-04-07 13:53:33:5333 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 14:00:00:00 [32minfo[39m: [32mStarting job: trendFetching[39m
+2025-04-07 14:00:00:00 [32minfo[39m: [32mRunning scheduled trend fetching[39m
+2025-04-07 14:00:00:00 [32minfo[39m: [32mStarting to fetch trends for all categories and countries[39m
+2025-04-07 14:00:00:00 [32minfo[39m: [32mFetching trending keywords for tech/US using SerpAPI[39m
+2025-04-07 14:00:02:02 [32minfo[39m: [32mStoring 20 trends for tech/US[39m
+2025-04-07 14:00:02:02 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 14:00:02:02 [32minfo[39m: [32mStored 20 trends for tech/US[39m
+2025-04-07 14:00:02:02 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/US[39m
+2025-04-07 14:00:03:03 [32minfo[39m: [32mFetching trending keywords for tech/GB using SerpAPI[39m
+2025-04-07 14:00:05:05 [32minfo[39m: [32mStoring 20 trends for tech/GB[39m
+2025-04-07 14:00:06:06 [32minfo[39m: [32mStored 20 trends for tech/GB[39m
+2025-04-07 14:00:06:06 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/GB[39m
+2025-04-07 14:00:07:07 [32minfo[39m: [32mFetching trending keywords for tech/CA using SerpAPI[39m
+2025-04-07 14:00:08:08 [32minfo[39m: [32mStoring 20 trends for tech/CA[39m
+2025-04-07 14:00:08:08 [32minfo[39m: [32mStored 20 trends for tech/CA[39m
+2025-04-07 14:00:08:08 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/CA[39m
+2025-04-07 14:00:09:09 [32minfo[39m: [32mFetching trending keywords for tech/DE using SerpAPI[39m
+2025-04-07 14:00:11:011 [32minfo[39m: [32mStoring 20 trends for tech/DE[39m
+2025-04-07 14:00:11:011 [32minfo[39m: [32mStored 20 trends for tech/DE[39m
+2025-04-07 14:00:11:011 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/DE[39m
+2025-04-07 14:00:12:012 [32minfo[39m: [32mFetching trending keywords for tech/FR using SerpAPI[39m
+2025-04-07 14:00:13:013 [32minfo[39m: [32mStoring 20 trends for tech/FR[39m
+2025-04-07 14:00:13:013 [32minfo[39m: [32mStored 20 trends for tech/FR[39m
+2025-04-07 14:00:13:013 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/FR[39m
+2025-04-07 14:00:14:014 [32minfo[39m: [32mFetching trending keywords for tech/SA using SerpAPI[39m
+2025-04-07 14:00:15:015 [32minfo[39m: [32mStoring 20 trends for tech/SA[39m
+2025-04-07 14:00:15:015 [32minfo[39m: [32mStored 20 trends for tech/SA[39m
+2025-04-07 14:00:15:015 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/SA[39m
+2025-04-07 14:00:16:016 [32minfo[39m: [32mFetching trending keywords for tech/AU using SerpAPI[39m
+2025-04-07 14:00:18:018 [32minfo[39m: [32mStoring 20 trends for tech/AU[39m
+2025-04-07 14:00:18:018 [32minfo[39m: [32mStored 20 trends for tech/AU[39m
+2025-04-07 14:00:18:018 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for tech/AU[39m
+2025-04-07 14:00:19:019 [32minfo[39m: [32mFetching trending keywords for sports/US using SerpAPI[39m
+2025-04-07 14:00:28:028 [32minfo[39m: [32mStoring 20 trends for sports/US[39m
+2025-04-07 14:00:28:028 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 14:00:28:028 [32minfo[39m: [32mStored 20 trends for sports/US[39m
+2025-04-07 14:00:28:028 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/US[39m
+2025-04-07 14:00:29:029 [32minfo[39m: [32mFetching trending keywords for sports/GB using SerpAPI[39m
+2025-04-07 14:00:30:030 [32minfo[39m: [32mStoring 20 trends for sports/GB[39m
+2025-04-07 14:00:30:030 [32minfo[39m: [32mStored 20 trends for sports/GB[39m
+2025-04-07 14:00:30:030 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/GB[39m
+2025-04-07 14:00:31:031 [32minfo[39m: [32mFetching trending keywords for sports/CA using SerpAPI[39m
+2025-04-07 14:00:33:033 [32minfo[39m: [32mStoring 20 trends for sports/CA[39m
+2025-04-07 14:00:33:033 [32minfo[39m: [32mStored 20 trends for sports/CA[39m
+2025-04-07 14:00:33:033 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/CA[39m
+2025-04-07 14:00:34:034 [32minfo[39m: [32mFetching trending keywords for sports/DE using SerpAPI[39m
+2025-04-07 14:00:35:035 [32minfo[39m: [32mStoring 20 trends for sports/DE[39m
+2025-04-07 14:00:35:035 [32minfo[39m: [32mStored 20 trends for sports/DE[39m
+2025-04-07 14:00:35:035 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/DE[39m
+2025-04-07 14:00:36:036 [32minfo[39m: [32mFetching trending keywords for sports/FR using SerpAPI[39m
+2025-04-07 14:00:42:042 [32minfo[39m: [32mStoring 20 trends for sports/FR[39m
+2025-04-07 14:00:42:042 [32minfo[39m: [32mStored 20 trends for sports/FR[39m
+2025-04-07 14:00:42:042 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/FR[39m
+2025-04-07 14:00:43:043 [32minfo[39m: [32mFetching trending keywords for sports/SA using SerpAPI[39m
+2025-04-07 14:00:45:045 [32minfo[39m: [32mStoring 20 trends for sports/SA[39m
+2025-04-07 14:00:45:045 [32minfo[39m: [32mStored 20 trends for sports/SA[39m
+2025-04-07 14:00:45:045 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/SA[39m
+2025-04-07 14:00:46:046 [32minfo[39m: [32mFetching trending keywords for sports/AU using SerpAPI[39m
+2025-04-07 14:00:47:047 [32minfo[39m: [32mStoring 20 trends for sports/AU[39m
+2025-04-07 14:00:47:047 [32minfo[39m: [32mStored 20 trends for sports/AU[39m
+2025-04-07 14:00:47:047 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for sports/AU[39m
+2025-04-07 14:00:48:048 [32minfo[39m: [32mFetching trending keywords for politics/US using SerpAPI[39m
+2025-04-07 14:00:50:050 [32minfo[39m: [32mStoring 20 trends for politics/US[39m
+2025-04-07 14:00:50:050 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 14:00:50:050 [32minfo[39m: [32mStored 20 trends for politics/US[39m
+2025-04-07 14:00:50:050 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/US[39m
+2025-04-07 14:00:51:051 [32minfo[39m: [32mFetching trending keywords for politics/GB using SerpAPI[39m
+2025-04-07 14:00:57:057 [32minfo[39m: [32mStoring 20 trends for politics/GB[39m
+2025-04-07 14:00:57:057 [32minfo[39m: [32mStored 20 trends for politics/GB[39m
+2025-04-07 14:00:57:057 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/GB[39m
+2025-04-07 14:00:58:058 [32minfo[39m: [32mFetching trending keywords for politics/CA using SerpAPI[39m
+2025-04-07 14:01:00:10 [32minfo[39m: [32mStoring 20 trends for politics/CA[39m
+2025-04-07 14:01:00:10 [32minfo[39m: [32mStored 20 trends for politics/CA[39m
+2025-04-07 14:01:00:10 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/CA[39m
+2025-04-07 14:01:01:11 [32minfo[39m: [32mFetching trending keywords for politics/DE using SerpAPI[39m
+2025-04-07 14:01:12:112 [32minfo[39m: [32mStoring 20 trends for politics/DE[39m
+2025-04-07 14:01:12:112 [32minfo[39m: [32mStored 20 trends for politics/DE[39m
+2025-04-07 14:01:12:112 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/DE[39m
+2025-04-07 14:01:13:113 [32minfo[39m: [32mFetching trending keywords for politics/FR using SerpAPI[39m
+2025-04-07 14:01:19:119 [32minfo[39m: [32mStoring 20 trends for politics/FR[39m
+2025-04-07 14:01:19:119 [32minfo[39m: [32mStored 20 trends for politics/FR[39m
+2025-04-07 14:01:19:119 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/FR[39m
+2025-04-07 14:01:20:120 [32minfo[39m: [32mFetching trending keywords for politics/SA using SerpAPI[39m
+2025-04-07 14:01:23:123 [32minfo[39m: [32mStoring 20 trends for politics/SA[39m
+2025-04-07 14:01:23:123 [32minfo[39m: [32mStored 20 trends for politics/SA[39m
+2025-04-07 14:01:23:123 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/SA[39m
+2025-04-07 14:01:24:124 [32minfo[39m: [32mFetching trending keywords for politics/AU using SerpAPI[39m
+2025-04-07 14:01:25:125 [32minfo[39m: [32mStoring 20 trends for politics/AU[39m
+2025-04-07 14:01:25:125 [32minfo[39m: [32mStored 20 trends for politics/AU[39m
+2025-04-07 14:01:25:125 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for politics/AU[39m
+2025-04-07 14:01:26:126 [32minfo[39m: [32mFetching trending keywords for health/US using SerpAPI[39m
+2025-04-07 14:01:28:128 [32minfo[39m: [32mStoring 20 trends for health/US[39m
+2025-04-07 14:01:28:128 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 14:01:28:128 [32minfo[39m: [32mStored 20 trends for health/US[39m
+2025-04-07 14:01:28:128 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/US[39m
+2025-04-07 14:01:29:129 [32minfo[39m: [32mFetching trending keywords for health/GB using SerpAPI[39m
+2025-04-07 14:01:31:131 [32minfo[39m: [32mStoring 20 trends for health/GB[39m
+2025-04-07 14:01:31:131 [32minfo[39m: [32mStored 20 trends for health/GB[39m
+2025-04-07 14:01:31:131 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/GB[39m
+2025-04-07 14:01:32:132 [32minfo[39m: [32mFetching trending keywords for health/CA using SerpAPI[39m
+2025-04-07 14:01:33:133 [32minfo[39m: [32mStoring 20 trends for health/CA[39m
+2025-04-07 14:01:33:133 [32minfo[39m: [32mStored 20 trends for health/CA[39m
+2025-04-07 14:01:33:133 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/CA[39m
+2025-04-07 14:01:34:134 [32minfo[39m: [32mFetching trending keywords for health/DE using SerpAPI[39m
+2025-04-07 14:01:37:137 [32minfo[39m: [32mStoring 20 trends for health/DE[39m
+2025-04-07 14:01:37:137 [32minfo[39m: [32mStored 20 trends for health/DE[39m
+2025-04-07 14:01:37:137 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/DE[39m
+2025-04-07 14:01:38:138 [32minfo[39m: [32mFetching trending keywords for health/FR using SerpAPI[39m
+2025-04-07 14:01:40:140 [32minfo[39m: [32mStoring 20 trends for health/FR[39m
+2025-04-07 14:01:40:140 [32minfo[39m: [32mStored 20 trends for health/FR[39m
+2025-04-07 14:01:40:140 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/FR[39m
+2025-04-07 14:01:41:141 [32minfo[39m: [32mFetching trending keywords for health/SA using SerpAPI[39m
+2025-04-07 14:01:42:142 [32minfo[39m: [32mStoring 20 trends for health/SA[39m
+2025-04-07 14:01:42:142 [32minfo[39m: [32mStored 20 trends for health/SA[39m
+2025-04-07 14:01:42:142 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/SA[39m
+2025-04-07 14:01:43:143 [32minfo[39m: [32mFetching trending keywords for health/AU using SerpAPI[39m
+2025-04-07 14:01:44:144 [32minfo[39m: [32mStoring 20 trends for health/AU[39m
+2025-04-07 14:01:44:144 [32minfo[39m: [32mStored 20 trends for health/AU[39m
+2025-04-07 14:01:44:144 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for health/AU[39m
+2025-04-07 14:01:45:145 [32minfo[39m: [32mFetching trending keywords for general/US using SerpAPI[39m
+2025-04-07 14:01:47:147 [32minfo[39m: [32mStoring 20 trends for general/US[39m
+2025-04-07 14:01:47:147 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 14:01:47:147 [32minfo[39m: [32mStored 20 trends for general/US[39m
+2025-04-07 14:01:47:147 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/US[39m
+2025-04-07 14:01:48:148 [32minfo[39m: [32mFetching trending keywords for general/GB using SerpAPI[39m
+2025-04-07 14:01:49:149 [32minfo[39m: [32mStoring 20 trends for general/GB[39m
+2025-04-07 14:01:49:149 [32minfo[39m: [32mStored 20 trends for general/GB[39m
+2025-04-07 14:01:49:149 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/GB[39m
+2025-04-07 14:01:50:150 [32minfo[39m: [32mFetching trending keywords for general/CA using SerpAPI[39m
+2025-04-07 14:01:52:152 [32minfo[39m: [32mStoring 20 trends for general/CA[39m
+2025-04-07 14:01:52:152 [32minfo[39m: [32mStored 20 trends for general/CA[39m
+2025-04-07 14:01:52:152 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/CA[39m
+2025-04-07 14:01:53:153 [32minfo[39m: [32mFetching trending keywords for general/DE using SerpAPI[39m
+2025-04-07 14:01:54:154 [32minfo[39m: [32mStoring 20 trends for general/DE[39m
+2025-04-07 14:01:54:154 [32minfo[39m: [32mStored 20 trends for general/DE[39m
+2025-04-07 14:01:54:154 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/DE[39m
+2025-04-07 14:01:55:155 [32minfo[39m: [32mFetching trending keywords for general/FR using SerpAPI[39m
+2025-04-07 14:01:56:156 [32minfo[39m: [32mStoring 20 trends for general/FR[39m
+2025-04-07 14:01:56:156 [32minfo[39m: [32mStored 20 trends for general/FR[39m
+2025-04-07 14:01:56:156 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/FR[39m
+2025-04-07 14:01:57:157 [32minfo[39m: [32mFetching trending keywords for general/SA using SerpAPI[39m
+2025-04-07 14:02:02:22 [32minfo[39m: [32mStoring 20 trends for general/SA[39m
+2025-04-07 14:02:03:23 [32minfo[39m: [32mStored 20 trends for general/SA[39m
+2025-04-07 14:02:03:23 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/SA[39m
+2025-04-07 14:02:04:24 [32minfo[39m: [32mFetching trending keywords for general/AU using SerpAPI[39m
+2025-04-07 14:02:06:26 [32minfo[39m: [32mStoring 20 trends for general/AU[39m
+2025-04-07 14:02:06:26 [32minfo[39m: [32mStored 20 trends for general/AU[39m
+2025-04-07 14:02:06:26 [32minfo[39m: [32mSuccessfully fetched 20 keywords and stored 20 for general/AU[39m
+2025-04-07 14:02:07:27 [32minfo[39m: [32mCompleted fetching trends for all categories and countries[39m
+2025-04-07 14:02:07:27 [32minfo[39m: [32mScheduled trend fetching completed[39m
+2025-04-07 14:02:07:27 [32minfo[39m: [32mJob trendFetching completed successfully[39m

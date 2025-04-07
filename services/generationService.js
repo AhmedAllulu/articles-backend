@@ -1,7 +1,7 @@
 // services/generationService.js
 const logger = require('../config/logger');
 const trendsService = require('./trendsService');
-const deepSeekService = require('./deepSeekService');
+const deepSeekService = require('./openAiService');
 const db = require('../db/connections');
 const constants = require('../config/constants');
 const countries = require('../config/countries');

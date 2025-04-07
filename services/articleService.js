@@ -2,7 +2,7 @@
 const Article = require('../models/Article');
 const logger = require('../config/logger');
 const imageService = require('./imageService');
-const deepSeekService = require('./deepSeekService');
+const deepSeekService = require('./openAiService');
 const { getLanguageForCountry } = require('../utils/languageUtils');
 
 class ArticleService {
