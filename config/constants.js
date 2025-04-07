@@ -13,8 +13,21 @@ module.exports = {
     USED: 'used',
     NOT_USED: 'not_used'
   },
-  DEEPSEEK_DISCOUNT_START: 16, // 4 PM in 24-hour format
-  DEEPSEEK_DISCOUNT_END: 24,   // 12 AM in 24-hour format
+  
+  // Generation quotas
+  GENERATION: {
+    MAX_ARTICLES_PER_DAY: 25,   // Total articles to generate across all categories/countries
+    MAX_PER_CATEGORY: 5,        // Maximum articles per category per day
+    MAX_PER_COUNTRY: 5,         // Maximum articles per country per day
+    MIN_UNUSED_TRENDS: 3,       // Minimum number of unused trends to consider a combination
+    PRIORITY_FACTORS: {
+      UNUSED_TRENDS_WEIGHT: 0.6,         // Weight for unused trends count
+      DAYS_SINCE_LAST_ARTICLE_WEIGHT: 0.3, // Weight for days since last article
+      BASE_IMPORTANCE_WEIGHT: 0.1        // Weight for base importance
+    }
+  },
+  
+  // API rate limiting
   API_RATE_LIMIT: 100,         // requests per 15 minutes
   
   // Logging configuration

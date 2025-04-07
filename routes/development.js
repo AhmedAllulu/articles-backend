@@ -3,6 +3,7 @@ const express = require('express');
 const generationService = require('../services/generationService');
 const trendsService = require('../services/trendsService');
 const scheduler = require('../config/scheduler');
+const constants = require('../config/constants');
 const logger = require('../config/logger');
 
 const router = express.Router();
@@ -41,8 +42,12 @@ router.post('/generate-articles', async (req, res) => {
 
 router.post('/generate-all', async (req, res) => {
   try {
+    const { maxArticles = 5, maxCombinations = 5 } = req.body;
+    
     const result = await generationService.generateArticlesForAll({
-      forceDevelopment: true
+      forceDevelopment: true,
+      maxArticlesPerDay: maxArticles,
+      maxCombinations: maxCombinations
     });
     
     res.json(result);
@@ -115,7 +120,10 @@ router.post('/full-process', async (req, res) => {
     
     // Step 2: Generate articles
     logger.info('Step 2: Generating articles for all categories and countries');
-    const articlesResult = await scheduler.runArticleGenerationJob();
+    const articlesResult = await scheduler.runArticleGenerationJob({
+      maxArticlesPerDay: 5, // Limit to 5 for development
+      maxCombinations: 5
+    });
     
     res.json({
       message: 'Full process completed successfully',
@@ -124,6 +132,38 @@ router.post('/full-process', async (req, res) => {
     });
   } catch (error) {
     logger.error(`Error in full-process: ${error.message}`);
+    res.status(500).json({
+      error: {
+        message: error.message,
+        status: 500
+      }
+    });
+  }
+});
+
+// Add endpoint to get generation stats
+router.get('/generation-stats', async (req, res) => {
+  try {
+    // Get scheduler stats
+    const schedulerStats = scheduler.getJobStats();
+    
+    // Get articles generated today
+    const articlesGeneratedToday = await generationService.countArticlesGeneratedToday();
+    
+    res.json({
+      date: new Date().toISOString(),
+      articlesGeneratedToday,
+      dailyQuota: constants.GENERATION.MAX_ARTICLES_PER_DAY,
+      quotaRemaining: Math.max(0, constants.GENERATION.MAX_ARTICLES_PER_DAY - articlesGeneratedToday),
+      scheduler: schedulerStats,
+      constants: {
+        maxArticlesPerDay: constants.GENERATION.MAX_ARTICLES_PER_DAY,
+        maxPerCategory: constants.GENERATION.MAX_PER_CATEGORY,
+        maxPerCountry: constants.GENERATION.MAX_PER_COUNTRY
+      }
+    });
+  } catch (error) {
+    logger.error(`Error in generation-stats: ${error.message}`);
     res.status(500).json({
       error: {
         message: error.message,

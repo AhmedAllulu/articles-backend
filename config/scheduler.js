@@ -19,7 +19,9 @@ const jobStats = {
     lastCompleted: null,
     lastDuration: null,
     averageDuration: null,
-    totalRuns: 0
+    totalRuns: 0,
+    todayRuns: 0,
+    todayArticles: 0
   },
   trendFetching: {
     lastScheduled: null,
@@ -27,7 +29,8 @@ const jobStats = {
     lastCompleted: null,
     lastDuration: null,
     averageDuration: null,
-    totalRuns: 0
+    totalRuns: 0,
+    todayRuns: 0
   }
 };
 
@@ -42,13 +45,32 @@ function initScheduler() {
   logger.info('Initializing scheduler with configuration:');
   logger.info(`- Verbose logging: ${VERBOSE_LOGGING}`);
   logger.info(`- Logs interval: ${GENERATION_LOGS_INTERVAL}ms`);
-  logger.info(`- Discount hours: ${constants.DEEPSEEK_DISCOUNT_START}-${constants.DEEPSEEK_DISCOUNT_END}`);
+  logger.info(`- Daily article quota: ${constants.GENERATION.MAX_ARTICLES_PER_DAY}`);
+  
+  // Reset daily counters at midnight
+  setupDailyReset();
   
   if (process.env.NODE_ENV === 'production') {
     setupProductionScheduler();
   } else {
     setupDevelopmentScheduler();
   }
+}
+
+/**
+ * Setup a cron job to reset daily counters at midnight
+ */
+function setupDailyReset() {
+  cron.schedule('0 0 * * *', () => {
+    logger.info('Resetting daily statistics at midnight');
+    
+    // Reset daily counters
+    jobStats.articleGeneration.todayRuns = 0;
+    jobStats.articleGeneration.todayArticles = 0;
+    jobStats.trendFetching.todayRuns = 0;
+    
+    logger.info('Daily statistics reset complete');
+  });
 }
 
 /**
@@ -114,6 +136,8 @@ async function executeWithLock(lockName, jobFunction) {
     
     // Update average duration
     jobStats[lockName].totalRuns++;
+    jobStats[lockName].todayRuns++;
+    
     if (jobStats[lockName].averageDuration === null) {
       jobStats[lockName].averageDuration = durationMs;
     } else {
@@ -121,6 +145,11 @@ async function executeWithLock(lockName, jobFunction) {
       jobStats[lockName].averageDuration = 
         (jobStats[lockName].averageDuration * (jobStats[lockName].totalRuns - 1) + durationMs) / 
         jobStats[lockName].totalRuns;
+    }
+    
+    // Update article count if this is article generation
+    if (lockName === 'articleGeneration' && result && result.stats) {
+      jobStats.articleGeneration.todayArticles += result.stats.successful || 0;
     }
     
     logger.info(`Job ${lockName} completed successfully in ${durationMs}ms (execution: ${executionTimeMs.toFixed(2)}ms)`);
@@ -134,6 +163,7 @@ async function executeWithLock(lockName, jobFunction) {
     return {
       ...result,
       stats: {
+        ...(result.stats || {}),
         scheduledAt: scheduledTime.toISOString(),
         startedAt: startTime.toISOString(),
         completedAt: endTime.toISOString(),
@@ -157,47 +187,107 @@ async function executeWithLock(lockName, jobFunction) {
     
     // If we want detailed statistics, log them
     if (VERBOSE_LOGGING) {
-      logger.info(`Job ${lockName} statistics: totalRuns=${jobStats[lockName].totalRuns}, avgDuration=${Math.round(jobStats[lockName].averageDuration)}ms`);
+      logger.info(`Job ${lockName} statistics: totalRuns=${jobStats[lockName].totalRuns}, todayRuns=${jobStats[lockName].todayRuns}, avgDuration=${Math.round(jobStats[lockName].averageDuration)}ms`);
     }
   }
 }
 
 /**
- * Set up the production scheduler to run during discount hours
+ * Set up the production scheduler to run daily with quota limits
  */
 function setupProductionScheduler() {
-  logger.info('Setting up production scheduler');
+  logger.info('Setting up production scheduler with quota-based generation');
   
-  // Schedule article generation to run every hour during discount hours
-  // This runs at 0 minutes of every hour between 16:00 and 23:00 (4 PM to 11 PM)
-  const articleGenerationSchedule = `0 ${constants.DEEPSEEK_DISCOUNT_START}-${constants.DEEPSEEK_DISCOUNT_END-1} * * *`;
-  cron.schedule(articleGenerationSchedule, async () => {
+  // Split the daily quota into two batches
+  const morningBatchSize = Math.ceil(constants.GENERATION.MAX_ARTICLES_PER_DAY * 0.6); // 60% in the morning
+  const eveningBatchSize = constants.GENERATION.MAX_ARTICLES_PER_DAY - morningBatchSize; // Remainder in the evening
+  
+  logger.info(`Article generation schedule: morning batch: ${morningBatchSize}, evening batch: ${eveningBatchSize}`);
+  
+  // Schedule morning article generation batch at 9 AM
+  cron.schedule('0 9 * * *', async () => {
     try {
-      logger.info(`Running scheduled article generation (cron: ${articleGenerationSchedule})`);
+      logger.info(`Running morning article generation batch (max: ${morningBatchSize} articles)`);
+      
       const result = await executeWithLock('articleGeneration', async () => {
-        logger.info('Starting scheduled article generation process');
-        const generationResult = await generationService.generateArticlesForAll();
-        logger.info(`Scheduled generation completed: ${JSON.stringify(generationResult.stats)}`);
+        logger.info('Starting morning article generation process');
+        
+        const articlesGenerated = await generationService.countArticlesGeneratedToday();
+        
+        // Skip if we've already generated more than our morning quota
+        if (articlesGenerated >= morningBatchSize) {
+          logger.info(`Already generated ${articlesGenerated} articles today, skipping morning batch`);
+          return { skipped: true, reason: 'quota_reached' };
+        }
+        
+        // Calculate remaining quota for morning batch
+        const remainingQuota = morningBatchSize - articlesGenerated;
+        
+        const generationResult = await generationService.generateArticlesForAll({
+          maxArticlesPerDay: remainingQuota,
+          maxCombinations: 10 // Limit to 10 combinations per batch for diversity
+        });
+        
+        logger.info(`Morning generation completed: ${JSON.stringify(generationResult.stats)}`);
         return generationResult;
       });
       
       if (result.skipped) {
-        logger.warn(`Article generation was skipped: ${result.reason}`);
+        logger.warn(`Morning article generation was skipped: ${result.reason}`);
       } else {
-        logger.info(`Article generation completed with stats: successful=${result.stats.successful}, failed=${result.stats.failed}, total=${result.stats.total}`);
+        logger.info(`Morning article generation completed with stats: successful=${result.stats.successful}, failed=${result.stats.failed}, total=${result.stats.total}`);
       }
     } catch (error) {
-      logger.error(`Critical error in scheduled article generation: ${error.message}`);
+      logger.error(`Critical error in morning article generation: ${error.message}`);
+      logger.error(error.stack);
+    }
+  });
+  
+  // Schedule evening article generation batch at 3 PM
+  cron.schedule('0 15 * * *', async () => {
+    try {
+      logger.info(`Running evening article generation batch (max: ${eveningBatchSize} articles)`);
+      
+      const result = await executeWithLock('articleGeneration', async () => {
+        logger.info('Starting evening article generation process');
+        
+        const articlesGenerated = await generationService.countArticlesGeneratedToday();
+        
+        // Skip if we've already generated more than our total daily quota
+        if (articlesGenerated >= constants.GENERATION.MAX_ARTICLES_PER_DAY) {
+          logger.info(`Already generated ${articlesGenerated} articles today, skipping evening batch`);
+          return { skipped: true, reason: 'quota_reached' };
+        }
+        
+        // Calculate remaining quota for evening batch
+        const remainingQuota = constants.GENERATION.MAX_ARTICLES_PER_DAY - articlesGenerated;
+        
+        const generationResult = await generationService.generateArticlesForAll({
+          maxArticlesPerDay: remainingQuota,
+          maxCombinations: 10 // Limit to 10 combinations per batch for diversity
+        });
+        
+        logger.info(`Evening generation completed: ${JSON.stringify(generationResult.stats)}`);
+        return generationResult;
+      });
+      
+      if (result.skipped) {
+        logger.warn(`Evening article generation was skipped: ${result.reason}`);
+      } else {
+        logger.info(`Evening article generation completed with stats: successful=${result.stats.successful}, failed=${result.stats.failed}, total=${result.stats.total}`);
+      }
+    } catch (error) {
+      logger.error(`Critical error in evening article generation: ${error.message}`);
       logger.error(error.stack);
     }
   });
   
   // Schedule trend fetching to run at 8 AM and 2 PM every day
-  // This ensures we have fresh trends before article generation starts
-  const trendFetchingSchedule = '0 8,14 * * *';
-  cron.schedule(trendFetchingSchedule, async () => {
+  // This ensures we have fresh trends before article generation
+  cron.schedule('0 8,14 * * *', async () => {
     try {
-      logger.info(`Running scheduled trend fetching (cron: ${trendFetchingSchedule})`);
+      logger.info('Running scheduled trend fetching');
+      
       const result = await executeWithLock('trendFetching', async () => {
         logger.info('Starting scheduled trend fetching process');
         const fetchResult = await trendsService.fetchAndStoreAllTrends();
@@ -214,15 +304,15 @@ function setupProductionScheduler() {
     }
   });
   
-  // Additional maintenance job to log statistics daily
-  cron.schedule('0 0 * * *', () => {
+  // Log summary statistics daily
+  cron.schedule('50 23 * * *', () => {
     logger.info('========= DAILY SCHEDULER STATISTICS =========');
-    logger.info(`Article Generation: runs=${jobStats.articleGeneration.totalRuns}, avgDuration=${Math.round(jobStats.articleGeneration.averageDuration)}ms`);
-    logger.info(`Trend Fetching: runs=${jobStats.trendFetching.totalRuns}, avgDuration=${Math.round(jobStats.trendFetching.averageDuration)}ms`);
+    logger.info(`Daily Article Generation: runs=${jobStats.articleGeneration.todayRuns}, articles=${jobStats.articleGeneration.todayArticles}, quota=${constants.GENERATION.MAX_ARTICLES_PER_DAY}, avgDuration=${Math.round(jobStats.articleGeneration.averageDuration)}ms`);
+    logger.info(`Daily Trend Fetching: runs=${jobStats.trendFetching.todayRuns}, avgDuration=${Math.round(jobStats.trendFetching.averageDuration)}ms`);
     logger.info('=============================================');
   });
   
-  logger.info(`Production scheduler set up successfully with article generation at "${articleGenerationSchedule}" and trend fetching at "${trendFetchingSchedule}"`);
+  logger.info('Production scheduler set up successfully');
 }
 
 /**
@@ -251,14 +341,20 @@ async function runFetchTrendsJob() {
 
 /**
  * Run the article generation job manually
+ * @param {Object} options - Generation options
  * @returns {Promise<Object>} Result of the job
  */
-async function runArticleGenerationJob() {
+async function runArticleGenerationJob(options = {}) {
   return executeWithLock('articleGeneration', async () => {
     logger.info('Running manual article generation');
-    const result = await generationService.generateArticlesForAll({
-      forceDevelopment: true
-    });
+    
+    // Default options with force development
+    const generationOptions = {
+      forceDevelopment: true,
+      ...options
+    };
+    
+    const result = await generationService.generateArticlesForAll(generationOptions);
     logger.info(`Manual generation completed: ${JSON.stringify(result.stats)}`);
     return result;
   });
@@ -275,6 +371,11 @@ function getJobStats() {
     activeJobs: {
       articleGeneration: jobLocks.articleGeneration,
       trendFetching: jobLocks.trendFetching
+    },
+    quotaInfo: {
+      dailyArticleQuota: constants.GENERATION.MAX_ARTICLES_PER_DAY,
+      articlesGeneratedToday: jobStats.articleGeneration.todayArticles,
+      remaining: Math.max(0, constants.GENERATION.MAX_ARTICLES_PER_DAY - jobStats.articleGeneration.todayArticles)
     }
   };
 }

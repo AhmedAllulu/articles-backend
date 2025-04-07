@@ -107,6 +107,20 @@ if (process.env.NODE_ENV === 'development') {
 // ✅ Not found and error handlers
 app.use(notFoundHandler);
 app.use(errorHandler);
-
+app.use((req, res, next) => {
+  if (!app.locals.startupLogged) {
+    logger.info('====== System Configuration ======');
+    logger.info(`Environment: ${process.env.NODE_ENV}`);
+    logger.info(`OpenAI API Integration: Enabled`);
+    logger.info(`Daily Article Quota: ${constants.GENERATION.MAX_ARTICLES_PER_DAY} articles`);
+    logger.info(`Min Unused Trends: ${constants.GENERATION.MIN_UNUSED_TRENDS}`);
+    logger.info(`Max Articles Per Category: ${constants.GENERATION.MAX_PER_CATEGORY}`);
+    logger.info(`Max Articles Per Country: ${constants.GENERATION.MAX_PER_COUNTRY}`);
+    logger.info('=================================');
+    
+    app.locals.startupLogged = true;
+  }
+  next();
+});
 // ✅ Export app
 module.exports = app;

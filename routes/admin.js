@@ -254,7 +254,167 @@ router.post('/trends/fetch-all', auth.requireAdmin, adminController.fetchAllTren
  *         $ref: '#/components/responses/ServerError'
  */
 router.post('/trends/fetch', adminController.fetchTrends);
-
+/**
+ * @swagger
+ * /api/admin/generation/stats:
+ *   get:
+ *     summary: Get generation statistics
+ *     tags: [Admin]
+ *     description: Get daily and total generation statistics
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Generation statistics retrieved successfully
+ */
+router.get('/generation/stats', auth.requireAdmin, async (req, res) => {
+    try {
+      // Get scheduler stats
+      const schedulerStats = scheduler.getJobStats();
+      
+      // Get articles generated today
+      const articlesGeneratedToday = await generationService.countArticlesGeneratedToday();
+      
+      res.json({
+        success: true,
+        data: {
+          current: {
+            date: new Date().toISOString(),
+            articlesGeneratedToday,
+            quotaRemaining: Math.max(0, schedulerStats.quotaInfo.dailyArticleQuota - articlesGeneratedToday)
+          },
+          scheduler: schedulerStats,
+          activeJobs: {
+            articleGeneration: scheduler.isJobRunning('articleGeneration'),
+            trendFetching: scheduler.isJobRunning('trendFetching')
+          }
+        },
+        message: 'Generation statistics retrieved successfully',
+        timestamp: new Date().toISOString()
+      });
+    } catch (error) {
+      logger.error(`Error getting generation stats: ${error.message}`);
+      res.status(500).json({
+        success: false,
+        error: {
+          message: error.message,
+          status: 500
+        },
+        timestamp: new Date().toISOString()
+      });
+    }
+  });
+  
+  /**
+   * @swagger
+   * /api/admin/generation/run:
+   *   post:
+   *     summary: Run article generation manually
+   *     tags: [Admin]
+   *     description: Manually trigger article generation with options
+   *     security:
+   *       - bearerAuth: []
+   *     requestBody:
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             type: object
+   *             properties:
+   *               maxArticles:
+   *                 type: integer
+   *                 description: Maximum number of articles to generate
+   *                 default: 5
+   *               maxCombinations:
+   *                 type: integer
+   *                 description: Maximum number of category/country combinations
+   *                 default: 5
+   *     responses:
+   *       200:
+   *         description: Generation started successfully
+   *       400:
+   *         description: Invalid request parameters
+   *       401:
+   *         description: Unauthorized
+   *       403:
+   *         description: Forbidden
+   *       500:
+   *         description: Server error
+   */
+  router.post('/generation/run', auth.requireAdmin, async (req, res) => {
+    try {
+      const { maxArticles = 5, maxCombinations = 5 } = req.body;
+      
+      // Validate parameters
+      if (maxArticles <= 0 || maxArticles > 25) {
+        return res.status(400).json({
+          success: false,
+          error: {
+            message: 'maxArticles must be between 1 and 25',
+            status: 400
+          },
+          timestamp: new Date().toISOString()
+        });
+      }
+      
+      if (maxCombinations <= 0 || maxCombinations > 35) {
+        return res.status(400).json({
+          success: false,
+          error: {
+            message: 'maxCombinations must be between 1 and 35',
+            status: 400
+          },
+          timestamp: new Date().toISOString()
+        });
+      }
+      
+      // Check if job is already running
+      if (scheduler.isJobRunning('articleGeneration')) {
+        return res.status(400).json({
+          success: false,
+          error: {
+            message: 'Article generation is already running',
+            status: 400
+          },
+          timestamp: new Date().toISOString()
+        });
+      }
+      
+      // Start generation in the background
+      scheduler.runArticleGenerationJob({
+        maxArticlesPerDay: maxArticles,
+        maxCombinations: maxCombinations,
+        forceDevelopment: true
+      }).catch(error => {
+        logger.error(`Error in manual generation: ${error.message}`);
+      });
+      
+      // Return immediately
+      res.json({
+        success: true,
+        data: {
+          message: 'Article generation started in the background',
+          options: {
+            maxArticles,
+            maxCombinations
+          }
+        },
+        message: 'Generation started successfully',
+        timestamp: new Date().toISOString()
+      });
+    } catch (error) {
+      logger.error(`Error starting generation: ${error.message}`);
+      res.status(500).json({
+        success: false,
+        error: {
+          message: error.message,
+          status: 500
+        },
+        timestamp: new Date().toISOString()
+      });
+    }
+  });
+  
 /**
  * @swagger
  * /api/admin/articles/generate-from-trends:
