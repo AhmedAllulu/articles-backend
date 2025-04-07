@@ -96,7 +96,7 @@ class OpenAIService {
       1. Have a clear, engaging headline
       2. Include an introduction, body, and conclusion
       3. Be factual and informative
-      4. Be between 500-800 words
+      4. Be between 800-1200 words
       5. Use formal journalistic style appropriate for a news website
       
       Format your response as:
