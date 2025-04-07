@@ -1,10 +1,8 @@
-// services/deepSeekService.js
+// services/openAiService.js
 const logger = require('../config/logger');
 const OpenAI = require('openai');
 
-  
-
-class DeepSeekService {
+class OpenAIService {
   constructor() {
     // Configure retries
     this.maxRetries = 3;
@@ -14,7 +12,7 @@ class DeepSeekService {
     this.cache = new Map();
     this.cacheTimeout = 30 * 60 * 1000; // 30 minutes
     
-    // Initialize OpenAI client with DeepSeek configuration
+    // Initialize OpenAI client
     this.openai = new OpenAI({ 
       baseURL: process.env.OpenAI_API_URL,
       apiKey: process.env.OpenAI_API_KEY
@@ -22,7 +20,7 @@ class DeepSeekService {
   }
   
   /**
-   * Generate an article using OpenAI's search preview with retries
+   * Generate an article using OpenAI with retries
    * @param {string} keyword - Trending keyword to base the article on
    * @param {string} language - Language code to generate the article in
    * @param {string} countryCode - Country code for localization
@@ -43,13 +41,13 @@ class DeepSeekService {
     let lastError;
     for (let attempt = 1; attempt <= this.maxRetries; attempt++) {
       try {
-        // Create search query based on keyword
-        const searchQuery = this._createSearchQuery(keyword, language, countryCode);
+        // Create prompt based on keyword
+        const prompt = this._createSearchQuery(keyword, language, countryCode);
 
-        // Make API call to GPT for search preview
+        // Make API call to OpenAI
         const response = await this.openai.completions.create({
-          model: "gpt-4o-mini-search-preview-2025-03-11", // Adjust to the appropriate GPT model
-          prompt: searchQuery,
+          model: "gpt-4o-mini-search-preview-2025-03-11", // Adjust to the appropriate OpenAI model
+          prompt: prompt,
           temperature: 0.7,
           max_tokens: 2000
         });
@@ -81,14 +79,14 @@ class DeepSeekService {
   }
   
   /**
-   * Create a prompt for the DeepSeek API
+   * Create a search query for the OpenAI API
    * @private
    * @param {string} keyword - Trending keyword
    * @param {string} language - Language code
    * @param {string} countryCode - Country code
-   * @returns {string} Formatted prompt
+   * @returns {string} Formatted search query
    */
-  _createPrompt(keyword, language, countryCode) {
+  _createSearchQuery(keyword, language, countryCode) {
     return `
       You are a professional journalist writing a news article about the trending topic: "${keyword}".
       
@@ -112,7 +110,7 @@ class DeepSeekService {
   /**
    * Parse generated content into title and body
    * @private
-   * @param {string} generatedText - Raw text from DeepSeek API
+   * @param {string} generatedText - Raw text from OpenAI API
    * @returns {Object} Object with title and content
    */
   _parseGeneratedContent(generatedText) {
@@ -178,5 +176,4 @@ class DeepSeekService {
   }
 }
 
-module.exports = new DeepSeekService();
-  
+module.exports = new OpenAIService();

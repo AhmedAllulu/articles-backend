@@ -1,7 +1,7 @@
 // services/generationService.js
 const logger = require('../config/logger');
 const trendsService = require('./trendsService');
-const deepSeekService = require('./openAiService');
+const openAiService = require('./openAiService');
 const db = require('../db/connections');
 const constants = require('../config/constants');
 const countries = require('../config/countries');
@@ -94,19 +94,12 @@ class GenerationService {
     return { message: 'Generation completed', stats };
   }
   
-  /**
-   * Generate an article for a single trend
-   * @private
-   * @param {string} category - Category
-   * @param {Object} country - Country object
-   * @param {Object} trend - Trend object
-   */
   async _generateArticleForTrend(category, country, trend) {
     try {
       logger.info(`Generating article for ${category}/${country.code}/${trend.keyword}`);
       
-      // Generate article using DeepSeek
-      const article = await deepSeekService.generateArticle(
+      // Generate article using OpenAI
+      const article = await openAiService.generateArticle(
         trend.keyword,
         country.language,
         country.code
