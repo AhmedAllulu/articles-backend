@@ -1548,3 +1548,8 @@
 [31m    at endReadableNT (node:internal/streams/readable:1696:12)[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)[39m
 2025-04-05 17:04:04:44 [31merror[39m: [31mFailed to load SSL certificates: SSL paths not configured[39m
+2025-04-07 00:57:52:5752 [31merror[39m: [31mFailed to fetch trends: trendsService.fetchAndStoreTrends is not a function[39m
+2025-04-07 00:59:03:593 [31merror[39m: [31mFailed to fetch trends: trendsService.fetchAndStoreTrends is not a function[39m
+2025-04-07 00:59:35:5935 [31merror[39m: [31mFailed to fetch trends: trendsService.fetchAndStoreTrends is not a function[39m
+2025-04-07 01:00:23:023 [31merror[39m: [31mFailed to fetch trends: this._generateMockTrends is not a function[39m
+2025-04-07 01:02:00:20 [31merror[39m: [31mFailed to fetch trends: this._generateMockTrends is not a function[39m

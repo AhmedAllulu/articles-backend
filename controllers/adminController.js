@@ -128,7 +128,7 @@ async function fetchTrends(req, res) {
     
     // Fetch and store trends
     try {
-      const result = await trendsService.fetchAndStoreTrends(category, countryCode);
+      const result = await trendsService.fetchTrendingKeywords(category, countryCode);
       
       return res.json(formatResponse({
         message: 'Trends fetched and stored successfully',

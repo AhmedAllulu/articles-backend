@@ -1,57 +1,52 @@
 // services/trendsService.js
+const axios = require('axios');
 const logger = require('../config/logger');
 const db = require('../db/connections');
 const constants = require('../config/constants');
+const { getLanguageForCountry } = require('../utils/languageUtils');
 
 class TrendsService {
-
-/**
-   * Fetch trending keywords from Google Trends API
+  /**
+   * Fetch trending keywords from external API
    * @param {string} category - Category to fetch trends for
    * @param {string} countryCode - Country code to fetch trends for
    * @param {number} limit - Maximum number of trends to fetch
    * @returns {Promise<Array<string>>} Array of trending keywords
    */
-async fetchTrendingKeywords(category, countryCode, limit = 20) {
-  try {
-    logger.info(`Fetching trending keywords for ${category}/${countryCode}`);
-
-    // Get language for the country
-    const language = getLanguageForCountry(countryCode);
-
-    // Use google-trends-api to fetch related queries
-    const response = await googleTrends.relatedQueries({
-      keyword: category, // Map category to keyword
-      geo: countryCode, // Country code for geographic targeting
-      hl: language, // Language for results
-      startTime: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), // Last 7 days
-    });
-
-    // Parse the JSON response
-    const data = JSON.parse(response);
-
-    // Process response based on google-trends-api structure
-    if (data && data.default && data.default.rankedList) {
-      const trends = data.default.rankedList[0].rankedKeyword // Top related queries
-        .map(item => item.query) // Extract the keyword
-        .slice(0, limit); // Apply limit
-      logger.info(`Fetched ${trends.length} trending keywords for ${category}/${countryCode}`);
-      return trends;
+  async fetchTrendingKeywords(category, countryCode, limit = 20) {
+    try {
+      logger.info(`Fetching trending keywords for ${category}/${countryCode}`);
+      
+      // Get language for the country
+      const language = getLanguageForCountry(countryCode);
+      
+      // Make API call to trends API
+      const response = await axios.get(process.env.TRENDS_API_URL, {
+        params: {
+          api_key: process.env.TRENDS_API_KEY,
+          category: category,
+          country: countryCode,
+          language: language,
+          limit: limit
+        },
+        timeout: 10000 // 10 second timeout
+      });
+      
+      // Process response based on the API structure
+      if (response.data && response.data.trends) {
+        const trends = response.data.trends.map(t => t.keyword || t);
+        logger.info(`Fetched ${trends.length} trending keywords for ${category}/${countryCode}`);
+        return trends;
+      }
+      
+      logger.warn(`No trends found for ${category}/${countryCode}`);
+      return [];
+    } catch (error) {
+      logger.error(`Error fetching trends for ${category}/${countryCode}: ${error.message}`);
+      throw error;
     }
-
-    logger.warn(`No trends found for ${category}/${countryCode}`);
-    return [];
-  } catch (error) {
-    // If we're in development mode, generate mock trends for testing
-    if (process.env.NODE_ENV === 'development') {
-      logger.warn(`Error fetching trends, using mock data: ${error.message}`);
-      return this._generateMockTrends(category, countryCode, limit);
-    }
-
-    logger.error(`Error fetching trends for ${category}/${countryCode}: ${error.message}`);
-    throw error;
   }
-}
+
   /**
    * Store trends in the database
    * @param {string} category - Category of the trends

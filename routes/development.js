@@ -71,7 +71,7 @@ router.post('/fetch-trends', async (req, res) => {
       });
     }
     
-    const result = await trendsService.fetchAndStoreTrends(
+    const result = await trendsService.fetchTrendingKeywords(
       category,
       countryCode
     );
