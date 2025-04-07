@@ -2,6 +2,9 @@
 const express = require('express');
 const adminController = require('../controllers/adminController');
 const auth = require('../middleware/auth');
+const logger = require('../config/logger');
+const scheduler = require('../config/scheduler');
+const generationService = require('../services/generationService');
 
 const router = express.Router();
 

@@ -12,10 +12,10 @@ class OpenAIService {
     this.cache = new Map();
     this.cacheTimeout = 30 * 60 * 1000; // 30 minutes
     
-    // Initialize OpenAI client
+    // Initialize OpenAI client with correct base URL
     this.openai = new OpenAI({ 
-      baseURL: process.env.OpenAI_API_URL,
       apiKey: process.env.OpenAI_API_KEY
+      // Don't specify baseURL - use OpenAI's default
     });
   }
   
@@ -42,18 +42,35 @@ class OpenAIService {
     for (let attempt = 1; attempt <= this.maxRetries; attempt++) {
       try {
         // Create prompt based on keyword
-        const prompt = this._createSearchQuery(keyword, language, countryCode);
+        const systemPrompt = `You are a professional journalist writing a news article about the trending topic: "${keyword}".`;
+        const userPrompt = `Write a comprehensive, factual news article in ${language} language that would be appropriate for readers in ${countryCode}.
+        
+        The article should:
+        1. Have a clear, engaging headline
+        2. Include an introduction, body, and conclusion
+        3. Be factual and informative
+        4. Be between 800-1200 words
+        5. Use formal journalistic style appropriate for a news website
+        
+        Format your response as:
+        
+        TITLE: [Your headline here]
+        
+        [Article content here]`;
 
-        // Make API call to OpenAI
-        const response = await this.openai.completions.create({
-          model: "gpt-4o-mini-search-preview-2025-03-11", // Adjust to the appropriate OpenAI model
-          prompt: prompt,
+        // Use chat completions API instead of completions
+        const response = await this.openai.chat.completions.create({
+          model: "gpt-4o-mini-search-preview", // Using a standard model that's widely available
+          messages: [
+            { role: "system", content: systemPrompt },
+            { role: "user", content: userPrompt }
+          ],
           temperature: 0.7,
           max_tokens: 2000
         });
 
-        // Extract title and content from generated text
-        const generatedText = response.choices[0].text;
+        // Extract content from chat completion response
+        const generatedText = response.choices[0].message.content;
         const article = this._parseGeneratedContent(generatedText);
 
         // Cache the successful result
@@ -76,35 +93,6 @@ class OpenAIService {
     // If all retries failed, throw the error
     logger.error(`All attempts failed for "${keyword}". Error: ${lastError.message}`);
     throw new Error(`Failed to generate article for "${keyword}" after ${this.maxRetries} attempts: ${lastError.message}`);
-  }
-  
-  /**
-   * Create a search query for the OpenAI API
-   * @private
-   * @param {string} keyword - Trending keyword
-   * @param {string} language - Language code
-   * @param {string} countryCode - Country code
-   * @returns {string} Formatted search query
-   */
-  _createSearchQuery(keyword, language, countryCode) {
-    return `
-      You are a professional journalist writing a news article about the trending topic: "${keyword}".
-      
-      Write a comprehensive, factual news article in ${language} language that would be appropriate for readers in ${countryCode}.
-      
-      The article should:
-      1. Have a clear, engaging headline
-      2. Include an introduction, body, and conclusion
-      3. Be factual and informative
-      4. Be between 800-1200 words
-      5. Use formal journalistic style appropriate for a news website
-      
-      Format your response as:
-      
-      TITLE: [Your headline here]
-      
-      [Article content here]
-    `;
   }
   
   /**

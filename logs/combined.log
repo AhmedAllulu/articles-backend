@@ -7846,3 +7846,508 @@
 2025-04-07 15:52:41:5241 [32minfo[39m: [32mScheduler initialized[39m
 2025-04-07 15:52:41:5241 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
 2025-04-07 15:52:41:5241 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 17:19:17:1917 [33mwarn[39m: [33mRoute not found: GET /api-docs%1B[39m[39m
+2025-04-07 17:19:17:1917 [33mwarn[39m: [33mRoute not found: GET /favicon.ico[39m
+2025-04-07 17:22:53:2253 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 17:22:53:2253 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 17:22:55:2255 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mHTTPS server created with SSL certificates[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mInitializing scheduler with configuration:[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32m- Verbose logging: true[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32m- Logs interval: 60000ms[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32m- Daily article quota: 25[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mSetting up production scheduler with quota-based generation[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mArticle generation schedule: morning batch: 15, evening batch: 10[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
+2025-04-07 17:22:56:2256 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 17:24:17:2417 [31merror[39m: [31mUnhandled Promise Rejection[39m
+2025-04-07 17:25:07:257 [31merror[39m: [31mUnhandled Promise Rejection[39m
+2025-04-07 17:55:33:5533 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 17:55:33:5533 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mHTTPS server created with SSL certificates[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mInitializing scheduler with configuration:[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32m- Verbose logging: true[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32m- Logs interval: 60000ms[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32m- Daily article quota: 25[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mSetting up production scheduler with quota-based generation[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mArticle generation schedule: morning batch: 15, evening batch: 10[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
+2025-04-07 17:55:36:5536 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 17:55:50:5550 [31merror[39m: [31mUnhandled Promise Rejection[39m
+2025-04-07 17:59:21:5921 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 17:59:21:5921 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mHTTPS server created with SSL certificates[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mInitializing scheduler with configuration:[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32m- Verbose logging: true[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32m- Logs interval: 60000ms[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32m- Daily article quota: 25[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mSetting up production scheduler with quota-based generation[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mArticle generation schedule: morning batch: 15, evening batch: 10[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
+2025-04-07 17:59:23:5923 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 17:59:28:5928 [32minfo[39m: [32mJob articleGeneration scheduled at: 2025-04-07T17:59:28.331Z[39m
+2025-04-07 17:59:28:5928 [32minfo[39m: [32mStarting job: articleGeneration at 2025-04-07T17:59:28.331Z (delay: 0ms)[39m
+2025-04-07 17:59:28:5928 [32minfo[39m: [32mRunning manual article generation[39m
+2025-04-07 17:59:28:5928 [32minfo[39m: [32mArticle generation started at 2025-04-07T17:59:28.332Z with max articles: 5[39m
+2025-04-07 17:59:28:5928 [32minfo[39m: [32mInitial memory usage: RSS=104.84 MB, Heap=32.17 MB/58.13 MB[39m
+2025-04-07 17:59:30:5930 [32minfo[39m: [32mAlready generated 2 articles today[39m
+2025-04-07 17:59:30:5930 [32minfo[39m: [32mStarting article generation with remaining quota: 3[39m
+2025-04-07 17:59:30:5930 [32minfo[39m: [32mFound 35 combinations with unused trends[39m
+2025-04-07 17:59:30:5930 [32minfo[39m: [32mSelected 3 combinations for article generation[39m
+2025-04-07 17:59:30:5930 [32minfo[39m: [32mProcessing tech/US with 50 unused trends[39m
+2025-04-07 17:59:30:5930 [32minfo[39m: [32mGenerating article for "of the globe" in en (US)[39m
+2025-04-07 17:59:30:5930 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:31:5931 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:34:5934 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:34:5934 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:34:5934 [31merror[39m: [31mError generating article for "of the globe" during generating content after 3570ms: Failed to generate article for "of the globe" after 3 attempts: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:34:5934 [31merror[39m: [31mFailed to generate article for tech/US/of the globe: Failed to generate article for "of the globe" after 3 attempts: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:34:5934 [32minfo[39m: [32mMemory after processing tech/US: RSS=82.71 MB, Heap=23.59 MB/25.13 MB[39m
+2025-04-07 17:59:34:5934 [32minfo[39m: [32mProcessing tech/SA with 41 unused trends[39m
+2025-04-07 17:59:34:5934 [32minfo[39m: [32mGenerating article for "of the globe" in ar (SA)[39m
+2025-04-07 17:59:34:5934 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:35:5935 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:37:5937 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:37:5937 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:37:5937 [31merror[39m: [31mError generating article for "of the globe" during generating content after 3449ms: Failed to generate article for "of the globe" after 3 attempts: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:37:5937 [31merror[39m: [31mFailed to generate article for tech/SA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:37:5937 [32minfo[39m: [32mMemory after processing tech/SA: RSS=83.46 MB, Heap=23.57 MB/26.13 MB[39m
+2025-04-07 17:59:37:5937 [32minfo[39m: [32mProcessing tech/CA with 23 unused trends[39m
+2025-04-07 17:59:37:5937 [32minfo[39m: [32mGenerating article for "of the globe" in en (CA)[39m
+2025-04-07 17:59:37:5937 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:38:5938 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:41:5941 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:41:5941 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:41:5941 [31merror[39m: [31mError generating article for "of the globe" during generating content after 3481ms: Failed to generate article for "of the globe" after 3 attempts: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:41:5941 [31merror[39m: [31mFailed to generate article for tech/CA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 405 Not allowed to POST on /v1/models/completions. (HINT: Perhaps you meant to use a different HTTP method?)[39m
+2025-04-07 17:59:41:5941 [32minfo[39m: [32mMemory after processing tech/CA: RSS=84.33 MB, Heap=24.31 MB/26.13 MB[39m
+2025-04-07 17:59:41:5941 [32minfo[39m: [32mFinal memory usage: RSS=84.33 MB (NaN undefined), Heap=24.32 MB (NaN undefined)[39m
+2025-04-07 17:59:41:5941 [32minfo[39m: [32mArticle generation completed in 12680ms (successful: 0, failed: 3, skipped: 0, total: 3)[39m
+2025-04-07 17:59:41:5941 [32minfo[39m: [32mManual generation completed: {"total":3,"successful":0,"failed":3,"skipped":0,"byCategory":{"tech":{"total":3,"successful":0,"failed":3,"skipped":0}},"timing":{"start":1744048768332,"end":1744048781012,"duration":12680}}[39m
+2025-04-07 17:59:41:5941 [32minfo[39m: [32mJob articleGeneration completed successfully in 12681ms (execution: 12680.45ms)[39m
+2025-04-07 17:59:41:5941 [32minfo[39m: [32mJob articleGeneration statistics: totalRuns=1, todayRuns=1, avgDuration=12681ms[39m
+2025-04-07 18:03:47:347 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 18:03:47:347 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-07 18:03:47:347 [32minfo[39m: [32mHTTPS server closed[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mHTTPS server created with SSL certificates[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mInitializing scheduler with configuration:[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32m- Verbose logging: true[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32m- Logs interval: 60000ms[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32m- Daily article quota: 25[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mSetting up production scheduler with quota-based generation[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mArticle generation schedule: morning batch: 15, evening batch: 10[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
+2025-04-07 18:03:48:348 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mJob articleGeneration scheduled at: 2025-04-07T18:03:51.031Z[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mStarting job: articleGeneration at 2025-04-07T18:03:51.031Z (delay: 0ms)[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mRunning manual article generation[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mArticle generation started at 2025-04-07T18:03:51.032Z with max articles: 5[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mInitial memory usage: RSS=102.63 MB, Heap=32.13 MB/58.13 MB[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mAlready generated 2 articles today[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mStarting article generation with remaining quota: 3[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mFound 35 combinations with unused trends[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mSelected 3 combinations for article generation[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mProcessing tech/US with 50 unused trends[39m
+2025-04-07 18:03:51:351 [32minfo[39m: [32mGenerating article for "of the globe" in en (US)[39m
+2025-04-07 18:03:51:351 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:52:352 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:54:354 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:54:354 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:54:354 [31merror[39m: [31mError generating article for "of the globe" during generating content after 3543ms: Failed to generate article for "of the globe" after 3 attempts: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:54:354 [31merror[39m: [31mFailed to generate article for tech/US/of the globe: Failed to generate article for "of the globe" after 3 attempts: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:54:354 [32minfo[39m: [32mMemory after processing tech/US: RSS=105.75 MB, Heap=35.43 MB/58.38 MB[39m
+2025-04-07 18:03:54:354 [32minfo[39m: [32mProcessing tech/SA with 41 unused trends[39m
+2025-04-07 18:03:54:354 [32minfo[39m: [32mGenerating article for "of the globe" in ar (SA)[39m
+2025-04-07 18:03:54:354 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:55:355 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:58:358 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:58:358 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:58:358 [31merror[39m: [31mError generating article for "of the globe" during generating content after 3431ms: Failed to generate article for "of the globe" after 3 attempts: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:58:358 [31merror[39m: [31mFailed to generate article for tech/SA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:58:358 [32minfo[39m: [32mMemory after processing tech/SA: RSS=106.63 MB, Heap=36.14 MB/58.38 MB[39m
+2025-04-07 18:03:58:358 [32minfo[39m: [32mProcessing tech/CA with 23 unused trends[39m
+2025-04-07 18:03:58:358 [32minfo[39m: [32mGenerating article for "of the globe" in en (CA)[39m
+2025-04-07 18:03:58:358 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:03:59:359 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:04:01:41 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:04:01:41 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:04:01:41 [31merror[39m: [31mError generating article for "of the globe" during generating content after 3440ms: Failed to generate article for "of the globe" after 3 attempts: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:04:01:41 [31merror[39m: [31mFailed to generate article for tech/CA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 401 Incorrect API key provided: sk-proj-********************************************************************************************************************************************************aQYA. You can find your API key at https://platform.openai.com/account/api-keys.[39m
+2025-04-07 18:04:01:41 [32minfo[39m: [32mMemory after processing tech/CA: RSS=107.38 MB, Heap=36.83 MB/58.38 MB[39m
+2025-04-07 18:04:01:41 [32minfo[39m: [32mFinal memory usage: RSS=107.38 MB (+4.75 MB), Heap=36.84 MB (+4.7 MB)[39m
+2025-04-07 18:04:01:41 [32minfo[39m: [32mArticle generation completed in 10520ms (successful: 0, failed: 3, skipped: 0, total: 3)[39m
+2025-04-07 18:04:01:41 [32minfo[39m: [32mManual generation completed: {"total":3,"successful":0,"failed":3,"skipped":0,"byCategory":{"tech":{"total":3,"successful":0,"failed":3,"skipped":0}},"timing":{"start":1744049031032,"end":1744049041552,"duration":10520}}[39m
+2025-04-07 18:04:01:41 [32minfo[39m: [32mJob articleGeneration completed successfully in 10522ms (execution: 10521.81ms)[39m
+2025-04-07 18:04:01:41 [32minfo[39m: [32mJob articleGeneration statistics: totalRuns=1, todayRuns=1, avgDuration=10522ms[39m
+2025-04-07 18:06:48:648 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 18:06:48:648 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-07 18:06:48:648 [32minfo[39m: [32mHTTPS server closed[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mHTTPS server created with SSL certificates[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mInitializing scheduler with configuration:[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32m- Verbose logging: true[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32m- Logs interval: 60000ms[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32m- Daily article quota: 25[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mSetting up production scheduler with quota-based generation[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mArticle generation schedule: morning batch: 15, evening batch: 10[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
+2025-04-07 18:06:49:649 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mJob articleGeneration scheduled at: 2025-04-07T18:09:19.394Z[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mStarting job: articleGeneration at 2025-04-07T18:09:19.395Z (delay: 1ms)[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mRunning manual article generation[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mArticle generation started at 2025-04-07T18:09:19.395Z with max articles: 5[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mInitial memory usage: RSS=81.11 MB, Heap=23.23 MB/24.88 MB[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mAlready generated 2 articles today[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mStarting article generation with remaining quota: 3[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mFound 35 combinations with unused trends[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mSelected 3 combinations for article generation[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mProcessing tech/US with 50 unused trends[39m
+2025-04-07 18:09:19:919 [32minfo[39m: [32mGenerating article for "of the globe" in en (US)[39m
+2025-04-07 18:09:33:933 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:35:935 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:40:940 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:40:940 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:40:940 [31merror[39m: [31mError generating article for "of the globe" during generating content after 20701ms: Failed to generate article for "of the globe" after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:40:940 [31merror[39m: [31mFailed to generate article for tech/US/of the globe: Failed to generate article for "of the globe" after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:40:940 [32minfo[39m: [32mMemory after processing tech/US: RSS=83.22 MB, Heap=24.65 MB/26.13 MB[39m
+2025-04-07 18:09:40:940 [32minfo[39m: [32mProcessing tech/SA with 41 unused trends[39m
+2025-04-07 18:09:40:940 [32minfo[39m: [32mGenerating article for "of the globe" in ar (SA)[39m
+2025-04-07 18:09:42:942 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:46:946 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:51:951 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:51:951 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:51:951 [31merror[39m: [31mError generating article for "of the globe" during generating content after 11671ms: Failed to generate article for "of the globe" after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:51:951 [31merror[39m: [31mFailed to generate article for tech/SA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:09:51:951 [32minfo[39m: [32mMemory after processing tech/SA: RSS=83.52 MB, Heap=24.72 MB/26.38 MB[39m
+2025-04-07 18:09:51:951 [32minfo[39m: [32mProcessing tech/CA with 23 unused trends[39m
+2025-04-07 18:09:51:951 [32minfo[39m: [32mGenerating article for "of the globe" in en (CA)[39m
+2025-04-07 18:09:54:954 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:10:00:100 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:10:04:104 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:10:04:104 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:10:04:104 [31merror[39m: [31mError generating article for "of the globe" during generating content after 12599ms: Failed to generate article for "of the globe" after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:10:04:104 [31merror[39m: [31mFailed to generate article for tech/CA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.[39m
+2025-04-07 18:10:04:104 [32minfo[39m: [32mMemory after processing tech/CA: RSS=84.19 MB, Heap=25.41 MB/26.38 MB[39m
+2025-04-07 18:10:04:104 [32minfo[39m: [32mFinal memory usage: RSS=84.19 MB (+3.08 MB), Heap=25.41 MB (+2.18 MB)[39m
+2025-04-07 18:10:04:104 [32minfo[39m: [32mArticle generation completed in 45120ms (successful: 0, failed: 3, skipped: 0, total: 3)[39m
+2025-04-07 18:10:04:104 [32minfo[39m: [32mManual generation completed: {"total":3,"successful":0,"failed":3,"skipped":0,"byCategory":{"tech":{"total":3,"successful":0,"failed":3,"skipped":0}},"timing":{"start":1744049359395,"end":1744049404515,"duration":45120}}[39m
+2025-04-07 18:10:04:104 [32minfo[39m: [32mJob articleGeneration completed successfully in 45121ms (execution: 45120.99ms)[39m
+2025-04-07 18:10:04:104 [32minfo[39m: [32mJob articleGeneration statistics: totalRuns=1, todayRuns=1, avgDuration=45121ms[39m
+2025-04-07 18:14:32:1432 [32minfo[39m: [32mSIGINT received, starting graceful shutdown...[39m
+2025-04-07 18:14:32:1432 [32minfo[39m: [32m0 requests still in progress[39m
+2025-04-07 18:14:32:1432 [32minfo[39m: [32mHTTPS server closed[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mAll database connection pools initialized[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mDatabase connection pools initialized[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/US[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/GB[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/CA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/DE[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/FR[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/SA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for tech/AU[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mConnected to sports database[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/US[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/GB[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/CA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/DE[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/FR[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/SA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for sports/AU[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mConnected to politics database[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/US[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/GB[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/CA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/DE[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/FR[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/SA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for politics/AU[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mConnected to health database[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/US[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/GB[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/CA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/DE[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/FR[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/SA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for health/AU[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mConnected to general database[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/US[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/GB[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/CA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/DE[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/FR[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/SA[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mEnsured schema and tables for general/AU[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mDatabase schemas initialized[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mAdmin database tables initialized[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mAdmin database initialized[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mHTTPS server created with SSL certificates[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mInitializing scheduler with configuration:[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32m- Verbose logging: true[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32m- Logs interval: 60000ms[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32m- Daily article quota: 25[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mSetting up production scheduler with quota-based generation[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mArticle generation schedule: morning batch: 15, evening batch: 10[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mProduction scheduler set up successfully[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mScheduler initialized[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mServer running on HTTPS port 3300[39m
+2025-04-07 18:14:33:1433 [32minfo[39m: [32mAPI Documentation available at https://localhost:3300/api-docs[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mJob articleGeneration scheduled at: 2025-04-07T18:14:36.945Z[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mStarting job: articleGeneration at 2025-04-07T18:14:36.945Z (delay: 0ms)[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mRunning manual article generation[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mArticle generation started at 2025-04-07T18:14:36.946Z with max articles: 5[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mInitial memory usage: RSS=102.38 MB, Heap=32.2 MB/57.88 MB[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mAlready generated 2 articles today[39m
+2025-04-07 18:14:36:1436 [32minfo[39m: [32mStarting article generation with remaining quota: 3[39m
+2025-04-07 18:14:37:1437 [32minfo[39m: [32mFound 35 combinations with unused trends[39m
+2025-04-07 18:14:37:1437 [32minfo[39m: [32mSelected 3 combinations for article generation[39m
+2025-04-07 18:14:37:1437 [32minfo[39m: [32mProcessing tech/US with 50 unused trends[39m
+2025-04-07 18:14:37:1437 [32minfo[39m: [32mGenerating article for "of the globe" in en (US)[39m
+2025-04-07 18:14:38:1438 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:14:39:1439 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:14:41:1441 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:14:41:1441 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:14:41:1441 [31merror[39m: [31mError generating article for "of the globe" during generating content after 4378ms: Failed to generate article for "of the globe" after 3 attempts: 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:14:41:1441 [31merror[39m: [31mFailed to generate article for tech/US/of the globe: Failed to generate article for "of the globe" after 3 attempts: 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:14:41:1441 [32minfo[39m: [32mMemory after processing tech/US: RSS=105.75 MB, Heap=35.75 MB/58.38 MB[39m
+2025-04-07 18:14:41:1441 [32minfo[39m: [32mProcessing tech/SA with 41 unused trends[39m
+2025-04-07 18:14:41:1441 [32minfo[39m: [32mGenerating article for "of the globe" in ar (SA)[39m
+2025-04-07 18:15:03:153 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
