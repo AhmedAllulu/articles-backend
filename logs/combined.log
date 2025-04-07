@@ -8351,3 +8351,14 @@
 2025-04-07 18:14:41:1441 [32minfo[39m: [32mProcessing tech/SA with 41 unused trends[39m
 2025-04-07 18:14:41:1441 [32minfo[39m: [32mGenerating article for "of the globe" in ar (SA)[39m
 2025-04-07 18:15:03:153 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:15:26:1526 [33mwarn[39m: [33mAttempt 2/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:15:36:1536 [32minfo[39m: [32mJob articleGeneration still running after 1m 0s (interval #1)[39m
+2025-04-07 18:15:48:1548 [33mwarn[39m: [33mAttempt 3/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:15:48:1548 [31merror[39m: [31mAll attempts failed for "of the globe". Error: 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:15:48:1548 [31merror[39m: [31mError generating article for "of the globe" during generating content after 67572ms: Failed to generate article for "of the globe" after 3 attempts: 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:15:48:1548 [31merror[39m: [31mFailed to generate article for tech/SA/of the globe: Failed to generate article for "of the globe" after 3 attempts: 400 Model incompatible request argument supplied: temperature[39m
+2025-04-07 18:15:48:1548 [32minfo[39m: [32mMemory after processing tech/SA: RSS=81.02 MB, Heap=24.5 MB/25.63 MB[39m
+2025-04-07 18:15:48:1548 [32minfo[39m: [32mProcessing tech/CA with 23 unused trends[39m
+2025-04-07 18:15:49:1549 [32minfo[39m: [32mConnected to tech database[39m
+2025-04-07 18:15:49:1549 [32minfo[39m: [32mGenerating article for "of the globe" in en (CA)[39m
+2025-04-07 18:16:09:169 [33mwarn[39m: [33mAttempt 1/3 failed for "of the globe": 400 Model incompatible request argument supplied: temperature[39m
