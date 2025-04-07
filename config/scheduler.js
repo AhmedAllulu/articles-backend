@@ -2,6 +2,7 @@
 const cron = require('node-cron');
 const logger = require('./logger');
 const generationService = require('../services/generationService');
+const trendsService = require('../services/trendsService');
 const constants = require('./constants');
 
 // Simple job locks to prevent overlapping executions
@@ -80,41 +81,9 @@ function setupProductionScheduler() {
     try {
       await executeWithLock('trendFetching', async () => {
         logger.info('Running scheduled trend fetching');
-        
-        const results = {};
-        for (const category of constants.CATEGORIES) {
-          results[category] = {};
-          
-          for (const country of require('./countries')) {
-            try {
-              const trendsService = require('../services/trendsService');
-              const trends = await trendsService.fetchTrendingKeywords(category, country.code);
-              
-              if (trends.length > 0) {
-                await trendsService.storeTrends(category, country.code, trends);
-                logger.info(`Fetched and stored ${trends.length} trends for ${category}/${country.code}`);
-                results[category][country.code] = {
-                  count: trends.length,
-                  status: 'success'
-                };
-              } else {
-                results[category][country.code] = {
-                  count: 0,
-                  status: 'no trends found'
-                };
-              }
-            } catch (error) {
-              logger.error(`Error fetching trends for ${category}/${country.code}: ${error.message}`);
-              results[category][country.code] = {
-                status: 'error',
-                message: error.message
-              };
-            }
-          }
-        }
-        
-        logger.info('Scheduled trend fetching completed');
-        return results;
+        const result = await trendsService.fetchAndStoreAllTrends();
+        logger.info(`Scheduled trend fetching completed`);
+        return result;
       });
     } catch (error) {
       logger.error(`Error in scheduled trend fetching: ${error.message}`);
@@ -134,8 +103,39 @@ function setupDevelopmentScheduler() {
   // Instead, we use the dev endpoints to manually trigger article generation
 }
 
+/**
+ * Run the fetch trends job manually
+ * @returns {Promise<Object>} Result of the job
+ */
+async function runFetchTrendsJob() {
+  return executeWithLock('trendFetching', async () => {
+    logger.info('Running manual trend fetching');
+    const result = await trendsService.fetchAndStoreAllTrends();
+    logger.info('Manual trend fetching completed');
+    return result;
+  });
+}
+
+/**
+ * Run the article generation job manually
+ * @returns {Promise<Object>} Result of the job
+ */
+async function runArticleGenerationJob() {
+  return executeWithLock('articleGeneration', async () => {
+    logger.info('Running manual article generation');
+    const result = await generationService.generateArticlesForAll({
+      forceDevelopment: true
+    });
+    logger.info(`Manual generation completed: ${JSON.stringify(result.stats)}`);
+    return result;
+  });
+}
+
 module.exports = {
   initScheduler,
   // Export job lock status check for testing and manual execution
-  isJobRunning: (jobName) => jobLocks[jobName] || false
+  isJobRunning: (jobName) => jobLocks[jobName] || false,
+  // Export manual job runners
+  runFetchTrendsJob,
+  runArticleGenerationJob
 };

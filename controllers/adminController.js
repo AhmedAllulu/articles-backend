@@ -102,24 +102,47 @@ async function getTrends(req, res) {
 }
 
 /**
- * Fetch new trends (disabled, use insert trends instead)
+ * Fetch new trends from external API
  * @param {Object} req - Request object
  * @param {Object} res - Response object
  * @returns {Promise<void>}
  */
 async function fetchTrends(req, res) {
   try {
+    const { category, countryCode } = req.body;
+    
+    // Validate params
+    if (!category || !countryCode) {
+      return res.status(400).json(
+        formatResponse(null, 'Missing required parameters: category, countryCode', 400)
+      );
+    }
+    
     // Log action
     await User.logAction(
       req.user.id,
-      `Attempted to use disabled fetch trends endpoint`,
+      `Fetch trends for ${category}/${countryCode}`,
       req.ip,
       req.headers['user-agent']
     );
     
-    return res.status(400).json(
-      formatResponse(null, 'Automatic trend fetching is disabled. Please use the /trends/insert endpoint to manually add trends.', 400)
-    );
+    // Fetch and store trends
+    try {
+      const result = await trendsService.fetchAndStoreTrends(category, countryCode);
+      
+      return res.json(formatResponse({
+        message: 'Trends fetched and stored successfully',
+        fetched: result.fetched,
+        stored: result.stored,
+        category,
+        countryCode
+      }));
+    } catch (error) {
+      logger.error(`Failed to fetch trends: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Failed to fetch trends: ${error.message}`, 500)
+      );
+    }
   } catch (error) {
     logger.error(`Error in fetchTrends: ${error.message}`);
     return res.status(500).json(
@@ -128,6 +151,43 @@ async function fetchTrends(req, res) {
   }
 }
 
+/**
+ * Fetch trends for all categories and countries
+ * @param {Object} req - Request object
+ * @param {Object} res - Response object
+ * @returns {Promise<void>}
+ */
+async function fetchAllTrends(req, res) {
+  try {
+    // Log action
+    await User.logAction(
+      req.user.id,
+      'Fetch trends for all categories and countries',
+      req.ip,
+      req.headers['user-agent']
+    );
+    
+    // Fetch and store all trends
+    try {
+      const result = await trendsService.fetchAndStoreAllTrends();
+      
+      return res.json(formatResponse({
+        message: 'All trends fetched and stored successfully',
+        results: result.results
+      }));
+    } catch (error) {
+      logger.error(`Failed to fetch all trends: ${error.message}`);
+      return res.status(500).json(
+        formatResponse(null, `Failed to fetch all trends: ${error.message}`, 500)
+      );
+    }
+  } catch (error) {
+    logger.error(`Error in fetchAllTrends: ${error.message}`);
+    return res.status(500).json(
+      formatResponse(null, error.message, 500)
+    );
+  }
+}
 /**
  * Generate articles from existing trends
  * @param {Object} req - Request object
@@ -372,6 +432,7 @@ async function cleanupOldTrends(req, res) {
 
 // Add this to the exports at the bottom of the file
 module.exports = {
+  fetchAllTrends,
   generateArticles,
   getTrends,
   fetchTrends,

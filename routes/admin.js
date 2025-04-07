@@ -148,6 +148,50 @@ router.post('/articles/generate', adminController.generateArticles);
  */
 router.get('/trends/:category/:countryCode', adminController.getTrends);
 
+// Add the new route for fetching all trends
+/**
+ * @swagger
+ * /api/admin/trends/fetch-all:
+ *   post:
+ *     summary: Fetch trends for all categories and countries
+ *     tags: [Admin]
+ *     description: Fetch trending keywords for all categories and countries and store them in the database
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Trends fetched and stored successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     message:
+ *                       type: string
+ *                       example: All trends fetched and stored successfully
+ *                     results:
+ *                       type: object
+ *                 message:
+ *                   type: string
+ *                   example: Success
+ *                 timestamp:
+ *                   type: string
+ *                   format: date-time
+ *       401:
+ *         $ref: '#/components/responses/UnauthorizedError'
+ *       403:
+ *         $ref: '#/components/responses/ForbiddenError'
+ *       500:
+ *         $ref: '#/components/responses/ServerError'
+ */
+router.post('/trends/fetch-all', auth.requireAdmin, adminController.fetchAllTrends);
+
 /**
  * @swagger
  * /api/admin/trends/fetch:
@@ -194,11 +238,6 @@ router.get('/trends/:category/:countryCode', adminController.getTrends);
  *                     stored:
  *                       type: integer
  *                       example: 15
- *                     trends:
- *                       type: array
- *                       items:
- *                         type: string
- *                       example: ["artificial intelligence", "metaverse", "blockchain"]
  *                 message:
  *                   type: string
  *                   example: Success
